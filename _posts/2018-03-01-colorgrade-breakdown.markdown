@@ -11,5 +11,5 @@ An overview of some color grading works
 <div class="videoWrapper">
  <iframe src="https://player.vimeo.com/video/258404953" frameborder="0" allowfullscreen></iframe>
 </div>
-[Direct Link](https://www.youtube.com/watch?v=1uesF5tLMVo)
+[Direct Link](https://vimeo.com/258404953)
 
