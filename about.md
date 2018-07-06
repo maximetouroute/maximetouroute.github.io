@@ -72,7 +72,7 @@ __2017 - 2018__
 * Heavy sound design of a "box that vacuums sounds" and reverberations of crowd
 * <b>Jury's congratulations</b>
 
-#### Hyperlpse video <em>"Journey"</em>
+#### Hyperlapse video <em>"Journey"</em>
 * multiple hyperlapse shots around France edited together
 * Optimisation of a 14bit 8K hyperlapse workflow for low end desktops
 
