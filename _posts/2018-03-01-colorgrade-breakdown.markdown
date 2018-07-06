@@ -6,6 +6,8 @@ category: video
 cover: "/assets/posts/post_sunrise.jpg"
 ---
 
+An overview of some color grading works
+
 <div class="videoWrapper">
  <iframe src="https://player.vimeo.com/video/258404953" frameborder="0" allowfullscreen></iframe>
 </div>
