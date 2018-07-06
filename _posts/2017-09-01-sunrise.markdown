@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Sunrise"
+tags: [Video]
+category: video
+cover: "/assets/posts/post_sunrise.jpg"
+---
+
+__*Sunrise*__ is a poetic video shot in one morning in Paris.
+
+Role on this project: __Film maker__
+
+<div class="videoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m29FKPodRjs?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+[Direct Link](https://www.youtube.com/watch?v=m29FKPodRjs)
+<br/><br/>

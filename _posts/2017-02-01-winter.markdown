@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Music projects"
+tags: [Personnal work]
+category: video
+cover: "/assets/posts/post_winterep.jpg"
+---
+
+
+# Movie Soundtracks
+<hr/>
+__*Insomnies*__ is a music soundtrack made for a short movie about dreamy nights and insomnia.
+
+
+<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/332516939&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+
+[Direct Link](https://soundcloud.com/max-io/insomnies)
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+# Personal creations
+<hr/>
+Personal music compositions Winter EP and "Iron" single, published in early 2018
+<br/><br/><br/><br/>
+
+
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/392920155&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+[Direct Link](https://soundcloud.com/max-io/iron/)
+<br/><br/>
+
+<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/432598605&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+[Direct Link](https://soundcloud.com/max-io/sets/winter-ep/)
+
+# Alarm Clocks
+<hr/>
+A personal sound design project looking for the best sound for an alarm clock.
+<br/><br/>
+
+<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/362500982&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+<br/><br/>
+[Direct Link](https://soundcloud.com/max-io/am-clock-1/)

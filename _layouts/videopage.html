@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="home homePosts">
+
+    <div class="postGrid" style="padding:0;">
+
+        {% for post in site.posts %}
+        {% if post.categories contains "video" %}
+        <div class="post" onclick="window.location='{{ post.url | relative_url }}#content'">
+            <div class="postHeader" style="background-image: url('{{ post.cover }}');">
+                <div class="inside">
+                    <span class="postTitle">{{ post.title | escape }}</span>
+
+                    <span class="post-meta postTag">
+            {% for tags in post.tags %}
+              {{ tags }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          </span>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="moreProjects">
+        <a  href="/about">More projects</a>
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="styleNavbar">
+    <div class="content">
+        {% assign default_paths = site.pages | map: "path" %}
+        {% assign page_paths = site.header_pages | default: default_paths %}
+        <div class="headerLinks">
+            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% for node in sorted_pages %}
+            {% if node.title %}
+            {% if page.url == node.url %}
+            <a class="active" href="{{ node.url | relative_url }}">{{ node.title | escape }}</a>
+            {% else %}
+            <a href="{{ node.url | relative_url }}">{{ node.title | escape }}</a>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
