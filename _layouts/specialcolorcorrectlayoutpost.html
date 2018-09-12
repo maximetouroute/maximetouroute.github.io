@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+
+
+<div class="Page">
+
+  <article class="card" itemscope itemtype="http://schema.org/BlogPosting" id="content">
+
+    <div class="cover" style="background-image: url('{{ page.cover }}');">
+      <div class="title">
+        <span itemprop="name headline" style="font-size: 3rem; font-weight:900">{{ page.title | escape }}</span>
+
+        <span style="font-weight:600; font-size:1.4rem;">
+        {% for tags in page.tags %}
+        {{ tags }}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        </span>
+
+      <!--  <span class="meta" style="font-size:1rem;">
+            {% assign date_format = "%Y" %}
+            {{ page.date | date: date_format }}
+        </span> -->
+      </div>
+    </div>
+    <div class="article">
+
+<br/><br/>
+      <div class="content" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </div>
+
+  </article>
+</div>
+
+{% include juxtapose.html %}
