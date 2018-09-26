@@ -5,7 +5,7 @@ title:  "Harmonie des Sphères"
 subtitle: Short movie
 date: "2018-03-02"
 category: video
-cover: "screen1.jpg"
+cover: "cover.jpg"
 ---
 
 __*Harmonie des Sphères*__ is an independent short movie directed and produced by __Vincent Montalieu__.
