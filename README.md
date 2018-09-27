@@ -2,7 +2,6 @@
 
 A simple portfolio website.
 
-
 #### Dependencies used
 
 * Customised image compare component based on [react-compare-image](https://github.com/junkboy0315/react-compare-image)
