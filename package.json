@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "author": "Maxime Touroute",
   "dependencies": {
+    "css-element-queries": "latest",
     "gatsby": "^2.0.0",
     "gatsby-image": "^2.0.8",
     "gatsby-plugin-catch-links": "^2.0.2",
@@ -19,17 +20,17 @@
     "gatsby-transformer-sharp": "^2.1.1",
     "markdown-to-jsx": "^6.7.3",
     "node-sass": "^4.9.3",
+    "prop-types": "latest",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
-    "rehype-react": "^3.0.3",
-    "css-element-queries": "latest",
-    "prop-types": "latest"
+    "react-image-lightbox": "^5.0.0",
+    "rehype-react": "^3.0.3"
   },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
+    "format": "prettiegit str --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public -b master"
   },

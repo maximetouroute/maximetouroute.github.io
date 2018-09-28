@@ -174,63 +174,63 @@ export const fileImage = graphql`
 
 export const query = graphql`
     query {
-        real2A:file(relativePath: {eq: "grading-showcase/real2_a.jpg"}) {
+        real2A:file(relativePath: {eq: "gradingShowcase/real2_a.jpg"}) {
             ...fileImage
         }
 
-        real2B:file(relativePath: {eq: "grading-showcase/real2_b.jpg"}) {
+        real2B:file(relativePath: {eq: "gradingShowcase/real2_b.jpg"}) {
             ...fileImage
         }
 
-        poucet2A:file(relativePath: {eq: "grading-showcase/poucet2_a.jpg"}) {
+        poucet2A:file(relativePath: {eq: "gradingShowcase/poucet2_a.jpg"}) {
             ...fileImage
         }
 
-        poucet2B:file(relativePath: {eq: "grading-showcase/poucet2_b.jpg"}) {
+        poucet2B:file(relativePath: {eq: "gradingShowcase/poucet2_b.jpg"}) {
             ...fileImage
         }
 
-        mari3A:file(relativePath: {eq: "grading-showcase/mari3_a.jpg"}) {
+        mari3A:file(relativePath: {eq: "gradingShowcase/mari3_a.jpg"}) {
             ...fileImage
         }
-        mari3B:file(relativePath: {eq: "grading-showcase/mari3_b.jpg"}) {
+        mari3B:file(relativePath: {eq: "gradingShowcase/mari3_b.jpg"}) {
             ...fileImage
         }
-        mari1A:file(relativePath: {eq: "grading-showcase/mari1_a.jpg"}) {
+        mari1A:file(relativePath: {eq: "gradingShowcase/mari1_a.jpg"}) {
             ...fileImage
         }
-        mari1B:file(relativePath: {eq: "grading-showcase/mari1_b.jpg"}) {
+        mari1B:file(relativePath: {eq: "gradingShowcase/mari1_b.jpg"}) {
             ...fileImage
         }
-        mari5A:file(relativePath: {eq: "grading-showcase/mari5_a.jpg"}) {
+        mari5A:file(relativePath: {eq: "gradingShowcase/mari5_a.jpg"}) {
             ...fileImage
         }
-        mari5B:file(relativePath: {eq: "grading-showcase/mari5_b.jpg"}) {
+        mari5B:file(relativePath: {eq: "gradingShowcase/mari5_b.jpg"}) {
             ...fileImage
         }
 
-        harm1A:file(relativePath: {eq: "grading-showcase/harm1_a.jpg"}) {
+        harm1A:file(relativePath: {eq: "gradingShowcase/harm1_a.jpg"}) {
             ...fileImage
         }
-        harm1B:file(relativePath: {eq: "grading-showcase/harm1_b.jpg"}) {
+        harm1B:file(relativePath: {eq: "gradingShowcase/harm1_b.jpg"}) {
             ...fileImage
         }
-        harm3A:file(relativePath: {eq: "grading-showcase/harm3_a.jpg"}) {
+        harm3A:file(relativePath: {eq: "gradingShowcase/harm3_a.jpg"}) {
             ...fileImage
         }
-        harm3B:file(relativePath: {eq: "grading-showcase/harm3_b.jpg"}) {
+        harm3B:file(relativePath: {eq: "gradingShowcase/harm3_b.jpg"}) {
             ...fileImage
         }
-        harm4A:file(relativePath: {eq: "grading-showcase/harm4_a.jpg"}) {
+        harm4A:file(relativePath: {eq: "gradingShowcase/harm4_a.jpg"}) {
             ...fileImage
         }
-        harm4B:file(relativePath: {eq: "grading-showcase/harm4_b.jpg"}) {
+        harm4B:file(relativePath: {eq: "gradingShowcase/harm4_b.jpg"}) {
             ...fileImage
         }
-        harm5A:file(relativePath: {eq: "grading-showcase/harm5_a.jpg"}) {
+        harm5A:file(relativePath: {eq: "gradingShowcase/harm5_a.jpg"}) {
             ...fileImage
         }
-        harm5B:file(relativePath: {eq: "grading-showcase/harm5_b.jpg"}) {
+        harm5B:file(relativePath: {eq: "gradingShowcase/harm5_b.jpg"}) {
             ...fileImage
         }
 
