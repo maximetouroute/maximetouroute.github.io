@@ -32,6 +32,10 @@ const Layout = ({ children }) => (
               name: 'keywords',
               content: 'photography, digital art, movie, cinema, photo, photos, portfolio, touroute',
             },
+            {
+              name: 'viewport',
+              content: 'user-scalable=no'
+            }
           ]}
           link={[
             { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
