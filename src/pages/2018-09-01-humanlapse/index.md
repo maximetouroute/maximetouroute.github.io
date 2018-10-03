@@ -1,5 +1,5 @@
 ---
-path: /humanlapse
+path: /humanlapseProject
 layout: article
 title:  "The Humanlapse Project"
 subtitle: Timelapses of humans
