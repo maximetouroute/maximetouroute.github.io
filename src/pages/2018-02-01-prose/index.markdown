@@ -10,9 +10,8 @@ cover: "post_prose.jpg"
 
 An __*Aftermovie*__ shot for [Prose Event](https://www.facebook.com/Prose.Event/).
 
-* The video is aimed to be used in multiple contexts (promotional video, facebook video cover...)
+The video is aimed to be used in multiple contexts (promotional video, facebook video cover...)
 
-* Role on this project: __*Film maker*__
 
 ### Aftermovie
 (Music and title credits goes to Prose Event)

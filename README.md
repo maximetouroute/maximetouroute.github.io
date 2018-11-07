@@ -2,6 +2,12 @@
 
 A simple portfolio website.
 
+#### How to run and deploy
+
+* npm run develop
+* npm run deploy
+
+
 #### Libs
 
 * [gatsbyJS](gatsbyjs.org) framework and multiple plugins

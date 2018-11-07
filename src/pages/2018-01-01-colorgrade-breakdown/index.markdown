@@ -8,7 +8,7 @@ category: video
 cover: "post_sunrise.jpg"
 ---
 
-An overview of some color grading works
+An overview of some color grading works.
 
 
 <iframe src="https://player.vimeo.com/video/258404953" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
