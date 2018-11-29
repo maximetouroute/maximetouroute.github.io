@@ -7,7 +7,7 @@ export class Navbar extends Component {
   menuItems() {
     return (<>
         <Link activeClassName="" className="siteTitle" to="/">MAXIME TOUROUTE</Link>
-        <Link activeClassName="active" to="/">VIDEO</Link>
+        <Link activeClassName="active" to="/">PROJECTS</Link>
         <Link activeClassName="active" to="/photoBook">PHOTO</Link>
         <Link activeClassName="active" to="/about">ABOUT</Link>
         <Link activeClassName="active" to="/contact">CONTACT</Link>

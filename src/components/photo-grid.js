@@ -108,7 +108,6 @@ class PhotoGridTest extends React.Component {
 PhotoGridTest.propTypes = photoGridProptypes;
 
 
-
 function PhotoGrid({ children }) {
   const photos = children.filter(child => typeof child !== 'string');
   const srcs = photos.map(photo => photo.props.href);

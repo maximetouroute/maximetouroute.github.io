@@ -17,7 +17,7 @@ title: ABOUT
 ### — I'm Maxime, an engineer specialised in __audiovisual arts__
 
 
-I've always been drawn by film making, photography and arts. I'm well versed in many skills around audiovisual creation, from shooting to post-production 
+I've always been drawn by film making, photography and arts. I'm well versed in many skills around audiovisual creation, from shooting to post-production. I'm also a full fledged software engineer and using these skills to design new creative experiences. 
 I love to work on audiovisual and art projects where my creativity and rigor can be an asset.
  
 I'm always looking for new projects — if you would like to make something together, [get in touch !](/contact)
@@ -27,15 +27,16 @@ I'm always looking for new projects — if you would like to make something toge
 
 ## — What I do
 
-
 #### I make movies
-short movies, music clips, concert recordings, corporate videos... 
+I direct short movies, music clips, concert recordings... 
+And I join movie crews as a camera operator or sound engineer during shooting, as a colorist or sound mixer during post.
 
-#### I join movie crews
-As a camera operator, sound engineer during shooting, as a colorist or sound mixer during post.
+#### I work on any kind of creative projects
+Photography, video, museography, digital arts... If it's creative, I'm in for it !
 
-#### And I develop tools
-With my experience as a software engineer I design film making workflows to gain on productivity
+#### And I code
+Web apps, software, mobile apps... With my experience as a software engineer I design workflows to gain on productivity and I develop innovative solutions for art projects
+
 
 
 <br><br>
@@ -52,6 +53,10 @@ With my experience as a software engineer I design film making workflows to gain
 __2017 - 2018__
 
 <br/>
+
+#### Short movie <em>"Veronika"</em>
+* A short documentary about life's choices
+
 
 #### Short movie <em>"Innocent Words"</em>
 * A short movie about the precarious
@@ -103,6 +108,11 @@ __2017 - 2018__
 <br/>
 <br/>
 
+#### Software engineer
+* Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
+
+
+
 #### Camera Operator / Live recordings
 * Multicam recording of concerts and dance performance for [Tous a la guil' Festival](http://sixiemecontinent.net/festival2018/tousalaguill.html)
 
@@ -140,6 +150,9 @@ __2017 - 2018__
 * 2' Sequence shot <em>"La Rue"</em> made for a contest
 * Visual effects to remove the crew from window reflections
 * Heavy sound mix to recover sound from bad recordings
+
+
+
 
 
 <br/><br/>

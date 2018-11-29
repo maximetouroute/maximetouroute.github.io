@@ -128,6 +128,9 @@ export default class PhotoBook extends React.Component {
 
         <div className="pageContent">
           <div className="pageContainer">
+
+            <p>A selection of my photography works.</p>
+            <br/>
             {photoBookAlbums.map(album => {
               const pics = this.quickSortObjectBasedOnPartOfKeyName(album.keyToken, this.props.data)
               return (
