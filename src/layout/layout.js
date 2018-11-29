@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
           meta={[
             {
               name: 'description',
-              content: 'Portfolio website of Maxime Touroute, audiovisual projects (photography, videography, music) of Maxime Touroute',
+              content: 'Portfolio website of Maxime Touroute, audiovisual projects (photography, videography, digital art) of Maxime Touroute',
             },
             {
               name: 'keywords',

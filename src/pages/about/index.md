@@ -17,8 +17,8 @@ title: ABOUT
 ### — I'm Maxime, an engineer specialised in __audiovisual arts__
 
 
-I've always been drawn by film making, photography and music. I'm well versed in many skills around audiovisual creation, from shooting to post-production 
-I love to work on audiovisual projects where my creativity and rigor can be an asset.
+I've always been drawn by film making, photography and arts. I'm well versed in many skills around audiovisual creation, from shooting to post-production 
+I love to work on audiovisual and art projects where my creativity and rigor can be an asset.
  
 I'm always looking for new projects — if you would like to make something together, [get in touch !](/contact)
 
@@ -52,6 +52,11 @@ With my experience as a software engineer I design film making workflows to gain
 __2017 - 2018__
 
 <br/>
+
+#### Short movie <em>"Innocent Words"</em>
+* A short movie about the precarious
+* __Official Selection__ , Mobile Film Festival
+* [Click for More infos](/innocentWords#content)
 
 #### Music clip <em>"Maripega"</em>
 * More infos coming soon

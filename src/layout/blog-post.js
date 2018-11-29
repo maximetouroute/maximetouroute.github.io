@@ -2,6 +2,14 @@ import React from 'react'
 import Layout from './layout'
 import './page.scss'
 import 'moment'
+import rehypeReact from "rehype-react"
+import PhotoGrid from '../components/photo-grid';
+import { graphql } from 'gatsby'
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { "photo-grid": PhotoGrid },
+}).Compiler
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data // data.markdownRemark holds our post data
@@ -22,7 +30,7 @@ export default function Template({ data }) {
         <article className="card" itemScope itemType="http://schema.org/BlogPosting">
           <div className="article">
             <br/><br/>
-            <div className="content" itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }}/>
+            {renderAst(post.htmlAst)}
           </div>
         </article>
       </div>
@@ -30,11 +38,13 @@ export default function Template({ data }) {
   )
 }
 
+//  <div className="content" itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }}/>
+
 
 export const pageQuery = graphql`
     query BlogPostByPath($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
-            html
+            htmlAst # previously \`html\`
             frontmatter {
                 date(formatString: "MMMM DD, YYYY")
                 path
@@ -52,6 +62,10 @@ export const pageQuery = graphql`
 
                     }
                 }
+                
             }
         }
     }`
+
+
+
