@@ -2,7 +2,7 @@ import React from 'react';
 import Lightbox from 'react-image-lightbox'
 import 'react-image-lightbox/style.css' // This only needs to be imported once in your app
 import PropTypes from 'prop-types'
-
+import './photo-grid.scss';
 
 // DIRTY test for custom component.
 /*
@@ -111,8 +111,6 @@ PhotoGridTest.propTypes = photoGridProptypes;
 function PhotoGrid({ children }) {
   const photos = children.filter(child => typeof child !== 'string');
   const srcs = photos.map(photo => photo.props.href);
-  console.log(`photos : ${photos}`);
-  console.log(photos);
   return (
     <PhotoGridTest gatsbyImages={srcs} />
   );
