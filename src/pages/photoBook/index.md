@@ -70,4 +70,5 @@ A collection of shots fmor the everyday ramblings of my life.
 <img src="dailies/b-4.jpg"/>
 </photo-grid>
 
-            
+<p style="text-align:center"}>Want more ? check out my <a href="https://instagram.com/maximetouroute" target="_blank" rel="noreferrer noopener">Instagram</a></p>
+      
