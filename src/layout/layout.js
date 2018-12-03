@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
             },
             {
               name: 'viewport',
-              content: 'user-scalable=no'
+              content: 'user-scalable=no, width=device-width'
             }
           ]}
           link={[
