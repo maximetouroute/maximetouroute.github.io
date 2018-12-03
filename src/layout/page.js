@@ -1,10 +1,16 @@
 import React from 'react'
 import Layout from './layout'
 import './page.scss'
+import rehypeReact from 'rehype-react'
+import PhotoGrid from '../components/photo-grid'
 
 
 
 
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { "photo-grid": PhotoGrid },
+}).Compiler
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data
@@ -20,7 +26,9 @@ export default function Template({ data }) {
         <article className="card article" id="content">
           <header className="header" style={{ paddingTop: '1em', paddingBottom: '2em' }}>
           </header>
-          <div className="content" itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }}/>
+          <div className="content" itemProp="articleBody">
+            {renderAst(post.htmlAst)}
+          </div>
         </article>
       </div>
 
@@ -34,7 +42,7 @@ export default function Template({ data }) {
 export const pageQuery = graphql`
     query PageByPath($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
-            html
+              htmlAst # previously \`html\`
             frontmatter {
                 path
                 title
