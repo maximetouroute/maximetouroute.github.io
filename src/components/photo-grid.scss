@@ -67,7 +67,7 @@
     background-position: center center;
 
     &:hover {
-      box-shadow: inset 0 0 10000px 100000px rgba(0, 0, 0, 0.2); // easy way to get a black overlay
+      box-shadow: inset 0 0 0px 100000px rgba(0, 0, 0, 0.2); // easy way to get a black overlay
       cursor: pointer;
     }
 
