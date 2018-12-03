@@ -11,12 +11,14 @@ const renderAst = new rehypeReact({
   components: { "photo-grid": PhotoGrid },
 }).Compiler
 
+
+/* style={{ backgroundImage: 'url(' + post.frontmatter.cover.childImageSharp.fixed.src + ')' }}*/
 export default function Template({ data }) {
   const { markdownRemark: post } = data // data.markdownRemark holds our post data
   return (
     <Layout>
       <div className="coverBand"
-           style={{ backgroundImage: 'url(' + post.frontmatter.cover.childImageSharp.fixed.src + ')' }} id="content">
+           id="content">
         <div className="overlay">
           <div className="punchline">{post.frontmatter.title}</div>
           <div className="subtext">
