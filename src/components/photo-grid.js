@@ -36,8 +36,8 @@ class PhotoGridTest extends React.Component {
   generatePicture(picture, index, margin) {
     let className = margin ? `photoThumbnail marginRight` : `photoThumbnail`
     return (
-      <div className={className} style={styleBackgroundPhoto(picture)}
-           onClick={() => this.setState({ isOpen: true, photoIndex: index })} key={picture.id}/>
+      <div key={index} className={className} style={styleBackgroundPhoto(picture)}
+           onClick={() => this.setState({ isOpen: true, photoIndex: index })}/>
     )
   }
 
@@ -58,7 +58,7 @@ class PhotoGridTest extends React.Component {
         }
       }
       photoGrid.push(
-        <div className="photoRowContainer" key={pictures[i].id}>
+        <div key={i} className="photoRowContainer">
           {photoRow}
         </div>,
       )
@@ -74,7 +74,7 @@ class PhotoGridTest extends React.Component {
     const images = this.props.gatsbyImages;
 
     return (
-      <>
+      <div className="componentPhotoGrid">
         {isOpen && (
 
           <Lightbox
@@ -98,7 +98,7 @@ class PhotoGridTest extends React.Component {
         <div className="photoGrid">
           {this.generateGrid(this.props.gatsbyImages)}
         </div>
-      </>
+      </div>
 
     )
   }

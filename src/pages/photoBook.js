@@ -29,8 +29,8 @@ class PhotoGrid extends React.Component {
   generatePicture(picture, index, margin) {
     let className = margin ? `photoThumbnail marginRight` : `photoThumbnail`
     return (
-      <div className={className} style={styleBackgroundPhoto(picture.childImageSharp.sizes.src)}
-           onClick={() => this.setState({ isOpen: true, photoIndex: index })} key={picture.id}/>
+      <div key={index*1000} className={className} style={styleBackgroundPhoto(picture.childImageSharp.sizes.src)}
+           onClick={() => this.setState({ isOpen: true, photoIndex: index })} />
     )
   }
 
@@ -51,7 +51,7 @@ class PhotoGrid extends React.Component {
         }
       }
       photoGrid.push(
-        <div className="photoRowContainer" key={pictures[i].id}>
+        <div key={i} className="photoRowContainer" >
           {photoRow}
         </div>,
       )
