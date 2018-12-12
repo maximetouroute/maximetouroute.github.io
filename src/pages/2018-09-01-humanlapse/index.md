@@ -58,5 +58,3 @@ The frames are fixed on poles and disposed in an open area so visitors can walk 
 <img src="b-7.jpg" />
 <img src="b-10.jpg" />
 </photo-grid>
-
-
