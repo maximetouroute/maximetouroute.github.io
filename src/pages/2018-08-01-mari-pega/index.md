@@ -9,11 +9,14 @@ cover: "mari5_a.jpg"
 ---
 
 
-__Synopsis__ : A group of friends are binge drinking until one of them falls into a bad trip.
+#### Description
+Music clip shot in one day with the band.
 
-__Role on this project__ : Film maker
-
-__Insight__ : This clip was shot in one day with the band.
+#### Synopsis
+A group of friends are binge drinking until one of them falls into a bad trip.
+ 
+#### Role
+Film maker
 
 
 ![Screenshot](mari0.png)

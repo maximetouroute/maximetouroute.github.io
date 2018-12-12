@@ -8,21 +8,26 @@ category: video
 cover: "post_realite.jpg"
 ---
 
-A short movie about the elderly. Shot in a few hours with a real grandma. Currently not public due to festival selections. Send me a mail for a private access.
+#### Description
+A short movie about the elderly. Shot in a few hours with a real grandma.  
+__Currently not public due to festival selections.__  
+[Send me a mail](/contact) for a private access.
 
-__Synopsis__ : The everydaylife of an elderly gets interrupted by a TV failure.
+#### Synopsis 
+The everydaylife of an elderly gets interrupted by a TV failure.
 
-__Festival Selections__
+#### Festival selection
 * [LYF Lyon Young Film Festival](http://lyonyoungfilmfest.fr/)
 
+#### Role
+Camera and sound recording, edit, visual effects, sound mix, color grading. No team.
 
-![photo](screen3.jpg)
+<br/>
+<br/>
 
-
-![photo](screen1.jpg)
-
-
-![photo](screen2.jpg)
+![Snapshot of Realité short movie](screen3.jpg)  
+![Snapshot of Realité short movie](screen1.jpg)  
+![Snapshot of Realité short movie](screen2.jpg)  
 
 
 

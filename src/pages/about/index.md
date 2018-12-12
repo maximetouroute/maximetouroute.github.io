@@ -37,118 +37,103 @@ Photography, video, museography, digital arts... If it's creative, I'm in for it
 #### And I code
 Web apps, software, mobile apps... With my experience as a software engineer I design workflows to gain on productivity and I develop innovative solutions for art projects
 
+<br/>
+<br/>
+
+# Overview of my work
+
+#### My last short movies as a director
+* **_"Veronika"_**, a short documentary about life's choices
+* [Short movie "Innocent Words"](/innocentWords#content)
+* [Music clip "Mari Pega"](/maripega#content)
+* [Short movie "Réalité"](/realite#content)
+* [Experimental Video "Rainy Day"](/rainyday#content)
+* [Promotional clip "Astrakan Café"](/badhinjan-trio#content)
+* [Short movie "Echos"](/echos#content)
+
+#### My other creative projects
+* [The Live Drawing Project](/livedrawing#content)
+* [The Humanlape Project](/humanlapseProject#content)
 
 
-<br><br>
 
-
-## — Recent projects
-
-
-<div id="#recentProjects"/>
 
 <br/>
 <br/>
 
-__2017 - 2018__
-
-<br/>
-
-#### Short movie <em>"Veronika"</em>
-* A short documentary about life's choices
+# Work Experience
 
 
-#### Short movie <em>"Innocent Words"</em>
-* A short movie about the precarious
-* __Official Selection__ , Mobile Film Festival
-* [Click for More infos](/innocentWords#content)
-
-#### Music clip <em>"Maripega"</em>
-* More infos coming soon
-
-#### Short movie <em>"Réalité"</em>
-* A short movie about the elderly
-* [Click for More infos](/realite#content)
-
-#### Experimental video <em>"Rainy day"</em>
-* The result of conception and development of an innovative workflow for hyperlapses
-* [Click for More infos](/rainyday#content)
-
-#### Aftermovie <em>"Baraqu'en Prose"<em>
-* A promotional video for a cultural event
-* [Click for More infos](/prose-aftermovie#content)
-
-#### Promotional clip / "Astrakan Café"
-* A 2" video clip to showcase a band's music singularity and musical style
-* * [Click for More infos](/badhinjan-trio#content)
-
-#### Short movie  <em>"Echos"</em>
-* A 2' short film made for a student contest
-* Heavy sound design of a "box that vacuums sounds" and reverberations of crowd
-* <b>Jury's congratulations</b>
-
-#### Hyperlapse video <em>"Journey"</em>
-* multiple hyperlapse shots around France edited together
-* Optimisation of a 14bit 8K hyperlapse workflow for low end desktops
-
-<br/>
-
-
----
-
-<br/>
-<br/>
-
-## Work Experience
-
-<br/>
-
-__2017 - 2018__
-
-<br/>
-<br/>
-
-#### Software engineer
+#### Freelance Software Engineer
+_2016 - Today_  
+_Part time missions_ 
 * Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
+* Research and development in various fields : 3D (OpenGL, Metal, Unity), physics engine, computer vision
 
 
-
-#### Camera Operator / Live recordings
-* Multicam recording of concerts and dance performance for [Tous a la guil' Festival](http://sixiemecontinent.net/festival2018/tousalaguill.html)
+#### Camera Operator / Concert recording
+_Spring 2018_
+* Multicam recording of concerts and dance performance with an assistant
+* for [Tous a la guil' Festival](http://sixiemecontinent.net/festival2018/tousalaguill.html)
 
 
 #### Sound Engineer / Short movie
-* 10' Short movie <em>"Quand le loup n'y est pas"</em>
-* Dialogue recording in harsh conditions
-* Heavy sound design
-* Sound mix
+**_"Quand le loup n'y est pas"_** directed by Josephine Santraille  
+_Spring 2018_
+* Dialogue recording in harsh conditions: windy cliffs and in the middle of strong current rivers
+* Sound design of heartbeats
+* Sound mix with a tight schedule
+* Supervision of a novice sound assistant
 
 #### Colorist / Short movie
-* 10' short movie <em>"Emma"</em>
+**_"Harmonie des sphères"_** directed by Vincent Montalieu  
+_2018_
+* Meticulous color grading to get the most of a low bitrate video source (Lumix GH2)
+* [Project page for "Harmonie des sphères"](/harmoniedesspheres#content)
+
+
+#### Colorist / Short movie
+**_"Eva"_** directed by Julien Gasparoux  
+_Spring 2018_
+* recovery of noisy and under-exposed images
+* complex color matching
+
+
+#### Film Maker / Aftermovie
+**_"Baraqu'en Prose Aftermovie_** for _Prose Events_
+_February 2018_
+* [Project page for "Prose Aftermovie"](/prose-aftermovie#content)
 
 #### Sound Designer / Alarm Clock
+_Winter 2017_
 * 1' alarm clock music designed for a slow, calm but efficient awakening
 * Available [here](https://soundcloud.com/max-io/am-clock-1)
 
 #### Camera Operator / Concert recording
-* Autumn 2017 - Lyon
-* Live video and sound recording with multiple camera setup
-* For the "Badhinjan Trio" At "La Boite à Gants", Lyon, France
+_Autumn 2017_
+* Multicam & sound recording of a concert for the _Badhinjan Trio_
 
 #### Assistant Director and Director of photography / Short film
-* 17' short film <em>"Harmonie des Sphères"</em>, directed by Vincent Montalieu
-* Camera operator, lighting, color correction, and logistics
+**_"Harmonie des sphères"_** directed by Vincent Montalieu  
+_Summer 2017_
+* Director of photography, Camera operator, lighting and logistics
+* [Project page for "Harmonie des sphères"](/harmoniedesspheres#content)
 
 #### 2nd Sound assistant / Feature film
-* Docufiction, in post-production
-* Sound recording, quality reports, laval mic placement and boom operator
+**_"Lune Rousse"_** directed by Cecile Briffoz, cinematography by Philippe Brelot  
+_Summer 2017_
+* laval mic placement, boom operator, ambient sound recordings
+* back-ups, quality reports
 
-#### Co-director, Color Correction, Sound Mix, Leading Role / Short film
-* 2' short film <em>"Ma Cousine"</em> made for a contest
+#### Co-director, Post-production, Leading Role / Short film
+**_"Ma Cousine"_** with Clementine Brochet  
+_Spring 2017_
+* Sound mix and color grading supervision
 
-#### Assistant Director, Camera Operator, Visual Effects, Sound Mix / Short film
-* 2' Sequence shot <em>"La Rue"</em> made for a contest
-* Visual effects to remove the crew from window reflections
+#### Assistant Director, Camera Operator, Post-production / Short film
+**_"La Rue"_** with Clementine Brochet  
+_Spring 2017_
+* Visual effects to reduce the crew reflection on windows
 * Heavy sound mix to recover sound from bad recordings
 
 
