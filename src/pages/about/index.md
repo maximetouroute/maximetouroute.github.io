@@ -63,13 +63,27 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 
 # Work Experience
 
+#### Director of photography / Short film
+_December 2018_  
+**_"Toc toc"_** directed by Nicolas Sintes and Vincent Montalieu  
+* Night lighting for a 4 minute sequence shot inside a small apartment
+* Creative light set-up with minimal budget (cheap LED spots, construction spotlights and some cheap photography studio lighting)
 
-#### Freelance Software Engineer
-_2016 - Today_  
-_Part time missions_ 
-* Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
-* Research and development in various fields : 3D (OpenGL, Metal, Unity), physics engine, computer vision
+#### Full Stack Engineer / The Live Drawing Project
+_December 2018_  
+* A project about collaborative and realtime live drawing
+* Users draw on their phones and all their drawings appear in realtime on a wide screen
+* Javascript stack using React, VanillaJS (ES7) and Node.js
+* Entirely working on web sockets, fallback on classic HTTP for old browsers
+* Deployment with AWS Fargate and docker containers
+* [The Live Drawing Project](/livedrawing#content)
 
+#### Museum scenographer / The Humanlapse Project
+_October 2018_
+* Conception and crafting of an art installation based on handmade wood video frames
+* Exhibition set-up and dismantling
+* Maintenance of the art exhibition for a month
+* [Pictures and videos of the exhibition](/humanlapseProject#content)
 
 #### Camera Operator / Concert recording
 _Spring 2018_
@@ -100,7 +114,7 @@ _Spring 2018_
 
 
 #### Film Maker / Aftermovie
-**_"Baraqu'en Prose Aftermovie_** for _Prose Events_
+**_"Baraqu'en Prose Aftermovie_** for _Prose Events_  
 _February 2018_
 * [Project page for "Prose Aftermovie"](/prose-aftermovie#content)
 
@@ -136,7 +150,11 @@ _Spring 2017_
 * Visual effects to reduce the crew reflection on windows
 * Heavy sound mix to recover sound from bad recordings
 
-
+#### Freelance Software Engineer
+_2016 - Today_  
+_Part time missions_ 
+* Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
+* Research and development in various fields : 3D (OpenGL, Metal, Unity), physics engine, computer vision
 
 
 
