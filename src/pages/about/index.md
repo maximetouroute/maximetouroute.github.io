@@ -43,7 +43,7 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 # Overview of my work
 
 #### My last short movies as a director
-* **_"Veronika"_**, a short documentary about life's choices
+* [Short documentary "Veronika"](/veronika#content)
 * [Short movie "Innocent Words"](/innocentWords#content)
 * [Music clip "Mari Pega"](/maripega#content)
 * [Short movie "Réalité"](/realite#content)
