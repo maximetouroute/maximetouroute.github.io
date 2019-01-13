@@ -3,18 +3,24 @@ path: /humanlapseProject
 layout: article
 title:  "The Humanlapse Project"
 subtitle: Timelapses of humans
-date: "2018-09-01"
+date: "2019-01-01"
 category: video
 cover: "cover.png"
 ---
+
+#### This is an ongoing project !  
+####  Do not hesitate to [reach me](/contact) for exhibition & collaboration inquiries
+
+<br/>
+<br/>
 
 #### Description
 
 The __Humanlapse Project__ is a photography project that aims to explore usage of the timelapse and hyperlapse techniques for human subjects.
 
-<a href="https://instagram.com/maximetouroute/" target="_blank" rel="noreferrer noopener">Check out Humanlapses on Instagram</a>
+<a href="https://instagram.com/maximetouroute/" target="_blank" rel="noreferrer noopener">Check out Humanlapses on Instagram (Low quality)</a>
 
-[Check out humanlapses on website gallery (High quality)](http://maximetouroute.github.io/humanlapse)
+[Check out humanlapses on the showcase website (High quality)](http://maximetouroute.github.io/humanlapse)
 
 <br/>
 
@@ -58,3 +64,5 @@ The frames are fixed on poles and disposed in an open area so visitors can walk 
 <img src="b-7.jpg" />
 <img src="b-10.jpg" />
 </photo-grid>
+
+
