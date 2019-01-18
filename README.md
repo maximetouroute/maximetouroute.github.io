@@ -24,3 +24,5 @@ A simple portfolio website.
 * auto generation of navbar links
 * clean graphql with fragments
 * factorise and clean css
+* Dirty workaround in components image-compare and photo-grid to use in markdowns
+* updating gatsby packages somehow broke many dependencies, need to update the whole project with a gatsby new

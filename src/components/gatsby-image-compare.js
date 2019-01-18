@@ -387,7 +387,7 @@ function GatsbyImageCompare({ children }) {
   const leftImage = photos[0].props.href;
   const rightImage = photos[1].props.href;
   return (
-    <ReactCompareImage leftImage={leftImage} rightImage={rightImage} />
+    <ReactCompareImage leftImage={leftImage ? leftImage : null} rightImage={rightImage ? rightImage : null} />
   );
 }
 

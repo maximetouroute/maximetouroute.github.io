@@ -56,7 +56,7 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 * [The Humanlape Project](/humanlapseProject#content)
 
 #### Overview of my colorist works
-* [Colorist Showcase](/colorist)
+* [Colorist Showcase](/colorist/)
 
 
 <br/>
