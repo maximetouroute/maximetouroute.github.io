@@ -54,7 +54,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Maxime Touroute Portfolio`,
-        short_name: `Max Portfolio`,
+        short_name: `Maxime Portfolio`,
         start_url: `/`,
         background_color: `#d6d0cd`,
         theme_color: `#363636`,

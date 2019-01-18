@@ -4,11 +4,12 @@ import './page.scss'
 import 'moment'
 import rehypeReact from "rehype-react"
 import PhotoGrid from '../components/photo-grid';
+import ImageCompare from '../components/gatsby-image-compare';
 import { graphql } from 'gatsby'
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "photo-grid": PhotoGrid },
+  components: { "photo-grid": PhotoGrid, "image-compare": ImageCompare },
 }).Compiler
 
 
