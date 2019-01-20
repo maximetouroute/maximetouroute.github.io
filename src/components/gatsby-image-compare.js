@@ -67,6 +67,11 @@ class ReactCompareImage extends React.Component {
       containerElement.addEventListener('mousedown', this.startSliding)
       window.addEventListener('mouseup', this.finishSliding)
     }
+
+    // Hotfix: img onload is never called, thanks to service worker
+    this.setState({
+      isImgFullyLoaded: true
+    });
   }
 
   componentDidUpdate = (prevProps, prevState) => {
