@@ -55,7 +55,7 @@ A series of experiments on the usage of lighting and photography techniques
 </photo-grid>
 
 # Dailies 
-A collection of shots fmor the everyday ramblings of my life.
+A collection of shots from the everyday ramblings of my life.
 <br/>
 
 <photo-grid>
