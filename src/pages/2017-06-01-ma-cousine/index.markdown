@@ -16,4 +16,4 @@ cover: "cover-cousine.png"
 __*Ma Cousine*__ is a short movie co-directed with Clementine Brochet.
 
 #### Role
-__Writing__, __Storyboarding__, __Sound mix__, __Color Correction__ and __comedian__
+teamwork on __writing__, __sound mix__, __color grading__.
