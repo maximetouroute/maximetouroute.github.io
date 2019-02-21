@@ -8,7 +8,7 @@ category: video
 cover: "cover.png"
 ---
 
-#### Do you to have your own humanlapse ? 
+#### Do you want to have your very own humanlapse ? 
 #### Do you want to exhibit the humanlapse project in your gallery ?
 #### You can [reach me](/contact) for exhibition & collaboration inquiries
 
