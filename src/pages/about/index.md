@@ -29,7 +29,7 @@ I'm always looking for new projects — if you would like to make something toge
 
 #### I make movies
 I direct short movies, music clips, concert recordings... 
-And I join movie crews as a camera operator or sound engineer during shooting, as a colorist or sound mixer during post.
+And I join movie crews as a camera operator, camera assistant, or sound engineer during shooting, as a colorist or sound mixer during post.
 
 #### I work on any kind of creative projects
 Photography, video, museography, digital arts... If it's creative, I'm in for it !
@@ -63,6 +63,22 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 <br/>
 
 # Work Experience
+
+#### 1st Assistant Camera / Short film
+_Ongoing_  
+**_"Esteban"_** directed by Sebastien Jimenez, cinematography by Pierre Chamming's  
+
+#### Software Engineer in digital arts
+_Ongoing_  
+* Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
+
+#### Film maker / Augmented Reality 360° videos
+_Ongoing_  
+* Working on 360° dance videos for use in an augented reality space
+
+#### Director of photography, colorist / Short film
+_February 2018_  
+**_"La Cible"_** directed by Alex Boulin
 
 #### Director of photography / Short film
 _December 2018_  
@@ -151,11 +167,7 @@ _Spring 2017_
 * Visual effects to reduce the crew reflection on windows
 * Heavy sound mix to recover sound from bad recordings
 
-#### Freelance Software Engineer
-_2016 - Today_  
-_Part time missions_ 
-* Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
-* Research and development in various fields : 3D (OpenGL, Metal, Unity), physics engine, computer vision
+
 
 
 

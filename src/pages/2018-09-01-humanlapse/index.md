@@ -8,8 +8,9 @@ category: video
 cover: "cover.png"
 ---
 
-#### This is an ongoing project !  
-####  Do not hesitate to [reach me](/contact) for exhibition & collaboration inquiries
+#### Do you to have your own humanlapse ? 
+#### Do you want to exhibit the humanlapse project in your gallery ?
+#### You can [reach me](/contact) for exhibition & collaboration inquiries
 
 <br/>
 <br/>

@@ -9,6 +9,37 @@ cover: "harm5_a.jpg"
 ---
 
 
+# La Cible
+### Court métrage de Alex Boulin
+__Caméra__ : Lumix GH5 et Canon 5D  
+  
+__Qualité vidéo__: H.264  
+  
+__Description__: Etalonnage effectué en quelques heures pour concours. Création d'une ambiance feutrée
+Travail de conservation des détails en basse lumière et notamment des vêtements noirs.
+
+<image-compare>
+    <img src="decoy5_a.jpg"/>
+    <img src="decoy5_b.jpg"/>
+</image-compare>
+
+<image-compare>
+    <img src="decoy4_a.jpg"/>
+    <img src="decoy4_b.jpg"/>
+</image-compare>
+
+
+<image-compare>
+    <img src="decoy2_a.jpg"/>
+    <img src="decoy2_b.jpg"/>
+</image-compare>
+
+<image-compare>
+    <img src="decoy3_a.jpg"/>
+    <img src="decoy3_b.jpg"/>
+</image-compare>
+
+
 
 # Innocent Words
 ### Court métrage de Maxime Touroute
