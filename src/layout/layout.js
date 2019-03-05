@@ -7,7 +7,6 @@ import { Navbar } from '../components/navbar'
 import favicon from '../images/favicon.png'
 import './layout.scss'
 
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -43,8 +42,6 @@ const Layout = ({ children }) => (
         >
           <html lang="en"/>
         </Helmet>
-
-
 
         <div className="CssGridNavContentFooter">
           <nav className="gridNavBar">

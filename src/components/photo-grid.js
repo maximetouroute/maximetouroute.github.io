@@ -21,7 +21,7 @@ function styleBackgroundPhoto(src) {
 }
 
 const photoGridProptypes = { gatsbyImages: PropTypes.array.isRequired }
-class PhotoGridTest extends React.Component {
+class PhotoGrid extends React.Component {
 
   constructor(props) {
     super(props)
@@ -30,7 +30,6 @@ class PhotoGridTest extends React.Component {
       photoIndex: 0,
       isOpen: false,
     }
-
   }
 
   generatePicture(picture, index, margin) {
@@ -105,19 +104,19 @@ class PhotoGridTest extends React.Component {
 
 }
 
-PhotoGridTest.propTypes = photoGridProptypes;
+PhotoGrid.propTypes = photoGridProptypes;
 
 
-function PhotoGrid({ children }) {
+function PhotoGridGatsbyMethod({ children }) {
   const photos = children.filter(child => typeof child !== 'string');
   const srcs = photos.map(photo => photo.props.href);
   return (
-    <PhotoGridTest gatsbyImages={srcs} />
+    <PhotoGrid gatsbyImages={srcs} />
   );
 }
 
-PhotoGrid.propTypes = {
+PhotoGridGatsbyMethod.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default PhotoGrid;
+export default PhotoGridGatsbyMethod;

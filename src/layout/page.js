@@ -5,8 +5,6 @@ import rehypeReact from 'rehype-react'
 import PhotoGrid from '../components/photo-grid'
 
 
-
-
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: { "photo-grid": PhotoGrid },
