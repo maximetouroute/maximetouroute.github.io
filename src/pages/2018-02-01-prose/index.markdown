@@ -5,7 +5,7 @@ title:  "Prose Aftermovie"
 subtitle: Film making
 date: "2018-02-01"
 category: video
-cover: "post_prose.jpg"
+image: "post_prose.jpg"
 ---
 
 An __*Aftermovie*__ shot for [Prose Event](https://www.facebook.com/Prose.Event/).

@@ -5,7 +5,7 @@ title:  Innocent Words
 subtitle: Short movie
 date: "2018-10-30"
 category: video
-cover: "cover.png"
+image: "cover.png"
 ---
 
 

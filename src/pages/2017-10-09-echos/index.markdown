@@ -5,7 +5,7 @@ title:  "Echos"
 subtitle: 24h short movie
 date: "2017-10-09"
 category: video
-cover: "post_echos.jpg"
+image: "post_echos.jpg"
 ---
 
 #### Description

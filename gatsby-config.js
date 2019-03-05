@@ -1,9 +1,27 @@
 module.exports = {
 
   siteMetadata: {
+    siteName: `Maxime Touroute Portfolio`,
     title: `Maxime's Portfolio`,
     author: 'Maxime Touroute',
+    titleTemplate: "%s · Maxime Touroute",
+    description: "Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Cinematography, Photography, Digital Arts, Software Engineering. ",
+    url: "https://www.maximetouroute.github.io", // No trailing slash allowed!
+    image: "/static/favicon.png", // Path to your image you placed in the 'static' folder
+    keywords: "cinematography, photography, digital arts, maxime touroute, portfolio", // separated by comas
+
+    /* to hide the icon, put an empty string instead of a link */
+    socialLinks: {
+      twitter: '',
+      facebook: '//facebook.com/maxime.touroute',
+      github: '//github.com/maximetouroute',
+      instagram: '//instagram.com/maximetouroute/',
+      vimeo: '//vimeo.com/maximetouroute',
+      youtube: '',
+      soundcloud: ''
+    },
   },
+
   plugins: [
     {
       resolve: 'gatsby-plugin-react-helmet',
@@ -48,7 +66,7 @@ module.exports = {
       },
     },
 
-    `gatsby-plugin-sharp`, // For images processing
+    `gatsby-plugin-sharp`, // For static processing
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -59,7 +77,7 @@ module.exports = {
         background_color: `#d6d0cd`,
         theme_color: `#363636`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/static/favicon.png`, // This path is relative to the root of the site.
       },
     },
 

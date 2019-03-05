@@ -5,7 +5,7 @@ title:  "Mari Pega"
 subtitle: Music Clip
 date: "2018-08-01"
 category: video
-cover: "mari5_a.jpg"
+image: "mari5_a.jpg"
 ---
 
 

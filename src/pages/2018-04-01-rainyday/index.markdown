@@ -5,7 +5,7 @@ title:  Rainy Day
 subtitle: Experimental video
 date: "2018-04-01"
 category: video
-cover: "post_rainyday.jpg"
+image: "post_rainyday.jpg"
 ---
 
 <iframe src="https://player.vimeo.com/video/263371046" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>

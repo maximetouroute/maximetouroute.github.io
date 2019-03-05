@@ -1,7 +1,7 @@
 ---
-path: /photoBook
+path: /photography
 layout: page
-title: Photo Book
+title: Photography
 ---
 
 

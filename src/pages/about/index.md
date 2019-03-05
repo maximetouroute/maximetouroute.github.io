@@ -1,7 +1,8 @@
 ---
 path: /about
 layout: page
-title: ABOUT
+title: About
+image: "profile.jpg"
 ---
 <div class="roundGatsbyPicture" style="width: 200px">
 
@@ -64,17 +65,26 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 
 # Work Experience
 
-#### 1st Assistant Camera / Short film
-_Ongoing_  
-**_"Esteban"_** directed by Sebastien Jimenez, cinematography by Pierre Chamming's  
+
 
 #### Software Engineer in digital arts
 _Ongoing_  
 * Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
+* Software engineer for [The Live Drawing Project](/livedrawing#content)
+
 
 #### Film maker / Augmented Reality 360° videos
 _Ongoing_  
 * Working on 360° dance videos for use in an augented reality space
+
+
+#### Director of photography / Short film
+_March 2018_  
+**_"Cartes sur table"_** directed by Alex Boulin
+
+#### 1st Assistant Camera / Short film
+_February 2018_  
+**_"Esteban"_** directed by Sebastien Jimenez, cinematography by Pierre Chamming's  
 
 #### Director of photography, colorist / Short film
 _February 2018_  
@@ -88,12 +98,12 @@ _December 2018_
 
 #### Full Stack Engineer / The Live Drawing Project
 _December 2018_  
-* A project about collaborative and realtime live drawing
+* Development of a collaborative and realtime live drawing application
 * Users draw on their phones and all their drawings appear in realtime on a wide screen
 * Javascript stack using React, VanillaJS (ES7) and Node.js
 * Entirely working on web sockets, fallback on classic HTTP for old browsers
 * Deployment with AWS Fargate and docker containers
-* [The Live Drawing Project](/livedrawing#content)
+* [The Live Drawing Project](//thelivedrawingproject.com)
 
 #### Museum scenographer / The Humanlapse Project
 _October 2018_
@@ -224,7 +234,7 @@ __Before 2017__
 * Visual effects to simulate a camera moving around a computer screen
 
 #### Camera Operator / Culture Event
-* Conférence, musical performances and projections
+* Conference, musical performances and projections
 * Nantes, France
 
 #### Film maker / Retirement party
@@ -238,4 +248,4 @@ __Before 2017__
 * 2" short film "Initiation"
 
 #### Camera/Sound Operator / Short film
-* 20" short film "Vigilantes"
+* 20" short film "Vigilantes" directed by Vincent Montalieu

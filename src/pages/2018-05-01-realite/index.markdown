@@ -5,7 +5,7 @@ title:  Réalité
 subtitle: Short movie
 date: "2018-05-01"
 category: video
-cover: "post_realite.jpg"
+image: "post_realite.jpg"
 ---
 
 #### Description
@@ -17,7 +17,8 @@ __Currently not public due to festival selections.__
 The everydaylife of an elderly gets interrupted by a TV failure.
 
 #### Festival selection
-* [LYF Lyon Young Film Festival](http://lyonyoungfilmfest.fr/)
+* [LYF Lyon Young Film Festival](//lyonyoungfilmfest.fr/)
+* [Festival Artlézia](//www.facebook.com/events/280133379336372/)
 
 #### Role
 Camera and sound recording, edit, visual effects, sound mix, color grading. No team.

@@ -5,7 +5,7 @@ title:  "Harmonie des Sphères"
 subtitle: Short movie
 date: "2018-03-02"
 category: video
-cover: "cover.jpg"
+image: "cover.jpg"
 ---
 
 #### Description

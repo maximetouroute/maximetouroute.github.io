@@ -5,7 +5,7 @@ title: True Pedestrian
 subtitle: Spoof Trailer
 date: "2015-12-07"
 category: video
-cover: "post_truePedestrian.jpg"
+image: "post_truePedestrian.jpg"
 ---
 
 

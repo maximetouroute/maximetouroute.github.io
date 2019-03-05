@@ -5,7 +5,7 @@ title:  "Color Grade Breakdown 2017"
 subtitle: Showreel
 date: "2018-01-01"
 category: video
-cover: "post_sunrise.jpg"
+image: "post_sunrise.jpg"
 ---
 
 An overview of some color grading works.

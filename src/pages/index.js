@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link, graphql, navigate } from 'gatsby'
-import Layout from '../layout/layout'
+import MainLayout from '../layout/MainLayout'
+import MetaTags from '../components/MetaTags'
 import './index.scss'
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <Layout>
-
+    <MainLayout>
+    <MetaTags title={'Home'}/>
       <div className="home homePosts">
 
         <div className="postGrid">
@@ -21,7 +22,7 @@ export default function Index({ data }) {
                   navigate(post.frontmatter.path + '#content')
                 }} key={post.id}>
                   <div className="postHeader" style={{
-                    backgroundImage: 'url(' + post.frontmatter.cover.childImageSharp.fixed.src + ')',
+                    backgroundImage: 'url(' + post.frontmatter.image.childImageSharp.fixed.src + ')',
                   }}>
                     <div className="inside">
                       <span className="postTitle">{post.frontmatter.title}</span>
@@ -39,7 +40,7 @@ export default function Index({ data }) {
         </div>
 
       </div>
-    </Layout>
+    </MainLayout>
   )
 }
 
@@ -58,7 +59,7 @@ export default function Index({ data }) {
                           path
                           category
                           subtitle
-                          cover {
+                          image {
                               childImageSharp {
                                   # Other options include height (set both width and height to crop),
                                   # grayscale, duotone, rotate, etc.

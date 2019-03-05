@@ -1,4 +1,4 @@
-@import '../components/common';
+@import '../components/styles';
 
 .roundGatsbyPicture {
 
@@ -113,6 +113,8 @@
 
   .content {
     text-align: justify;
+
+
 
     p {
       @include breakpoint(small) {

@@ -5,7 +5,7 @@ title:  Portfolio Etalonnage
 subtitle: Présentation de mes travaux d'étalonnage
 date: "2019-01-01"
 category: hidden
-cover: "harm5_a.jpg"
+image: "harm5_a.jpg"
 ---
 
 

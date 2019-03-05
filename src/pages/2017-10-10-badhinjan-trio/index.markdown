@@ -5,7 +5,7 @@ title:  "Astrakan Café"
 subtitle: Music clip
 date: "2017-10-10"
 category: video
-cover: "post_badhinjan.jpg"
+image: "post_badhinjan.jpg"
 ---
 
 

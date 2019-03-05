@@ -5,7 +5,7 @@ title:  "Ma Cousine"
 subtitle: Short movie
 date: "2017-06-01"
 category: video
-cover: "cover-cousine.png"
+image: "cover-cousine.png"
 ---
 
 <iframe src="https://player.vimeo.com/video/219981931" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>

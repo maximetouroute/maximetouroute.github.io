@@ -5,12 +5,10 @@ title:  "The Humanlapse Project"
 subtitle: Timelapses of humans
 date: "2019-01-01"
 category: video
-cover: "cover.png"
+image: "cover.png"
 ---
 
-#### Do you want to have your very own humanlapse ? 
-#### Do you want to exhibit the humanlapse project in your gallery ?
-#### You can [reach me](/contact) for exhibition & collaboration inquiries
+#### This is an ongoing project. You can [reach me](/contact) for exhibition & collaboration inquiries
 
 <br/>
 <br/>

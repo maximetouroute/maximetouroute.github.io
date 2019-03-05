@@ -5,7 +5,7 @@ title:  "Veronika"
 subtitle: Short documentary
 date: "2018-11-03"
 category: video
-cover: "screen1.png"
+image: "screen1.png"
 ---
 
 #### Description

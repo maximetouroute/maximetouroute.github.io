@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import './navbar.scss'
+import './Navbar.scss'
 
 export class Navbar extends Component {
 
@@ -8,7 +8,7 @@ export class Navbar extends Component {
     return (<>
         <Link activeClassName="" className="siteTitle" to="/">MAXIME TOUROUTE</Link>
         <Link activeClassName="active" to="/">PROJECTS</Link>
-        <Link activeClassName="active" to="/photoBook">PHOTO</Link>
+        <Link activeClassName="active" to="/photography">PHOTO</Link>
         <Link activeClassName="active" to="/about">ABOUT</Link>
         <Link activeClassName="active" to="/contact">CONTACT</Link>
       </>

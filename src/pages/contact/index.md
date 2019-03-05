@@ -1,7 +1,8 @@
 ---
 path: /contact
 layout: page
-title: CONTACT
+title: Contact
+description: contact details of Maxime Touroute
 ---
 
 

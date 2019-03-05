@@ -4,9 +4,8 @@ layout: article
 title: "Sunrise"
 subtitle: Movie clip
 date: "2017-09-01"
-
 category: video
-cover: "post_sunrise.jpg"
+image: "post_sunrise.jpg"
 ---
 
 <iframe width="1920" height="960" src="https://www.youtube.com/embed/-JbLUvenUJ8?rel=0" frameborder="0" allowfullscreen></iframe>

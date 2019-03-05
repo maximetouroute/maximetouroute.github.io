@@ -5,7 +5,7 @@ title:  Dans les deux sens
 subtitle: Museum Installation
 date: "2018-11-10"
 category: video
-cover: "p-1.jpg"
+image: "p-1.jpg"
 ---
 
 # Description
