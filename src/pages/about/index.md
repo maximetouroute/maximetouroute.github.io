@@ -72,11 +72,15 @@ _Ongoing_
 * Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
 * Software engineer for [The Live Drawing Project](/livedrawing#content)
 
-
 #### Film maker / Augmented Reality 360° videos
 _Ongoing_  
 * Working on 360° dance videos for use in an augented reality space
 
+#### Web Designer / The Live Drawing Project 
+_March 2018_
+* Development and deployment of a responsive and optimised website for the Live Drawing Project 
+* SEO optimisations for the best ranking in search results
+* [The Live Drawing Project website](//thelivedrawingproject.com)
 
 #### Director of photography / Short film
 _March 2018_  
