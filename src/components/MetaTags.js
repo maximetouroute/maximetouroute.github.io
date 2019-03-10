@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import favicon from '../static/favicon.png'
+import favicon from '../res/favicon.png'
 
 const MetaTags = ({ title, description, image, pathname, author, article }) => (
   <StaticQuery

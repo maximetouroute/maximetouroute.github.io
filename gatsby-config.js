@@ -6,8 +6,9 @@ module.exports = {
     author: 'Maxime Touroute',
     titleTemplate: "%s · Maxime Touroute",
     description: "Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Cinematography, Photography, Digital Arts, Software Engineering. ",
-    url: "https://www.maximetouroute.github.io", // No trailing slash allowed!
-    image: "/static/favicon.png", // Path to your image you placed in the 'static' folder
+    url: "https://maximetouroute.github.io", // No trailing slash allowed!
+    siteUrl: "https://maximetouroute.github.io", // for robots plugin
+    image: "/res/favicon.png", // Path to your image you placed in the 'res' folder
     keywords: "cinematography, photography, digital arts, maxime touroute, portfolio", // separated by comas
 
     /* to hide the icon, put an empty string instead of a link */
@@ -61,12 +62,15 @@ module.exports = {
             },
           },
 
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+          },
 
         ], // just in case those previously mentioned remark plugins sound cool :)
       },
     },
 
-    `gatsby-plugin-sharp`, // For static processing
+    `gatsby-plugin-sharp`, // For res processing
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -77,9 +81,19 @@ module.exports = {
         background_color: `#d6d0cd`,
         theme_color: `#363636`,
         display: `minimal-ui`,
-        icon: `src/static/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/res/favicon.png`, // This path is relative to the root of the site.
       },
     },
+
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://maximetouroute.github.io',
+        sitemap: 'https://maximetouroute.github.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    `gatsby-plugin-sitemap`
 
   ],
 }
