@@ -36,18 +36,18 @@ const MetaTags = ({ title, description, image, pathname, author, article }) => (
                     { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
                   ]}
           >
+            {seo.title && <title>{seo.title}</title>}
             <meta name="robots" content="all"/>
             <meta name="viewport" content="user-scalable=no, width=device-width"/>
             {seo.keywords && (<meta name="keywords" content={seo.keywords} />)}
             {seo.description && (<meta name="description" content={seo.description} />)}
             {seo.url && <meta property="og:url" content={seo.url} />}
-            {(article ? true : null) && (<meta property="og:type" content="article"/>)}
+            <meta property="og:type" content={article ? "article" : "website"}/>
             {( (article && seo.author) ? true : null) && ( <meta property="og:article:author" content={seo.author}/>)}
             {seo.title && <meta property="og:title" content={seo.title} />}
             {seo.description && (<meta property="og:description" content={seo.description} />)}
             {seo.image && <meta property="og:image" content={seo.image} />}
             {seo.title && <meta property="og:site_name" content={seo.siteName} />}
-            {seo.title && <meta property="og:title" content={seo.title} />}
           </Helmet>
         </>
       )
