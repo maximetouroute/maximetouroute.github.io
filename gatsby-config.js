@@ -16,7 +16,7 @@ module.exports = {
       twitter: '',
       facebook: '//facebook.com/maxime.touroute',
       github: '//github.com/maximetouroute',
-      instagram: '//instagram.com/maximetouroute/',
+      instagram: '//instagram.com/maximetouroute',
       vimeo: '//vimeo.com/maximetouroute',
       youtube: '',
       soundcloud: ''
