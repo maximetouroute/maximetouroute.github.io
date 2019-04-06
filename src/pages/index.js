@@ -11,7 +11,6 @@ export default function Index({ data }) {
     <MainLayout>
     <MetaTags title={'Home'}/>
       <div className="home homePosts">
-
         <div className="postGrid">
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)

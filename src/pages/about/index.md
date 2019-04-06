@@ -66,33 +66,49 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 # Work Experience
 
 
+#### Audiovisual engineer, film director / Space Dances
+_Ongoing_
+* Film maker of 360° dance videos for Augmented Reality
+* Design and development of an automated rotoscoping process for body extraction
+* Creation of a computer-less and mobile render farm to turn any computer available into a render machine in a few minutes
+* In residency at the [Subsistances](//www.les-subs.com/)
 
 #### Software Engineer in digital arts
 _Ongoing_  
 * Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
-* Software engineer for [The Live Drawing Project](/livedrawing#content)
+* Software engineer for [The Live Drawing Project](/livedrawing#content), a realtime collaborative drawing installation
 
-#### Film maker / Augmented Reality 360° videos
-_Ongoing_  
-* Working on 360° dance videos for use in an augented reality space
+
+#### Speaker / Mirage Festival
+_April 2019_
+* Masterclass speaker on video workflows for 360° videos post production and Augmented Reality
+* For the [Mirage Festival](http://miragefestival.com/), a digital arts festival
+* As part of the Space Dances project
+
+#### Film Maker / The Live Drawing Project
+_March 2019_
+* Editing of a facebook event cover video
+* [Facebook Event](//www.facebook.com/events/592231084520436/)
 
 #### Web Designer / The Live Drawing Project 
-_March 2018_
+_March 2019_
 * Development and deployment of a responsive and optimised website for the Live Drawing Project 
 * SEO optimisations for the best ranking in search results
 * [The Live Drawing Project website](//thelivedrawingproject.com)
 
 #### Director of photography / Short film
-_March 2018_  
-**_"Cartes sur table"_** directed by Alex Boulin
+_March 2019_  
+**_"Ouno"_** directed by Alex Boulin
+* 3rd public prize
 
 #### 1st Assistant Camera / Short film
-_February 2018_  
+_February 2019_  
 **_"Esteban"_** directed by Sebastien Jimenez, cinematography by Pierre Chamming's  
 
 #### Director of photography, colorist / Short film
-_February 2018_  
+_February 2019_  
 **_"La Cible"_** directed by Alex Boulin
+* 3rd public prize
 
 #### Director of photography / Short film
 _December 2018_  
