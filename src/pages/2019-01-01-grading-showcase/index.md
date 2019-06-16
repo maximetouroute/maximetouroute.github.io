@@ -5,12 +5,53 @@ title:  Portfolio Etalonnage
 subtitle: Présentation de mes travaux d'étalonnage
 date: "2019-01-01"
 category: hidden
-image: "harm5_a.jpg"
+image: "harm4_a.jpg"
 ---
+
+# Ouno
+### Court métrage de Alex Boulin
+
+__Caméra__ : Nikon D5500
+  
+__Qualité vidéo__: H.264, 4:2:0
+  
+__Description__ : Fausse bande-annonce loufoque sur des amis jouant aux cartes.
+
+
+<image-compare>
+    <img src="ou2_a.jpg"/>
+    <img src="ou2_b.jpg"/>
+</image-compare>
+
+<image-compare>
+    <img src="ou3_a.jpg"/>
+    <img src="ou3_b.jpg"/>
+</image-compare>
+
+<image-compare>
+    <img src="ou4_a.jpg"/>
+    <img src="ou4_b.jpg"/>
+</image-compare>
+
+
+
+
+
+# Point de Vue
+### Court métrage
+
+__Description__: Court métrage avec un seul angle de camér.
+
+
+<image-compare>
+    <img src="pdv1_a.jpg"/>
+    <img src="pdv1_b.jpg"/>
+</image-compare>
 
 
 # La Cible
 ### Court métrage de Alex Boulin
+
 __Caméra__ : Lumix GH5 et Canon 5D  
   
 __Qualité vidéo__: H.264  
@@ -42,7 +83,7 @@ Travail de conservation des détails en basse lumière et notamment des vêtemen
 
 
 # Innocent Words
-### Court métrage de Maxime Touroute
+### Court métrage
 __Caméra__ : Smartphone LG G6  
   
 __Qualité vidéo__: H.264 de smartphone
@@ -69,7 +110,7 @@ Ambiance visuelle teinte froide et sombre, nuit urbaine, qui supporte le récit.
 
 
 # Veronika
-### Court métrage de Maxime Touroute
+### Court métrage
 __Caméra__ : Nikon D5500
   
 __Qualité vidéo__: H.264, 4:2:0
@@ -94,7 +135,7 @@ Travail sur l'atténuation de la teinte verdâtre du papier peint du lieu de tou
 </image-compare>
 
 # Réalité
-### Court métrage de Maxime Touroute
+### Court métrage
 __Caméra__ : Nikon D5500  
   
 __Qualité vidéo__: H.264, 4:2:0   
@@ -131,7 +172,7 @@ __Description__ : Etalonnage express d'une séquence de 2 minutes.
 
 
 # Maripega
-### Clip réalisé par Maxime Touroute
+### Clip
 __Caméra__ : Nikon D5500  
   
 __Qualité vidéo__: H.264, 4:2:0   
@@ -181,13 +222,6 @@ Application des techniques de digital re-lighting sur certaines scènes comme le
     <img src="harm3_a.jpg"/>
     <img src="harm3_b.jpg"/>
 </image-compare>
-
-<image-compare>
-    <img src="harm5_a.jpg"/>
-    <img src="harm5_b.jpg"/>
-</image-compare>
-
-
 
 
 <br/>

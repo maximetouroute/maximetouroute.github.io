@@ -3,7 +3,7 @@ path: /harmoniedesspheres
 layout: article
 title:  "Harmonie des Sphères"
 subtitle: Short movie
-date: "2018-03-02"
+date: "2018-12-25"
 category: video
 image: "cover.jpg"
 ---

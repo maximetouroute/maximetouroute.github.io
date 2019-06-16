@@ -3,7 +3,7 @@ path: /innocentWords
 layout: article
 title:  Innocent Words
 subtitle: Short movie
-date: "2018-10-30"
+date: "2018-12-20"
 category: video
 image: "cover.png"
 ---

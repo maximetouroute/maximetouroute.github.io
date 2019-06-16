@@ -3,9 +3,9 @@ path: /museomix
 layout: article
 title:  Dans les deux sens
 subtitle: Museum Installation
-date: "2018-11-10"
+date: "2018-08-10"
 category: video
-image: "p-1.jpg"
+image: "p-10.jpg"
 ---
 
 # Description

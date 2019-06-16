@@ -3,7 +3,7 @@ path: /realite
 layout: article
 title:  Réalité
 subtitle: Short movie
-date: "2018-05-01"
+date: "2018-12-30"
 category: video
 image: "post_realite.jpg"
 ---
@@ -16,9 +16,12 @@ __Currently not public due to festival selections.__
 #### Synopsis 
 The everydaylife of an elderly gets interrupted by a TV failure.
 
-#### Festival selection
+#### Festival selections
+
 * [LYF Lyon Young Film Festival](//lyonyoungfilmfest.fr/)
 * [Festival Artlézia](//www.facebook.com/events/280133379336372/)
+* Comete Film Festival
+* International Film Festival of the Red Cross
 
 #### Role
 Camera and sound recording, edit, visual effects, sound mix, color grading. No team.

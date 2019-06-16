@@ -1,7 +1,7 @@
 ---
 path: /humanlapseProject
 layout: article
-title:  "The Humanlapse Project"
+title:  "Humanlapse"
 subtitle: Timelapses of humans
 date: "2019-01-01"
 category: video
@@ -36,9 +36,9 @@ The __Humanlapse Project__ is a photography project that aims to explore usage o
 
 ## Exhibitions
 
-The Humanlapse project has ben selected for exhibition by the Lyon City Hall.
+* Lyon City Hall - November/December 2018
+* [Toï Toï Le Zinc](//www.toitoilezinc.fr/) - June/July 2019
 
-The very first exhibition is happening from the __21st of November until the 17th of December__ at _Mairie de Lyon 9, Lyon, France_
 
 <iframe src="https://player.vimeo.com/video/306033197" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 

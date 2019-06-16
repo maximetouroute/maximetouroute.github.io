@@ -54,7 +54,7 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 
 #### My other creative projects
 * [The Live Drawing Project](/livedrawing#content)
-* [The Humanlape Project](/humanlapseProject#content)
+* [The Humanlapse Project](/humanlapseProject#content)
 
 #### Overview of my colorist works
 * [Colorist Showcase](/colorist/)

@@ -4,7 +4,7 @@ layout: article
 title:  "Prose Aftermovie"
 subtitle: Film making
 date: "2018-02-01"
-category: video
+category: hidden
 image: "post_prose.jpg"
 ---
 

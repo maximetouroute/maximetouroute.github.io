@@ -3,9 +3,9 @@ path: /livedrawing
 layout: article
 title:  The Live Drawing Project
 subtitle: Digital Arts
-date: "2018-11-30"
+date: "2019-05-01"
 category: video
-image: "cover.png"
+image: "cover.jpg"
 ---
 
 #### Exhibition for la Fête des Lumières, Lyon, France

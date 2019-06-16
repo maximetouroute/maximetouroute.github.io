@@ -4,7 +4,7 @@ layout: article
 title:  "Color Grade Breakdown 2017"
 subtitle: Showreel
 date: "2018-01-01"
-category: video
+category: hidden
 image: "post_sunrise.jpg"
 ---
 
