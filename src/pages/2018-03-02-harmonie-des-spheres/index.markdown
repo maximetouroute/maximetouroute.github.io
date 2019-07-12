@@ -8,7 +8,7 @@ category: video
 image: "cover.jpg"
 ---
 
-#### Description
+##  Description
 __*Harmonie des Sphères*__ is an independent short movie directed and produced by __Vincent Montalieu__.
 
 #### Role

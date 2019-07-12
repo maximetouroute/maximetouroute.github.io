@@ -3,12 +3,12 @@ path: /realite
 layout: article
 title:  Réalité
 subtitle: Short movie
-date: "2018-12-30"
+date: "2019-01-02"
 category: video
 image: "post_realite.jpg"
 ---
 
-#### Description
+##  Description
 A short movie about the elderly. Shot in a few hours with a real grandma.  
 __Currently not public due to festival selections.__  
 [Send me a mail](/contact) for a private access.
@@ -24,7 +24,7 @@ The everydaylife of an elderly gets interrupted by a TV failure.
 * International Film Festival of the Red Cross
 
 #### Role
-Camera and sound recording, edit, visual effects, sound mix, color grading. No team.
+Film maker
 
 <br/>
 <br/>

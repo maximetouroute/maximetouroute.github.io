@@ -8,14 +8,26 @@ category: video
 image: "cover.jpg"
 ---
 
-#### Exhibition for la Fête des Lumières, Lyon, France
-<iframe src="https://player.vimeo.com/video/311653956" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
-
-[Direct Link](//vimeo.com/311653956)
-
-
-
-#### Description
+## Description
 
 The Live Drawing Project is a digital arts project about experiencing the possibilities of collaborative and live drawing.
-More informations about it on the official website [The Live Drawing Project](//thelivedrawingproject.com)
+More informations about it on the official website [The Live Drawing Project](//thelivedrawingproject.com)  
+
+<br/>
+<br/>
+<br/>
+<br/>
+   
+   
+<photo-grid>
+<img src="b-1-6.jpg"/>
+<img src="b-2-2.jpg"/>
+<img src="b-7.jpg"/>
+<img src="b-11.jpg"/>
+<img src="b-26.jpg"/>
+<img src="cover.jpg"/>
+<img src="1.jpg"/>
+<img src="2.jpg"/>
+<img src="6.jpg"/>
+</photo-grid>
+

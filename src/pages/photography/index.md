@@ -51,6 +51,19 @@ A series of experiments on the usage of lighting and photography techniques
 <img src="landscapes/b-35.jpg"/>
 </photo-grid>
 
+# Architecture 
+<br/>
+
+<photo-grid>
+<img src="architecture/a0.jpg"/>
+<img src="architecture/a1.jpg"/>
+<img src="architecture/a2.jpg"/>
+<img src="architecture/b0.jpg"/>
+<img src="architecture/b1.jpg"/>
+<img src="architecture/b2.jpg"/>
+</photo-grid>
+
+
 # Dailies 
 A collection of shots from the everyday ramblings of my life.
 <br/>
@@ -63,6 +76,7 @@ A collection of shots from the everyday ramblings of my life.
 <img src="dailies/b-18.jpg"/>
 <img src="dailies/b-4.jpg"/>
 </photo-grid>
+
 
 
 Want more ? Check out my [Instagram](https://instagram.com/maximetouroute)

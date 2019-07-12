@@ -40,7 +40,7 @@ __Description__ : Fausse bande-annonce loufoque sur des amis jouant aux cartes.
 # Point de Vue
 ### Court métrage
 
-__Description__: Court métrage avec un seul angle de camér.
+__Description__: Court métrage avec un seul angle de caméra.
 
 
 <image-compare>

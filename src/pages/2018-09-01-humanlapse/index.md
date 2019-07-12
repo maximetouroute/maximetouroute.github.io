@@ -3,7 +3,7 @@ path: /humanlapseProject
 layout: article
 title:  "Humanlapse"
 subtitle: Timelapses of humans
-date: "2019-01-01"
+date: "2019-02-01"
 category: video
 image: "cover.png"
 ---
@@ -13,7 +13,7 @@ image: "cover.png"
 <br/>
 <br/>
 
-#### Description
+##  Description
 
 The __Humanlapse Project__ is a photography project that aims to explore usage of the timelapse and hyperlapse techniques for human subjects.
 

@@ -12,7 +12,7 @@ image: "post_rainyday.jpg"
 
 [Direct Link](https://vimeo.com/263371046)
 
-#### Description
+##  Description
 Experimental video made using still photographies.  
 
 * This video is the result of conception and development of an innovative workflow for hassle-free still image editing.

@@ -36,7 +36,7 @@ And I join movie crews as a camera operator, camera assistant, or sound engineer
 Photography, video, museography, digital arts... If it's creative, I'm in for it !
 
 #### And I code
-Web apps, software, mobile apps... With my experience as a software engineer I design workflows to gain on productivity and I develop innovative solutions for art projects
+Web apps, software, mobile apps... With my experience as a software engineer I design workflows to gain on productivity and I develop innovative solutions for art projects.
 
 <br/>
 <br/>
@@ -54,7 +54,8 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 
 #### My other creative projects
 * [The Live Drawing Project](/livedrawing#content)
-* [The Humanlapse Project](/humanlapseProject#content)
+* [Humanlapse](/humanlapseProject#content)
+* [Space Dances](/spacedances#content)
 
 #### Overview of my colorist works
 * [Colorist Showcase](/colorist/)

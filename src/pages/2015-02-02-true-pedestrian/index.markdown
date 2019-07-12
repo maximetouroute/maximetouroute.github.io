@@ -14,7 +14,7 @@ image: "post_truePedestrian.jpg"
 [Direct Link](https://www.youtube.com/watch?v=cz8iNzDwNpc)
 
 
-#### Description
+## Description
 __*True Pedestrian*__ is a spoof trailer of the excellent TV show [True Detective](http://www.imdb.com/title/tt2356777/).  
 This is an amateur short film made during my studies.
 

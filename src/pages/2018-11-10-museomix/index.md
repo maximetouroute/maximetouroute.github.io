@@ -8,7 +8,7 @@ category: video
 image: "p-10.jpg"
 ---
 
-# Description
+#### Description
 
 **Dans les deux sens** is a prototype of museum installation created during the 2018 edition of [Museomix](http://museomix.org/).  
 It's an emotion pod concept to learn about an art piece by questioning our emotions towards it. 
