@@ -93,7 +93,18 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
+
+    // Amazing loading progress bar on top of website
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `blue`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
 
   ],
 }

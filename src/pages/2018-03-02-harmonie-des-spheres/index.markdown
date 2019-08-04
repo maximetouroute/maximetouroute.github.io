@@ -8,20 +8,12 @@ category: video
 image: "cover.jpg"
 ---
 
+<iframe width="1920" height="1080" src="https://www.youtube.com/embed/W2fsqEoim-o?rel=0" frameborder="0" allowfullscreen></iframe>  
+
+[Direct Link](https://www.youtube.com/watch?v=W2fsqEoim-o)
+
 ##  Description
 __*Harmonie des Sphères*__ is an independent short movie directed and produced by __Vincent Montalieu__.
 
 #### Role
 __1st assistant director__, __Director of photography__ and __Colorist__.
-
-
-#### Currently in post-production
-
-![](screen1.jpg)
-
-![](screen2.jpg)
-
-![](screen3.jpg)
-
-
-

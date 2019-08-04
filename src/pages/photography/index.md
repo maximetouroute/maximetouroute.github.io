@@ -1,7 +1,7 @@
 ---
 path: /photography
 layout: page
-title: Photography
+title: Photo
 ---
 
 

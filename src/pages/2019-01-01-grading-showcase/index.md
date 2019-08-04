@@ -8,6 +8,62 @@ category: hidden
 image: "harm4_a.jpg"
 ---
 
+
+# Indice 50
+### Court métrage de Vincent Montalieu & Maxime Touroute
+
+__Caméra__ : Nikon D5500
+  
+__Qualité vidéo__: H.264, 4:2:0
+  
+__Description__ : Court métrage absurde avec une ambiance visuelle caniculaire desertique.
+
+
+<image-compare>
+    <img src="ind0_a.jpg"/>
+    <img src="ind0_b.jpg"/>
+</image-compare>
+
+<image-compare>
+    <img src="ind1_a.jpg"/>
+    <img src="ind1_b.jpg"/>
+</image-compare>
+
+<image-compare>
+    <img src="ind3_a.jpg"/>
+    <img src="ind3_b.jpg"/>
+</image-compare>
+
+<image-compare>
+    <img src="ind4_a.jpg"/>
+    <img src="ind4_b.jpg"/>
+</image-compare>
+
+
+# Franchement ça se mange
+### Court métrage de Bertille Garraud
+
+__Caméra__ : Lumix GH5
+  
+__Qualité vidéo__: H.264, profil S-Log
+  
+__Description__ : Court métrage post-apocalyptique mixant images ternes et images nostalgiques.
+
+<image-compare>
+    <img src="ber2_a.jpg"/>
+    <img src="ber2_b.jpg"/>
+</image-compare>
+
+<image-compare>
+    <img src="ber3_a.jpg"/>
+    <img src="ber3_b.jpg"/>
+</image-compare>
+
+<image-compare>
+    <img src="ber4_a.jpg"/>
+    <img src="ber4_b.jpg"/>
+</image-compare>
+
 # Ouno
 ### Court métrage de Alex Boulin
 
