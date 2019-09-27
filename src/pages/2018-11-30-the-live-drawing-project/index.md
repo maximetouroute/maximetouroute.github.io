@@ -2,7 +2,7 @@
 path: /livedrawing
 layout: article
 title:  The Live Drawing Project
-subtitle: Digital Arts
+subtitle: Collaborative Artwork
 date: "2019-05-01"
 category: video
 image: "cover.jpg"
@@ -10,14 +10,9 @@ image: "cover.jpg"
 
 ## Description
 
-The Live Drawing Project is a digital arts project about experiencing the possibilities of collaborative and live drawing.
-More informations about it on the official website [The Live Drawing Project](//thelivedrawingproject.com)  
+A digital arts project about experiencing the possibilities of collaborative and live drawing.
+More informations about it on the official website [The Live Drawing Project](//thelivedrawingproject.com).  
 
-<br/>
-<br/>
-<br/>
-<br/>
-   
    
 <photo-grid>
 <img src="b-1-6.jpg"/>

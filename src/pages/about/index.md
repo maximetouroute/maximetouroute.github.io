@@ -29,8 +29,7 @@ I'm always looking for new projects — if you would like to make something toge
 ## — What I do
 
 #### I make movies
-I direct short movies, music clips, concert recordings... 
-And I join movie crews as a camera operator, camera assistant, or sound engineer during shooting, as a colorist or sound mixer during post.
+I direct short movies and I join movie crews as a camera operator, camera assistant, or sound engineer during shooting, as a colorist or sound mixer during post.
 
 #### I work on any kind of creative projects
 Photography, video, museography, digital arts... If it's creative, I'm in for it !
@@ -43,22 +42,18 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 
 # Overview of my work
 
-#### My last short movies as a director
-* [Short documentary "Veronika"](/veronika#content)
-* [Short movie "Innocent Words"](/innocentWords#content)
-* [Music clip "Mari Pega"](/maripega#content)
+#### As a film maker
+* [Short Movie "Indice 50"](/indice50#content)
 * [Short movie "Réalité"](/realite#content)
+* [Short movie "Innocent Words"](/innocentWords#content)
 * [Experimental Video "Rainy Day"](/rainyday#content)
 * [Promotional clip "Astrakan Café"](/badhinjan-trio#content)
-* [Short movie "Echos"](/echos#content)
 
-#### My other creative projects
+#### Other projects
 * [The Live Drawing Project](/livedrawing#content)
 * [Humanlapse](/humanlapseProject#content)
 * [Space Dances](/spacedances#content)
-
-#### Overview of my colorist works
-* [Colorist Showcase](/colorist/)
+* [Photography Works](/photography)
 
 
 <br/>
@@ -67,206 +62,41 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 # Work Experience
 
 
-#### Audiovisual engineer, film director / Space Dances
-_Ongoing_
+#### Visual Arts Engineer, Film Maker / Space Dances
+_Ongoing_  
 * Film maker of 360° dance videos for Augmented Reality
-* Design and development of an automated rotoscoping process for body extraction
-* Creation of a computer-less and mobile render farm to turn any computer available into a render machine in a few minutes
+* Design and development of an automated rotoscoping process for body extraction using computer vision algorithms and artificial intelligence approaches
+* Conception of a computer-less and mobile render farm to turn any computer available into a render machine in a few minutes
 * In residency at the [Subsistances](//www.les-subs.com/)
 
-#### Software Engineer in digital arts
+
+#### Software Engineer in Digital Arts
 _Ongoing_  
 * Working on the development of [Millumin](https://www.millumin.com/), a full-fledged solution for audiovisual shows and art installations
 * Software engineer for [The Live Drawing Project](/livedrawing#content), a realtime collaborative drawing installation
+* Software engineer for [Museopic](//www.museopic.com/), Research and Development on state of the art Augmented Reality technologies
 
 
-#### Speaker / Mirage Festival
-_April 2019_
-* Masterclass speaker on video workflows for 360° videos post production and Augmented Reality
-* For the [Mirage Festival](http://miragefestival.com/), a digital arts festival
-* As part of the Space Dances project
-
-#### Film Maker / The Live Drawing Project
-_March 2019_
-* Editing of a facebook event cover video
-* [Facebook Event](//www.facebook.com/events/592231084520436/)
-
-#### Web Designer / The Live Drawing Project 
-_March 2019_
-* Development and deployment of a responsive and optimised website for the Live Drawing Project 
-* SEO optimisations for the best ranking in search results
-* [The Live Drawing Project website](//thelivedrawingproject.com)
-
-#### Director of photography / Short film
-_March 2019_  
-**_"Ouno"_** directed by Alex Boulin
-* 3rd public prize
-
-#### 1st Assistant Camera / Short film
-_February 2019_  
-**_"Esteban"_** directed by Sebastien Jimenez, cinematography by Pierre Chamming's  
-
-#### Director of photography, colorist / Short film
-_February 2019_  
-**_"La Cible"_** directed by Alex Boulin
-* 3rd public prize
-
-#### Director of photography / Short film
-_December 2018_  
-**_"Toc toc"_** directed by Nicolas Sintes and Vincent Montalieu  
-* Night lighting for a 4 minute sequence shot inside a small apartment
-* Creative light set-up with minimal budget (cheap LED spots, construction spotlights and some cheap photography studio lighting)
-
-#### Full Stack Engineer / The Live Drawing Project
-_December 2018_  
-* Development of a collaborative and realtime live drawing application
-* Users draw on their phones and all their drawings appear in realtime on a wide screen
-* Javascript stack using React, VanillaJS (ES7) and Node.js
-* Entirely working on web sockets, fallback on classic HTTP for old browsers
-* Deployment with AWS Fargate and docker containers
-* [The Live Drawing Project](//thelivedrawingproject.com)
-
-#### Museum scenographer / The Humanlapse Project
-_October 2018_
-* Conception and crafting of an art installation based on handmade wood video frames
-* Exhibition set-up and dismantling
-* Maintenance of the art exhibition for a month
-* [Pictures and videos of the exhibition](/humanlapseProject#content)
-
-#### Camera Operator / Concert recording
-_Spring 2018_
-* Multicam recording of concerts and dance performance with an assistant
-* for [Tous a la guil' Festival](http://sixiemecontinent.net/festival2018/tousalaguill.html)
+#### Cinematographer
+_Ongoing_  
+* **_"L'Heritage"_**, indie web series  
+* **_"Harmonie des sphères"_** directed by Vincent Montalieu  
+* **_"Ouno"_** directed by Alex Boulin - 3rd public prize, Kino Lyon  
+* **_"La Cible"_** directed by Alex Boulin - 3rd public prize, Kino Lyon  
+* **_"Toc toc"_** directed by Nicolas Sintes and Vincent Montalieu  - 4 minute night sequence shot  
+* [Colorist Showcase](/colorist/)
 
 
-#### Sound Engineer / Short movie
-**_"Quand le loup n'y est pas"_** directed by Josephine Santraille  
-_Spring 2018_
-* Dialogue recording in harsh conditions: windy cliffs and in the middle of strong current rivers
-* Sound design of heartbeats
-* Sound mix with a tight schedule
-* Supervision of a novice sound assistant
-
-#### Colorist / Short movie
-**_"Harmonie des sphères"_** directed by Vincent Montalieu  
-_2018_
-* Meticulous color grading to get the most of a low bitrate video source (Lumix GH2)
-* [Project page for "Harmonie des sphères"](/harmoniedesspheres#content)
+#### Other works
+* Short jobs on art projects & art shows as a developer, adviser or film maker  
+* Deep dedication to join movie shootings as cinematographer, sound engineer, colorist or crew assistant  
+* Camera operator and film maker for cultural and corporate events  
+* Conception and crafting of scenographies for art exhibitions 
+* Conference speaker and workshops on visual arts  
+* Web designer of responsive and optimised websites with a focus on user experience. Skills in SEO optimisations for the best ranking in search results  
+ 
 
 
-#### Colorist / Short movie
-**_"Eva"_** directed by Julien Gasparoux  
-_Spring 2018_
-* recovery of noisy and under-exposed images
-* complex color matching
-
-
-#### Film Maker / Aftermovie
-**_"Baraqu'en Prose Aftermovie_** for _Prose Events_  
-_February 2018_
-* [Project page for "Prose Aftermovie"](/prose-aftermovie#content)
-
-#### Sound Designer / Alarm Clock
-_Winter 2017_
-* 1' alarm clock music designed for a slow, calm but efficient awakening
-* Available [here](https://soundcloud.com/max-io/am-clock-1)
-
-#### Camera Operator / Concert recording
-_Autumn 2017_
-* Multicam & sound recording of a concert for the _Badhinjan Trio_
-
-#### Assistant Director and Director of photography / Short film
-**_"Harmonie des sphères"_** directed by Vincent Montalieu  
-_Summer 2017_
-* Director of photography, Camera operator, lighting and logistics
-* [Project page for "Harmonie des sphères"](/harmoniedesspheres#content)
-
-#### 2nd Sound assistant / Feature film
-**_"Lune Rousse"_** directed by Cecile Briffoz, cinematography by Philippe Brelot  
-_Summer 2017_
-* laval mic placement, boom operator, ambient sound recordings
-* back-ups, quality reports
-
-#### Co-director, Post-production, Leading Role / Short film
-**_"Ma Cousine"_** with Clementine Brochet  
-_Spring 2017_
-* Sound mix and color grading supervision
-
-#### Assistant Director, Camera Operator, Post-production / Short film
-**_"La Rue"_** with Clementine Brochet  
-_Spring 2017_
-* Visual effects to reduce the crew reflection on windows
-* Heavy sound mix to recover sound from bad recordings
-
-
-
-
-
-<br/><br/>
-
-
-__Before 2017__
-
-
-<br/><br/>
-
-#### Director / IT Project progress videos
-  * Videos following one of my academic project development through a year
-  * First video : desktop animation showing project's concept
-  * 2nd video : sequence shot showing project progress
-  * 3rd video : promotional clip showing the project's vision
-  * 4th video : animation showing the User Interface of a mobile app
-
-#### Co-director / IT Project Showcase Video
-* Video of an Augmented Reality golf game
-* Interviews, game demo recording
-
-#### Film Maker / Camera Sample Test Video
-* 2" Video clip "Sunrise" available [here](https://www.youtube.com/watch?v=m29FKPodRjs)
-* Shot with a Nikon D5500 DSLR
-
-
-#### Co-director / Fake TV show Trailer
-* Parodic trailer of the "True Detective" show
-* Camera and sound operator
-* Available [here](https://www.youtube.com/watch?v=cz8iNzDwNpc)
-
-#### Director / Short film
-* 2" short film "La Traque" for a student contest
-
-#### Director / Short film
-* 1" short film "Le Chant des Oiseaux" for the Mobile film festival
-
-#### Director, Composer / Short film
-* 2" video clip about a man having an Insomnia
-
-#### Director, Leading Role / Short film
-* 2" short film about hunting "La Chasse"
-
-#### Co-director / Promotional clip
-* Promotional clip against racism for "SOS Racisme" French organization
-
-#### Composer / Short film
-* Short film about cults "Le Dogme du bonheur"
-* 1"30 ambiance sound composition
-
-#### Director, Visual Effects / Short film
-* 2" short film "Je suis ton inspiration"
-* Visual effects to simulate a camera moving around a computer screen
-
-#### Camera Operator / Culture Event
-* Conference, musical performances and projections
-* Nantes, France
-
-#### Film maker / Retirement party
-* 5" video clip of the party and farewell messages
-* Made for the engineering school In'Tech Info, Paris, France
-
-#### Director / Short film
-* 2" short film "Je suis Paramnésique"
-
-#### Director / Short film
-* 2" short film "Initiation"
-
-#### Camera/Sound Operator / Short film
-* 20" short film "Vigilantes" directed by Vincent Montalieu
+# Studies
+* Entrepreneurship studies, Lyon, France  
+* Engineering school, Nice, France - Specialised in multimedia  

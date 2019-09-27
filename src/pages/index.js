@@ -35,7 +35,7 @@ export default function Index({ data }) {
         </div>
 
         <div className="moreProjects">
-          <Link to="/about#recentProjects">More projects</Link>
+          <Link to="/about">About me</Link>
         </div>
 
       </div>

@@ -14,6 +14,3 @@ image: "post_sunrise.jpg"
 
 ##  Description
 __*Sunrise*__ is a poetic video shot in one morning in Paris to test a new camera.
-
-#### Role
-Film maker

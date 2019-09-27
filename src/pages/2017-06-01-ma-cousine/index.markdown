@@ -13,7 +13,7 @@ image: "cover-cousine.png"
 [Direct Link](https://vimeo.com/219981931)
 
 ## Description
-__*Ma Cousine*__ is a short movie co-directed with Clementine Brochet.
+__*Ma Cousine*__ is a short movie directed by __Clementine Brochet__ for a student contest.
 
 #### Role
 teamwork on __writing__, __sound mix__, __color grading__.

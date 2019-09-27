@@ -15,8 +15,10 @@ image: "post_truePedestrian.jpg"
 
 
 ## Description
-__*True Pedestrian*__ is a spoof trailer of the excellent TV show [True Detective](http://www.imdb.com/title/tt2356777/).  
-This is an amateur short film made during my studies.
+We all start somewhere. I've worked on many creative projects during my studies, small ones and big ones. They all resulted in creations sometimes good, sometimes terrible, but always were a lot of fun to make and great lessons for the future. They forged my passion and skills for what I now do every day.  
+
+__*True Pedestrian*__ is one of those projects.  
+A spoof trailer of the excellent TV show [True Detective](http://www.imdb.com/title/tt2356777/), made with __Vincent Montalieu__.
 
 #### Role
 __Camera & Sound Operator__, __Comedian__.

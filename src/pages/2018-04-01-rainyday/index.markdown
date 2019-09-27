@@ -16,7 +16,4 @@ image: "post_rainyday.jpg"
 Experimental video made using still photographies.  
 
 * This video is the result of conception and development of an innovative workflow for hassle-free still image editing.
-* It's in many aspects my first step towards [The Humanlape Project](/humanlapseProject#content)
-
-#### Role
-Film maker
+* It's in many aspects my first step towards [The Humanlapse Project](/humanlapseProject#content)

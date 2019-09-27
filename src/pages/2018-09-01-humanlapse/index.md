@@ -8,8 +8,6 @@ category: video
 image: "cover.png"
 ---
 
-#### This is an ongoing project. You can [reach me](/contact) for exhibition & collaboration inquiries
-
 <br/>
 <br/>
 
@@ -38,6 +36,7 @@ The __Humanlapse Project__ is a photography project that aims to explore usage o
 
 * Lyon City Hall - November/December 2018
 * [Toï Toï Le Zinc](//www.toitoilezinc.fr/) - June/July 2019
+* MJC Montplaisir - January 2020
 
 
 <iframe src="https://player.vimeo.com/video/306033197" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
@@ -51,7 +50,7 @@ The __Humanlapse Project__ is a photography project that aims to explore usage o
 
 For this exhibition, I've built digital photo frames each one looping a single humanlapse video. 
 The frames are fully autonomous. They turn on in the morning and turn off in the evening without the need of any human intervention. 
-The frames are fixed on poles and disposed in an open area so visitors can walk around each humanlapse.
+The frames are fixed on poles and disposed in an open area so visitors can walk around each humanlapse as they would for a photo exhibition.
 
 
 <photo-grid>

@@ -18,6 +18,7 @@ image: "cover.png"
 A short movie about the precarious, made for the [Mobile Film Festival 2018](https://mobilefilmfestival.com/) _#StandUp4HumanRights_.
 Shot in a few hours with a smartphone.  
 __Official Selection__ among 50 other short movies for a total of 715 received films by the festival.  
+Also selected by the [Global Citizen Smartphone Short Film Festival](//www.oncaravan.org/global-citizen)
 
 #### Synopsis
 Words that seem innocent... and yet.

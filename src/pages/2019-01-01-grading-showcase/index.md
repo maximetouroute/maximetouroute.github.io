@@ -284,7 +284,3 @@ Application des techniques de digital re-lighting sur certaines scènes comme le
 <br/>
 
 Pour quelques images en mouvement, jetez un oeil à mon [2017 Color Grading Showreel](/color-grade-breakdown-2017)
-
-
-
-

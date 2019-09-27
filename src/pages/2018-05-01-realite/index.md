@@ -23,9 +23,6 @@ The everydaylife of an elderly gets interrupted by a TV failure.
 * Comete Film Festival
 * International Film Festival of the Red Cross
 
-#### Role
-Film maker
-
 <br/>
 <br/>
 
