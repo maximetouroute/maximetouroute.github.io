@@ -120,23 +120,6 @@ Travail de conservation des détails en basse lumière et notamment des vêtemen
     <img src="decoy5_b.jpg"/>
 </image-compare>
 
-<image-compare>
-    <img src="decoy4_a.jpg"/>
-    <img src="decoy4_b.jpg"/>
-</image-compare>
-
-
-<image-compare>
-    <img src="decoy2_a.jpg"/>
-    <img src="decoy2_b.jpg"/>
-</image-compare>
-
-<image-compare>
-    <img src="decoy3_a.jpg"/>
-    <img src="decoy3_b.jpg"/>
-</image-compare>
-
-
 
 # Innocent Words
 ### Court métrage
