@@ -4,7 +4,7 @@ layout: article
 title:  "Ma Cousine"
 subtitle: Short movie
 date: "2017-06-01"
-category: video
+category: hidden
 image: "cover-cousine.png"
 ---
 

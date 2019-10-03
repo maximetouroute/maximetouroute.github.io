@@ -1,5 +1,21 @@
 @import '../components/styles';
 
+.squareGatsbyPicture {
+  margin: auto;
+  @include breakpoint(normal) {
+    width: 30rem;
+  }
+  @include breakpoint(small) {
+
+    max-width: 30rem;
+  }
+
+  img {
+    width: 70%;
+    height: auto;
+  }
+}
+
 .roundGatsbyPicture {
 
   border-radius: 1000px;

@@ -4,7 +4,7 @@ layout: page
 title: About
 image: "profile.jpg"
 ---
-<div class="roundGatsbyPicture" style="width: 200px">
+<div class="squareGatsbyPicture" style="min-width: 70%">
 
 
 <img src="profile.jpg"></img>
@@ -15,10 +15,10 @@ image: "profile.jpg"
 
 
 
-### — I'm Maxime, an engineer specialised in __audiovisual arts__
+### — I'm Maxime, an __engineer__ specialised in __audiovisual arts__
 
 
-I've always been drawn by film making, photography and arts. I'm well versed in many skills around audiovisual creation, from shooting to post-production. I'm also a full fledged software engineer and using these skills to design new creative experiences. 
+I've always been drawn by cinema, photography and arts. I'm well versed in film making from shooting to post-production. Being a full fledged software engineer I use these skills to design new creative experiences. 
 I love to work on audiovisual and art projects where my creativity and rigor can be an asset.
  
 I'm always looking for new projects — if you would like to make something together, [get in touch !](/contact)
@@ -97,7 +97,7 @@ _Ongoing_
 * Short jobs on art projects & art shows as a developer, adviser or film maker  
 * Deep dedication in joining all kind of movie shootings as cinematographer, sound engineer, colorist or crew assistant  
 * Film maker for cultural and corporate events  
-* Conception and crafting of scenographies for art exhibitions 
+* Conception and crafting of scenographies for art exhibitions  
 * Conference speaker and workshops in visual arts  
 * Web designer
 
@@ -105,14 +105,14 @@ _Ongoing_
 <br/>
 <br/>
 
-# Filmography (Technical Crew)
+# Filmography (Tech Crew)
 
 #### L'héritage, Ep 1. (2019) (post-production)
 _Web series by Carole Siret - 5'_  
 Role: __Cinematographer__  
 Shot with Nikon DSLR  
 
-#### Harmonie des sphères (2017-2019)
+#### [Harmonie des sphères](/harmoniedesspheres) (2017-2019)
 _Short movie by Vincent Montalieu - 20'_  
 Role: __Cinematographer__  
 Shot with Lumix GH2  

@@ -62,6 +62,7 @@ $colorHover: $accentColorIdle;
   &:active, &:focus {
     outline: 0;
     -moz-outline-style: none;
+    outline-style: none;
   }
 }
 
