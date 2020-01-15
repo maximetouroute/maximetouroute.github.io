@@ -1,11 +1,11 @@
 ---
 path: /ma-cousine
 layout: article
-title:  "Ma Cousine"
+title: 'Ma Cousine'
 subtitle: Short movie
-date: "2017-06-01"
+date: '2017-06-01'
 category: hidden
-image: "cover-cousine.png"
+image: 'cover-cousine.png'
 ---
 
 <iframe src="https://player.vimeo.com/video/219981931" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
@@ -13,7 +13,9 @@ image: "cover-cousine.png"
 [Direct Link](https://vimeo.com/219981931)
 
 ## Description
-__*Ma Cousine*__ is a short movie directed by __Clementine Brochet__ for a student contest.
+
+**_Ma Cousine_** is a short movie directed by **Clementine Brochet** for a student contest.
 
 #### Role
-teamwork on __writing__, __sound mix__, __color grading__.
+
+teamwork on **writing**, **sound mix**, **color grading**.

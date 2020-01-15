@@ -1,16 +1,17 @@
 ---
 path: /sunrise
 layout: article
-title: "Sunrise"
+title: 'Sunrise'
 subtitle: Movie clip
-date: "2017-09-01"
+date: '2017-09-01'
 category: video
-image: "post_sunrise.jpg"
+image: 'post_sunrise.jpg'
 ---
 
 <iframe width="1920" height="960" src="https://www.youtube.com/embed/-JbLUvenUJ8?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Direct Link](https://www.youtube.com/watch?v=-JbLUvenUJ8)
 
-##  Description
-__*Sunrise*__ is a poetic video shot in one morning in Paris to test a new camera.
+## Description
+
+**_Sunrise_** is a poetic video shot in one morning in Paris to test a new camera.
