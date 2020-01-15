@@ -6,7 +6,6 @@
     width: 30rem;
   }
   @include breakpoint(small) {
-
     max-width: 30rem;
   }
 
@@ -17,21 +16,27 @@
 }
 
 .roundGatsbyPicture {
-
   border-radius: 1000px;
   margin: auto;
 
   img {
     border-radius: 1000px;
-
   }
   span {
     border-radius: 1000px;
-
   }
 }
 
 .Page {
+  .prevNextLinks {
+    display: flex;
+    filter: grayscale(1);
+    justify-content: space-between;
+    a {
+      margin-top: 2em;
+      padding: 0.75em;
+    }
+  }
 
   a {
     @include themedTagA();
@@ -58,7 +63,6 @@
   }
 
   .card {
-
     @include breakpoint(normal) {
       width: 50rem;
     }
@@ -130,13 +134,10 @@
   .content {
     text-align: justify;
 
-
-
     p {
       @include breakpoint(small) {
         padding: 0.4em;
       }
-
     }
   }
   .content-header-wrapper {
@@ -172,11 +173,15 @@
   }
 
   ul {
-   // padding: 0;
-
+    // padding: 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     text-align: start;
   }
 
@@ -206,7 +211,7 @@
 
   ul {
     color: rgb(50, 50, 50);
-   // list-style-type: none;
+    // list-style-type: none;
     font-size: 1rem;
     padding-left: 1rem;
 
@@ -219,9 +224,8 @@
 }
 
 .coverBand {
-
   text-align: center;
-  transition: opacity 1.5s ease;
+  transition: opacity 0.5s ease;
   font-weight: 600;
   color: white;
   border-radius: 4px;
@@ -231,7 +235,6 @@
   background-position: center center;
 
   .overlay {
-
     //background-color: rgba(45, 45, 45, 1);
     @include breakpoint(normal) {
       padding: 7rem;

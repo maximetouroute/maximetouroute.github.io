@@ -57,7 +57,7 @@ export const portfolioPostsQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { category: { eq: "video" } } }
+      filter: { frontmatter: { category: { eq: "portfolio" } } }
     ) {
       edges {
         node {

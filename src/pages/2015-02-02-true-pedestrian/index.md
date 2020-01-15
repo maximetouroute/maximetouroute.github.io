@@ -1,10 +1,10 @@
 ---
 path: /true-pedestrian
-layout: article
+layout: post
 title: True Pedestrian
 subtitle: Spoof Trailer
 date: '2015-12-07'
-category: video
+category: portfolio
 image: 'post_truePedestrian.jpg'
 ---
 

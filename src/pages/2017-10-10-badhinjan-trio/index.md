@@ -1,10 +1,10 @@
 ---
 path: /badhinjan-trio
-layout: article
+layout: post
 title: 'Astrakan Café'
 subtitle: Music clip
 date: '2017-10-10'
-category: video
+category: portfolio
 image: 'post_badhinjan.jpg'
 ---
 

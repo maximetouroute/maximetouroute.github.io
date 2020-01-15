@@ -70,8 +70,8 @@ class ReactCompareImage extends React.Component {
 
     // Hotfix: img onload is never called, thanks to service worker
     this.setState({
-      isImgFullyLoaded: true
-    });
+      isImgFullyLoaded: true,
+    })
   }
 
   componentDidUpdate = (prevProps, prevState) => {
@@ -205,8 +205,8 @@ class ReactCompareImage extends React.Component {
         position: 'relative',
         width: '100%',
         overflow: 'hidden',
-        marginTop:'1em',
-        marginBottom:'1em'
+        marginTop: '1em',
+        marginBottom: '1em',
       },
       underImage: {
         display: 'block',
@@ -216,7 +216,7 @@ class ReactCompareImage extends React.Component {
       },
       overImage: {
         clip: `rect(auto, ${this.state.imageWidth *
-        this.state.sliderPositionPercentage}px, auto, auto)`,
+          this.state.sliderPositionPercentage}px, auto, auto)`,
         display: 'block',
         height: '100%', // fit to the height of under image
         objectFit: 'cover', // protrudes is hidden
@@ -264,15 +264,15 @@ class ReactCompareImage extends React.Component {
         border: `inset ${this.props.handleSize * 0.15}px rgba(0,0,0,0)`,
         borderRight: `${this.props.handleSize * 0.15}px solid white`,
         height: '0px',
-        marginLeft: `-${this.props.handleSize * 0.50}px`, // for IE11
-        marginRight: `${this.props.handleSize * 0.50}px`,
+        marginLeft: `-${this.props.handleSize * 0.5}px`, // for IE11
+        marginRight: `${this.props.handleSize * 0.5}px`,
         width: '0px',
       },
       rightArrow: {
         border: `inset ${this.props.handleSize * 0.15}px rgba(0,0,0,0)`,
         borderLeft: `${this.props.handleSize * 0.15}px solid white`,
         height: '0px',
-        marginRight: `-${this.props.handleSize * 0.50}px`, // for IE11
+        marginRight: `-${this.props.handleSize * 0.5}px`, // for IE11
         width: '0px',
       },
       overlayTextLeft: {
@@ -285,8 +285,8 @@ class ReactCompareImage extends React.Component {
         position: 'absolute',
         top: 0,
         // width: `100px`,
-        backgroundColor:'rgba(0,0,0,0.5)',
-        opacity: this.state.sliderPositionPercentage
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        opacity: this.state.sliderPositionPercentage,
       },
       overlayTextRight: {
         alignItems: 'flex-end',
@@ -297,7 +297,7 @@ class ReactCompareImage extends React.Component {
         position: 'absolute',
         top: 0,
         backgroundColor: 'rgba(0,0,0,0.5)',
-        opacity: 1-this.state.sliderPositionPercentage
+        opacity: 1 - this.state.sliderPositionPercentage,
       },
       leftWord: {
         textAlign: 'left',
@@ -312,13 +312,12 @@ class ReactCompareImage extends React.Component {
         fontWeight: 400,
         textTransform: 'uppercase',
         padding: '1em',
-      }
+      },
     }
 
     return (
       <React.Fragment>
-        {this.props.skeleton &&
-        !this.state.isImgFullyLoaded && (
+        {this.props.skeleton && !this.state.isImgFullyLoaded && (
           <div style={{ ...styles.container }}>{this.props.skeleton}</div>
         )}
 
@@ -330,8 +329,6 @@ class ReactCompareImage extends React.Component {
           ref={this.containerRef}
           dataenzyme="container"
         >
-
-
           <img
             onLoad={this.onLeftImageLoaded}
             onError={() =>
@@ -343,7 +340,6 @@ class ReactCompareImage extends React.Component {
             src={this.props.rightImage}
             style={styles.underImage}
           />
-
 
           <img
             onLoad={this.onRightImageLoaded}
@@ -358,24 +354,18 @@ class ReactCompareImage extends React.Component {
           />
 
           <div style={styles.overlayTextRight}>
-              <span style={styles.leftWord}>
-                RAW
-              </span>
+            <span style={styles.leftWord}>RAW</span>
           </div>
           <div style={styles.overlayTextLeft}>
-              <span style={styles.leftWord}>
-                GRADED
-              </span>
+            <span style={styles.leftWord}>GRADED</span>
           </div>
           <div className="img-comp-slider" style={styles.slider}>
-
-            <div style={styles.line}/>
+            <div style={styles.line} />
             <div style={styles.handle}>
-              <div style={styles.leftArrow}/>
-              <div style={styles.rightArrow}/>
+              <div style={styles.leftArrow} />
+              <div style={styles.rightArrow} />
             </div>
-            <div style={styles.line}/>
-
+            <div style={styles.line} />
           </div>
         </div>
       </React.Fragment>
@@ -386,18 +376,21 @@ class ReactCompareImage extends React.Component {
 ReactCompareImage.propTypes = propTypes
 ReactCompareImage.defaultProps = defaultProps
 
-
 function GatsbyImageCompare({ children }) {
-  const photos = children.filter(child => typeof child !== 'string');
-  const leftImage = photos[0].props.href;
-  const rightImage = photos[1].props.href;
+  const photos = children.filter(child => typeof child !== 'string')
+  // Cleary a bad workaround to fetch gatsby image url.. but it works.
+  const leftImage = photos[0].props.children[1].props.href
+  const rightImage = photos[1].props.children[1].props.href
   return (
-    <ReactCompareImage leftImage={leftImage ? leftImage : null} rightImage={rightImage ? rightImage : null} />
-  );
+    <ReactCompareImage
+      leftImage={leftImage ? leftImage : null}
+      rightImage={rightImage ? rightImage : null}
+    />
+  )
 }
 
 GatsbyImageCompare.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default GatsbyImageCompare;
+export default GatsbyImageCompare

@@ -1,17 +1,17 @@
 ---
 path: /museomix
-layout: article
-title:  Dans les deux sens
+layout: post
+title: Dans les deux sens
 subtitle: Museum Installation
-date: "2018-08-10"
-category: video
-image: "p-10.jpg"
+date: '2018-08-10'
+category: portfolio
+image: 'p-10.jpg'
 ---
 
 #### Description
 
 **Dans les deux sens** is a prototype of museum installation created during the 2018 edition of [Museomix](http://museomix.org/).  
-It's an emotion pod concept to learn about an art piece by questioning our emotions towards it. 
+It's an emotion pod concept to learn about an art piece by questioning our emotions towards it.
 
 <photo-grid>
 <img src="p-0.jpg"/>
@@ -25,15 +25,11 @@ It's an emotion pod concept to learn about an art piece by questioning our emoti
 <img src="mus.jpg"/>
 </photo-grid>
 
-# Specs 
+# Specs
 
-* A wood pod with LED Lighting
-* An android tablet used as interface
-* A Raspberry Pi controlling the pod lighting colours and serving a progressive webapp to the android tablet
+- A wood pod with LED Lighting
+- An android tablet used as interface
+- A Raspberry Pi controlling the pod lighting colours and serving a progressive webapp to the android tablet
 
 This prototype has been built and coded in three days. It is fully autonomous and works with a single plug.
- It was exhibited in November, 2018 at the [Palais des Beaux Arts de Lille](http://www.pba-lille.fr/en).
-
-
-
-
+It was exhibited in November, 2018 at the [Palais des Beaux Arts de Lille](http://www.pba-lille.fr/en).

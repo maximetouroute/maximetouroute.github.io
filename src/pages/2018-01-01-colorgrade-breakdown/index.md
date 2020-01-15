@@ -1,6 +1,6 @@
 ---
 path: /color-grade-breakdown-2017
-layout: article
+layout: post
 title: 'Color Grade Breakdown 2017'
 subtitle: Showreel
 date: '2018-01-01'

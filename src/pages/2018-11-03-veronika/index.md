@@ -1,18 +1,17 @@
 ---
 path: /veronika
-layout: article
-title:  "Veronika"
+layout: post
+title: 'Veronika'
 subtitle: Short documentary
-date: "2018-11-03"
-category: video
-image: "screen1.png"
+date: '2018-11-03'
+category: portfolio
+image: 'screen1.png'
 ---
 
-##  Description
-__*Veronika*__ is a short documentary about life choices of a pianist girl.  
+## Description
+
+**_Veronika_** is a short documentary about life choices of a pianist girl.  
 It questions how old choices can affect and restrain our daily lives years after.
-  
-  
 
 ![](screen1.png)
 

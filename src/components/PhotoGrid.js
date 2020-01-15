@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 import Lightbox from 'react-image-lightbox'
 import 'react-image-lightbox/style.css' // This only needs to be imported once in your app
 import PropTypes from 'prop-types'
-import './PhotoGrid.scss';
+import './PhotoGrid.scss'
 
 // DIRTY test for custom component.
 /*
@@ -22,7 +22,6 @@ function styleBackgroundPhoto(src) {
 
 const photoGridProptypes = { gatsbyImages: PropTypes.array.isRequired }
 class PhotoGrid extends React.Component {
-
   constructor(props) {
     super(props)
 
@@ -35,47 +34,62 @@ class PhotoGrid extends React.Component {
   generatePicture(picture, index, margin) {
     let className = margin ? `photoThumbnail marginRight` : `photoThumbnail`
     return (
-      <div key={index} className={className} style={styleBackgroundPhoto(picture)}
-           onClick={() => this.setState({ isOpen: true, photoIndex: index })}/>
+      <div
+        key={index}
+        className={className}
+        style={styleBackgroundPhoto(picture)}
+        onClick={() => this.setState({ isOpen: true, photoIndex: index })}
+      />
     )
   }
 
   //numberPerRow is a WIP, needs changes in sass too
   generateGrid(pictures, numberPerRow = 3) {
-
     let photoGrid = []
     for (let i = 0; i < pictures.length; i += numberPerRow) {
-
       let photoRow = []
 
-      for (let columnIndex = 0; columnIndex < numberPerRow && i + columnIndex < pictures.length; columnIndex++) {
+      for (
+        let columnIndex = 0;
+        columnIndex < numberPerRow && i + columnIndex < pictures.length;
+        columnIndex++
+      ) {
         // handle margin right
         if (columnIndex < numberPerRow) {
-          photoRow.push(this.generatePicture(pictures[i + columnIndex], i + columnIndex, true))
+          photoRow.push(
+            this.generatePicture(
+              pictures[i + columnIndex],
+              i + columnIndex,
+              true
+            )
+          )
         } else {
-          photoRow.push(this.generatePicture(pictures[i + columnIndex], i + columnIndex, false))
+          photoRow.push(
+            this.generatePicture(
+              pictures[i + columnIndex],
+              i + columnIndex,
+              false
+            )
+          )
         }
       }
       photoGrid.push(
         <div key={i} className="photoRowContainer">
           {photoRow}
-        </div>,
+        </div>
       )
       photoRow = []
     }
     return photoGrid
   }
 
-
   render() {
-
     const { isOpen, photoIndex } = this.state
-    const images = this.props.gatsbyImages;
+    const images = this.props.gatsbyImages
 
     return (
       <div className="componentPhotoGrid">
         {isOpen && (
-
           <Lightbox
             mainSrc={images[photoIndex]}
             nextSrc={images[(photoIndex + 1) % images.length]}
@@ -98,25 +112,21 @@ class PhotoGrid extends React.Component {
           {this.generateGrid(this.props.gatsbyImages)}
         </div>
       </div>
-
     )
   }
-
 }
 
-PhotoGrid.propTypes = photoGridProptypes;
-
+PhotoGrid.propTypes = photoGridProptypes
 
 function PhotoGridGatsbyMethod({ children }) {
-  const photos = children.filter(child => typeof child !== 'string');
-  const srcs = photos.map(photo => photo.props.href);
-  return (
-    <PhotoGrid gatsbyImages={srcs} />
-  );
+  const photos = children.filter(child => typeof child !== 'string')
+  console.log(photos)
+  const srcs = photos.map(photo => photo.props.children[1].props.href) // Cleary a bad workaround to fetch gatsby image url.. but it works.
+  return <PhotoGrid gatsbyImages={srcs} />
 }
 
 PhotoGridGatsbyMethod.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default PhotoGridGatsbyMethod;
+export default PhotoGridGatsbyMethod

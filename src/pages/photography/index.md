@@ -2,12 +2,13 @@
 path: /photography
 layout: page
 title: Photo
+category: wh
 ---
-
 
 A selection of my photography works.
 
 # Experiments
+
 A series of experiments on the usage of lighting and photography techniques
 <br/>
 
@@ -27,6 +28,7 @@ A series of experiments on the usage of lighting and photography techniques
 </photo-grid>
 
 # Portraits
+
 <photo-grid>
 <img src="portraits/b-9.jpg"/>
 <img src="portraits/b-19.jpg"/>
@@ -39,6 +41,7 @@ A series of experiments on the usage of lighting and photography techniques
 </photo-grid>
 
 # Landscapes
+
 <photo-grid>
 <img src="landscapes/b-34.jpg"/>
 <img src="landscapes/b-27.jpg"/>
@@ -51,7 +54,8 @@ A series of experiments on the usage of lighting and photography techniques
 <img src="landscapes/b-35.jpg"/>
 </photo-grid>
 
-# Architecture 
+# Architecture
+
 <br/>
 
 <photo-grid>
@@ -63,8 +67,8 @@ A series of experiments on the usage of lighting and photography techniques
 <img src="architecture/b2.jpg"/>
 </photo-grid>
 
+# Dailies
 
-# Dailies 
 A collection of shots from the everyday ramblings of my life.
 <br/>
 
@@ -76,7 +80,5 @@ A collection of shots from the everyday ramblings of my life.
 <img src="dailies/b-18.jpg"/>
 <img src="dailies/b-4.jpg"/>
 </photo-grid>
-
-
 
 Want more ? Check out my [Instagram](https://instagram.com/maximetouroute)

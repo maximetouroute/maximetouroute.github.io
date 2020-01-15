@@ -1,10 +1,10 @@
 ---
 path: /echos
-layout: article
+layout: post
 title: 'Echos'
 subtitle: 24h short movie
 date: '2017-10-09'
-category: video
+category: portfolio
 image: 'post_echos.jpg'
 ---
 

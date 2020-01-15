@@ -1,6 +1,6 @@
 ---
 path: /ma-cousine
-layout: article
+layout: post
 title: 'Ma Cousine'
 subtitle: Short movie
 date: '2017-06-01'

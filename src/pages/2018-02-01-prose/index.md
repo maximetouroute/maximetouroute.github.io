@@ -1,6 +1,6 @@
 ---
 path: /prose-aftermovie
-layout: article
+layout: post
 title: 'Prose Aftermovie'
 subtitle: Film making
 date: '2018-02-01'

@@ -1,18 +1,16 @@
 ---
 path: /spacedances
-layout: article
-title:  Space Dances
+layout: post
+title: Space Dances
 subtitle: Digital Arts
-date: "2019-01-01"
-category: video
-image: "cover.jpg"
+date: '2019-01-01'
+category: portfolio
+image: 'cover.jpg'
 ---
-
 
 <iframe src="https://player.vimeo.com/video/347264544" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
 
 [Direct Link](//vimeo.com/347264544)
-
 
 ## Description
 
@@ -24,8 +22,4 @@ image: "cover.jpg"
 
 #### Role
 
-Visual Arts Engineer  
-
-
-
-
+Visual Arts Engineer

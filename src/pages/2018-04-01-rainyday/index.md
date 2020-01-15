@@ -1,10 +1,10 @@
 ---
 path: /rainyday
-layout: article
+layout: post
 title: Rainy Day
 subtitle: Experimental video
 date: '2018-04-01'
-category: video
+category: portfolio
 image: 'post_rainyday.jpg'
 ---
 

@@ -1,10 +1,10 @@
 ---
 path: /sunrise
-layout: article
+layout: post
 title: 'Sunrise'
 subtitle: Movie clip
 date: '2017-09-01'
-category: video
+category: portfolio
 image: 'post_sunrise.jpg'
 ---
 

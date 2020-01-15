@@ -1,10 +1,10 @@
 ---
 path: /harmoniedesspheres
-layout: article
+layout: post
 title: 'Harmonie des Sphères'
 subtitle: Short movie
 date: '2018-12-25'
-category: video
+category: portfolio
 image: 'cover.jpg'
 ---
 
