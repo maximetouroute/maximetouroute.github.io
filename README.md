@@ -7,6 +7,9 @@ A simple portfolio website.
 * npm run develop
 * npm run deploy
 
+#### How to install
+* npm install -g gatsby-cli
+* npm ci
 
 #### Libs
 

@@ -4,7 +4,7 @@ import './BasicPage.scss'
 import rehypeReact from 'rehype-react'
 import PhotoGrid from '../components/PhotoGrid'
 import MetaTags from '../components/MetaTags'
-
+import { graphql } from 'gatsby'
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
