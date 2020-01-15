@@ -2,7 +2,7 @@
 path: /humanlapseProject
 layout: post
 title: 'Humanlapse'
-subtitle: Timelapses of humans
+subtitle: Portraits in motion
 date: '2019-02-01'
 category: portfolio
 image: 'cover.png'
