@@ -120,7 +120,6 @@ PhotoGrid.propTypes = photoGridProptypes
 
 function PhotoGridGatsbyMethod({ children }) {
   const photos = children.filter(child => typeof child !== 'string')
-  console.log(photos)
   const srcs = photos.map(photo => photo.props.children[1].props.href) // Cleary a bad workaround to fetch gatsby image url.. but it works.
   return <PhotoGrid gatsbyImages={srcs} />
 }
