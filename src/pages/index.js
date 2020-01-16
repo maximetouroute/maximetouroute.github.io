@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql, navigate } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../components/MetaTags'
 import './index.scss'
@@ -11,6 +11,8 @@ export default function Index({ data }) {
     <MainLayout>
       <MetaTags title={'Home'} />
       <div className="home homePosts">
+        <div></div>
+
         <div className="postGrid">
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)

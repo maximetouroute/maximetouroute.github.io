@@ -38,6 +38,7 @@
     "gatsby-remark-images": "^3.1.42",
     "gatsby-remark-responsive-iframe": "^2.0.8",
     "gatsby-source-filesystem": "^2.0.16",
+    "gatsby-source-ical": "^1.1.0",
     "gatsby-transformer-remark": "^2.2.0",
     "gatsby-transformer-sharp": "^2.1.10",
     "markdown-to-jsx": "^6.9.0",

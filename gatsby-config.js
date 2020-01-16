@@ -1,15 +1,17 @@
 module.exports = {
-
   siteMetadata: {
     siteName: `Maxime Touroute Portfolio`,
     title: `Maxime's Portfolio`,
     author: 'Maxime Touroute',
-    titleTemplate: "%s · Maxime Touroute",
-    description: "Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Cinematography, Photography, Digital Arts, Software Engineering. ",
-    url: "https://maximetouroute.github.io", // No trailing slash allowed!
-    siteUrl: "https://maximetouroute.github.io", // for robots plugin
-    image: "/res/favicon.png", // Path to your image you placed in the 'res' folder
-    keywords: "cinematography, photography, digital arts, maxime touroute, portfolio", // separated by comas
+    authorMail: 'maxime.touroute@gmail.com',
+    titleTemplate: '%s · Maxime Touroute',
+    description:
+      'Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Cinematography, Photography, Digital Arts, Software Engineering. ',
+    url: 'https://maximetouroute.github.io', // No trailing slash allowed!
+    siteUrl: 'https://maximetouroute.github.io', // for robots plugin
+    image: '/res/favicon.png', // Path to your image you placed in the 'res' folder
+    keywords:
+      'cinematography, photography, digital arts, maxime touroute, portfolio', // separated by comas
 
     /* to hide the icon, put an empty string instead of a link */
     socialLinks: {
@@ -19,7 +21,7 @@ module.exports = {
       instagram: '//instagram.com/maximetouroute',
       vimeo: '//vimeo.com/maximetouroute',
       youtube: '',
-      soundcloud: ''
+      soundcloud: '',
     },
   },
 
@@ -31,6 +33,15 @@ module.exports = {
         icon: true,
       },
     },
+
+    {
+      resolve: `gatsby-source-ical`,
+      options: {
+        name: `events`,
+        url: `https://calendar.google.com/calendar/ical/rod4537o03duvj8s8sdrfd221o%40group.calendar.google.com/public/basic.ics`,
+      },
+    },
+
     'gatsby-plugin-offline',
     `gatsby-plugin-catch-links`,
 
@@ -63,9 +74,8 @@ module.exports = {
           },
 
           {
-            resolve: "gatsby-remark-copy-linked-files",
+            resolve: 'gatsby-remark-copy-linked-files',
           },
-
         ], // just in case those previously mentioned remark plugins sound cool :)
       },
     },
@@ -90,8 +100,8 @@ module.exports = {
       options: {
         host: 'https://maximetouroute.github.io',
         sitemap: 'https://maximetouroute.github.io/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
     `gatsby-plugin-sitemap`,
 
@@ -105,6 +115,5 @@ module.exports = {
         showSpinner: false,
       },
     },
-
   ],
 }

@@ -44,7 +44,6 @@ exports.createPages = ({ actions, graphql }) => {
 
     // Actually creating the page
     const allPages = result.data.allMarkdownRemark.edges
-    console.log(allPages)
     const pages = allPages.filter(
       edge => edge.node.frontmatter.layout === pageLayouts.page
     )
