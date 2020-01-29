@@ -12,7 +12,7 @@ image: 'post_realite.jpg'
 
 A short movie about the elderly. Shot in a few hours with a real grandma.  
 **Currently not public due to festival selections.**  
-[Send me a mail](/contact) for a private access.
+[Send me a mail](mailto:maxime.touroute@gmail.com) for a private access.
 
 #### Synopsis
 
