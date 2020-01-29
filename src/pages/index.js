@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
 import MetaTags from '../bits/MetaTags/MetaTags'
+import PostGrid from '../bits/PostGrid/PostGrid'
 import './index.scss'
 
 export default function Index({ data }) {
@@ -10,43 +11,8 @@ export default function Index({ data }) {
   return (
     <MainLayout>
       <MetaTags title={'Home'} />
-      <div className="home homePosts">
-        <div></div>
-
-        <div className="postGrid">
-          {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .map(({ node: post }) => {
-              return (
-                // TODO : remove underline and otherwise seems ok
-                <Link
-                  className="post"
-                  to={`${post.frontmatter.path}#content`}
-                  key={post.id}
-                >
-                  <div
-                    className="postHeader"
-                    style={{
-                      backgroundImage:
-                        'url(' +
-                        post.frontmatter.image.childImageSharp.fixed.src +
-                        ')',
-                    }}
-                  >
-                    <div className="inside">
-                      <span className="postTitle">
-                        {post.frontmatter.title}
-                      </span>
-                      <span className="post-meta postTag">
-                        {post.frontmatter.subtitle}
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              )
-            })}
-        </div>
-
+      <div className="home">
+        <PostGrid posts={posts}></PostGrid>
         <div className="moreProjects">
           <Link to="/about">About me</Link>
         </div>
