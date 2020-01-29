@@ -1,23 +1,22 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import './Navbar.scss'
+import PropTypes from 'prop-types'
 
 export class Navbar extends Component {
   menuItems() {
+    const title = this.props.title
+    const links = this.props.links
     return (
       <>
         <Link activeClassName="" className="siteTitle" to="/">
-          MAXIME TOUROUTE
+          {title}
         </Link>
-        <Link activeClassName="active" to="/">
-          WORK
-        </Link>
-        <Link activeClassName="active" to="/news">
-          NEWS
-        </Link>
-        <Link activeClassName="active" to="/about">
-          ABOUT
-        </Link>
+        {links.map(link => (
+          <Link activeClassName="active" to={link.path} key={link.name}>
+            {link.name}
+          </Link>
+        ))}
       </>
     )
   }
@@ -29,4 +28,18 @@ export class Navbar extends Component {
       </div>
     )
   }
+}
+
+Navbar.propTypes = {
+  title: PropTypes.string,
+  links: PropTypes.array,
+}
+
+Navbar.defaultProps = {
+  title: 'SiteTitle',
+  links: [
+    { path: '/', name: 'rootLink' },
+    { path: '/somePath', name: 'somePage' },
+    { path: '/otherPath', name: 'otherPage' },
+  ],
 }
