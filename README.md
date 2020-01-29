@@ -28,6 +28,11 @@ Make sure to put spaces around your urls
 - Customised image compare component based on [react-compare-image](https://github.com/junkboy0315/react-compare-image)
 - [react-image-lightbox](https://github.com/frontend-collective/react-image-lightbox)
 
+#### Bits
+
+Added bits using git submodules
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
 #### Todolist
 
 - responsive navbar
