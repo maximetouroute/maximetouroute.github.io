@@ -207,7 +207,7 @@ class ReactCompareImage extends React.Component {
       },
       overImage: {
         clip: `rect(auto, ${this.state.imageWidth *
-        this.state.sliderPositionPercentage}px, auto, auto)`,
+          this.state.sliderPositionPercentage}px, auto, auto)`,
         display: 'block',
         height: '100%', // fit to the height of under image
         objectFit: 'cover', // protrudes is hidden
@@ -255,15 +255,15 @@ class ReactCompareImage extends React.Component {
         border: `inset ${this.props.handleSize * 0.15}px rgba(0,0,0,0)`,
         borderRight: `${this.props.handleSize * 0.15}px solid white`,
         height: '0px',
-        marginLeft: `-${this.props.handleSize * 0.50}px`, // for IE11
-        marginRight: `${this.props.handleSize * 0.50}px`,
+        marginLeft: `-${this.props.handleSize * 0.5}px`, // for IE11
+        marginRight: `${this.props.handleSize * 0.5}px`,
         width: '0px',
       },
       rightArrow: {
         border: `inset ${this.props.handleSize * 0.15}px rgba(0,0,0,0)`,
         borderLeft: `${this.props.handleSize * 0.15}px solid white`,
         height: '0px',
-        marginRight: `-${this.props.handleSize * 0.50}px`, // for IE11
+        marginRight: `-${this.props.handleSize * 0.5}px`, // for IE11
         width: '0px',
       },
       overlayTextLeft: {
@@ -275,9 +275,9 @@ class ReactCompareImage extends React.Component {
         left: `${this.state.imageWidth}-100px`,
         position: 'absolute',
         top: 0,
-       // width: `100px`,
-        backgroundColor:'rgba(0,0,0,0.5)',
-        opacity: this.state.sliderPositionPercentage
+        // width: `100px`,
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        opacity: this.state.sliderPositionPercentage,
       },
       overlayTextRight: {
         alignItems: 'flex-end',
@@ -288,7 +288,7 @@ class ReactCompareImage extends React.Component {
         position: 'absolute',
         top: 0,
         backgroundColor: 'rgba(0,0,0,0.5)',
-        opacity: 1-this.state.sliderPositionPercentage
+        opacity: 1 - this.state.sliderPositionPercentage,
       },
       leftWord: {
         textAlign: 'left',
@@ -303,13 +303,12 @@ class ReactCompareImage extends React.Component {
         fontWeight: 400,
         textTransform: 'uppercase',
         padding: '1em',
-      }
+      },
     }
 
     return (
       <React.Fragment>
-        {this.props.skeleton &&
-        !this.state.isImgFullyLoaded && (
+        {this.props.skeleton && !this.state.isImgFullyLoaded && (
           <div style={{ ...styles.container }}>{this.props.skeleton}</div>
         )}
 
@@ -321,8 +320,6 @@ class ReactCompareImage extends React.Component {
           ref={this.containerRef}
           dataenzyme="container"
         >
-
-
           <img
             onLoad={this.onLeftImageLoaded}
             onError={() =>
@@ -334,7 +331,6 @@ class ReactCompareImage extends React.Component {
             src={this.props.rightImage}
             style={styles.underImage}
           />
-
 
           <img
             onLoad={this.onRightImageLoaded}
@@ -349,24 +345,18 @@ class ReactCompareImage extends React.Component {
           />
 
           <div style={styles.overlayTextRight}>
-              <span style={styles.leftWord}>
-                RAW
-              </span>
+            <span style={styles.leftWord}>RAW</span>
           </div>
           <div style={styles.overlayTextLeft}>
-              <span style={styles.leftWord}>
-                GRADED
-              </span>
+            <span style={styles.leftWord}>GRADED</span>
           </div>
           <div className="img-comp-slider" style={styles.slider}>
-
-            <div style={styles.line}/>
+            <div style={styles.line} />
             <div style={styles.handle}>
-              <div style={styles.leftArrow}/>
-              <div style={styles.rightArrow}/>
+              <div style={styles.leftArrow} />
+              <div style={styles.rightArrow} />
             </div>
-            <div style={styles.line}/>
-
+            <div style={styles.line} />
           </div>
         </div>
       </React.Fragment>

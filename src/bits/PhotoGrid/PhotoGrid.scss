@@ -1,23 +1,17 @@
-@import 'styles';
-
+@import '../styles/styles.scss';
 
 .componentPhotoGrid {
-
-
-
-
   .pageContent {
     background-color: $backgroundColorForText;
     padding-top: 2rem;
     padding-bottom: 2rem;
 
     a {
-      @include themedTagA()
+      @include themedTagA();
     }
   }
 
   .pageContainer {
-
     @include breakpoint(normal) {
       width: 50rem;
     }
@@ -37,7 +31,6 @@
     padding: 0;
   }
 
-
   // Thumbnail size is controled by percentage.
   // flexbox space-between permits to have an even space between pictures but none on the sides (best for mobiles)
   // We compute the same gap between each row based on this percentage.
@@ -47,11 +40,10 @@
   $thumbsPerRow: 3;
 
   @mixin rowMarginForThumbSize($photoSize) {
-    margin-bottom: calc(#{100-$thumbsPerRow*$photoSize}/#{-1+$thumbsPerRow});
+    margin-bottom: calc(#{100-$thumbsPerRow * $photoSize}/#{-1+$thumbsPerRow});
   }
 
   .photoThumbnail {
-
     @include breakpoint(normal) {
       width: $thumbSizeNormal;
       padding-top: $thumbSizeNormal;
@@ -70,7 +62,6 @@
       box-shadow: inset 0 0 0px 100000px rgba(0, 0, 0, 0.2); // easy way to get a black overlay
       cursor: pointer;
     }
-
   }
 
   .photoRowContainer {
@@ -85,6 +76,4 @@
       @include rowMarginForThumbSize($thumbSizeSmall);
     }
   }
-
-
 }

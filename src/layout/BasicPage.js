@@ -2,9 +2,9 @@ import React from 'react'
 import MainLayout from './MainLayout'
 import './Layouts.scss'
 import rehypeReact from 'rehype-react'
-import PhotoGrid from '../components/PhotoGrid'
-import ImageCompare from '../components/GatsbyImageCompare'
-import MetaTags from '../components/MetaTags'
+import PhotoGrid from '../bits/PhotoGrid/PhotoGrid'
+import ImageCompare from '../bits/ImageCompare/GatsbyImageCompare'
+import MetaTags from '../bits/MetaTags/MetaTags'
 import { graphql } from 'gatsby'
 
 const renderAst = new rehypeReact({

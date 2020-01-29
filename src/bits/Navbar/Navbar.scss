@@ -1,10 +1,9 @@
-@import 'styles';
+@import '../styles/styles.scss';
 
 .Navbar {
   background-color: $navbarColor;
   text-align: center;
   .header-subtitle {
-
     padding: 1em;
     @include breakpoint(small) {
       padding: 0.5em;
@@ -17,7 +16,6 @@
   }
 
   .header-title {
-
     padding: 2em;
     @include breakpoint(small) {
       padding: 1em;
@@ -39,13 +37,9 @@
         text-decoration: none;
       }
     }
-
   }
 
   .headerLinks {
-
-
-
     @include breakpoint(small) {
       display: flex;
       flex-direction: column;
@@ -83,7 +77,8 @@
         transition: all 0.1s ease-in-out 0s;
       }
 
-      &:active, &:focus {
+      &:active,
+      &:focus {
         outline: 0;
         -moz-outline-style: none;
       }

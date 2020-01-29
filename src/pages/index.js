@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
-import MetaTags from '../components/MetaTags'
+import MetaTags from '../bits/MetaTags/MetaTags'
 import './index.scss'
 
 export default function Index({ data }) {
