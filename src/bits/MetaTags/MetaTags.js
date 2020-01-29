@@ -2,7 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import favicon from '../../res/favicon.png' // TODO: move that somewhere else
 
 const MetaTags = ({ title, description, image, pathname, author, article }) => (
   <StaticQuery
@@ -14,19 +13,21 @@ const MetaTags = ({ title, description, image, pathname, author, article }) => (
           titleTemplate,
           defaultDescription,
           siteUrl,
-          defaultImage,
+          defaultThumbImage,
           defaultAuthor,
           siteName,
+          favicon,
         },
       },
     }) => {
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
+        image: `${siteUrl}${image || defaultThumbImage}`,
         url: `${siteUrl}${pathname || '/'}`,
         author: author || defaultAuthor,
         siteName: siteName || title || defaultTitle,
+        favicon: favicon || '',
       }
 
       return (
@@ -35,7 +36,11 @@ const MetaTags = ({ title, description, image, pathname, author, article }) => (
             title={seo.title}
             titleTemplate={titleTemplate}
             link={[
-              { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` },
+              {
+                rel: 'shortcut icon',
+                type: 'image/png',
+                href: `${seo.favicon}`,
+              },
             ]}
           >
             {seo.title && <title>{seo.title}</title>}
@@ -60,7 +65,13 @@ const MetaTags = ({ title, description, image, pathname, author, article }) => (
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}
-            {seo.image && <meta property="og:image" content={seo.image} />}
+            {seo.thumbImage && <meta property="og:image" content={seo.image} />}
+            {seo.thumbImage && (
+              <meta property="og:image:secure_url" content={seo.image} />
+            )}
+            {seo.thumbImage && (
+              <meta property="og:image:type" content="image/jpeg" />
+            )}
             {seo.title && (
               <meta property="og:site_name" content={seo.siteName} />
             )}
@@ -99,9 +110,10 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: url
-        defaultImage: image
+        defaultThumbImage: thumbImage
         defaultAuthor: author
         siteName: siteName
+        favicon: favicon
       }
     }
   }

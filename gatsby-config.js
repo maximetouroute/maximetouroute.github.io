@@ -9,13 +9,15 @@ module.exports = {
       'Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Cinematography, Photography, Digital Arts, Software Engineering. ',
     url: 'https://maximetouroute.github.io', // No trailing slash allowed!
     siteUrl: 'https://maximetouroute.github.io', // for robots plugin
-    image: '/res/favicon.png', // Path to your image you placed in the 'res' folder
+    // Those must be in the res folder
+    favicon: '/res/favicon.png', // Little icon on your browser tab, expected PNG
+    thumbImage: '/res/thumbImage.jpg', // Image shown on embed link previews, expected JPG
     keywords:
-      'cinematography, photography, digital arts, maxime touroute, portfolio', // separated by comas
+      'cinematography, photography, digital arts, maxime touroute, portfolio, visual arts', // separated by comas
 
     /* to hide the icon, put an empty string instead of a link */
     socialLinks: {
-      twitter: '',
+      twitter: '//twitter.com/Maxioki',
       facebook: '//facebook.com/maxime.touroute',
       github: '//github.com/maximetouroute',
       instagram: '//instagram.com/maximetouroute',
