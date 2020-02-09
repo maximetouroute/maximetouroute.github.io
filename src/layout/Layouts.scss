@@ -30,11 +30,14 @@
 .Page {
   .prevNextLinks {
     display: flex;
+    flex-wrap: wrap;
     filter: grayscale(1);
     justify-content: space-between;
     a {
       margin-top: 2em;
       padding: 0.75em;
+      max-width: 45vw;
+      text-overflow: ellipsis;
     }
   }
 

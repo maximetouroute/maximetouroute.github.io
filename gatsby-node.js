@@ -57,7 +57,7 @@ exports.createPages = ({ actions, graphql }) => {
     )
 
     if (0 < others.length) {
-      console.warning('found pages with unhandled layouts. Will ignore them:')
+      console.warn('found pages with unhandled layouts. Will ignore them:')
       console.log(others)
     }
 
