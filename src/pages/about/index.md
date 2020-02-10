@@ -18,7 +18,7 @@ image: 'profile.jpg'
 I've always been drawn by cinema, photography and arts. I'm well versed in film making from shooting to post-production. Being a full fledged software engineer I use these skills to design new creative experiences.
 I love to work on audiovisual and art projects where my creativity and rigor can be an asset.
 
-I'm always looking for new projects — if you would like to make something together, [get in touch !](mailto:maxime.touroute@ŋmail.com)
+I'm always looking for new projects — if you would like to make something together, get in touch ! [maxime.touroute@gmail.com](mailto:maxime.touroute@gmail.com)
 
 <br><br>
 
