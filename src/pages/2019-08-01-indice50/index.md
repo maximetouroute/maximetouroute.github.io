@@ -3,7 +3,7 @@ path: /indice50
 layout: post
 title: Indice 50
 subtitle: Short movie
-date: '2019-08-01'
+date: '2019-01-01'
 category: portfolio
 image: 'cover.jpg'
 ---
