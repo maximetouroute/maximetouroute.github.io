@@ -76,7 +76,7 @@ export default function News({ data }) {
 
           {urls.map(url => (
             <>
-              <Link to={url}>{url}</Link>
+              <a href={url}>{url}</a>
               <br />
             </>
           ))}
