@@ -16,8 +16,8 @@
 <url> <loc>https://maximetouroute.github.io/sunrise</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://maximetouroute.github.io/true-pedestrian</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://maximetouroute.github.io/colorist</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://maximetouroute.github.io/photography</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://maximetouroute.github.io/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://maximetouroute.github.io/photography</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://maximetouroute.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://maximetouroute.github.io/news/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
