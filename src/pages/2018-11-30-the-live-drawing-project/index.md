@@ -5,7 +5,7 @@ title: The Live Drawing Project
 subtitle: Collaborative Artwork
 date: '2019-05-01'
 category: portfolio
-image: 'cover.jpg'
+image: '6.jpg'
 ---
 
 ## Description

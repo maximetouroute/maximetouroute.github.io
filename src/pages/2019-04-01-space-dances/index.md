@@ -5,7 +5,7 @@ title: Space Dances
 subtitle: Digital Arts
 date: '2020-01-01'
 category: portfolio
-image: 'cover.jpg'
+image: 'cover2.jpg'
 ---
 
 <iframe src="https://player.vimeo.com/video/388504943" frameborder="0" allowfullscreen width="1920" height="1080"></iframe>
