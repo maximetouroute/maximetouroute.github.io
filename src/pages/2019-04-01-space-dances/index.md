@@ -2,7 +2,7 @@
 path: /spacedances
 layout: post
 title: Space Dances
-subtitle: Digital Arts
+subtitle: Augmented Reality
 date: '2020-01-01'
 category: portfolio
 image: 'cover2.jpg'

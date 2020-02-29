@@ -1,8 +1,8 @@
 ---
 path: /livedrawing
 layout: post
-title: The Live Drawing Project
-subtitle: Collaborative Artwork
+title: Live Drawing Project
+subtitle: Collaborative Drawing
 date: '2019-05-01'
 category: portfolio
 image: '6.jpg'
@@ -11,7 +11,7 @@ image: '6.jpg'
 ## Description
 
 A digital arts project about experiencing the possibilities of collaborative and live drawing.
-More informations about it on the official website [The Live Drawing Project](//thelivedrawingproject.com).
+More informations about it on the official website [Live Drawing Project](//thelivedrawingproject.com).
 
 <photo-grid>
 <img src="b-3.jpg"/>

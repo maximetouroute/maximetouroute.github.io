@@ -59,6 +59,10 @@ Web apps, software, mobile apps... With my experience as a software engineer I d
 
 #### Distinctions, Awards, Exhibitions
 
+- Spraying Board (2020) - **Exhibition of live mapping installation [Spraying Board](https://sprayingboard.thedailyboard.co/)**
+- Copenhagen Light Festival (2020) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
+- Calgary Winter Lights Festival (2020) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
+- Lyon Young and Culture House (2020)- **Exhibition [Humanlapse](/humanlapseProject#content)**
 - Le Creusot Video Game Festival (2019) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
 - Lyon Young Film Festival (2019) - **Projection "Les étoiles du LYF" [Réalité](/realite#content)**
 - Citizen Global Film Festival (2019) - **Official Selection [Innocent Words](/innocentWords#content)**
