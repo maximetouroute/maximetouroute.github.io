@@ -17,7 +17,7 @@ module.exports = {
 
     /* to hide the icon, put an empty string instead of a link */
     socialLinks: {
-      twitter: '//twitter.com/Maxioki',
+      twitter: '//twitter.com/MaximeTouroute',
       facebook: '//facebook.com/maxime.touroute',
       github: '//github.com/maximetouroute',
       instagram: '//instagram.com/maximetouroute',

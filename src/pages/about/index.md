@@ -13,49 +13,27 @@ image: 'profile.jpg'
 <br/>
 <br/>
 
-### — I'm Maxime, an **engineer** specialised in **audiovisual arts**
+### — I'm Maxime, engineer specialised in **audiovisual arts**
 
-I've always been drawn by cinema, photography and arts. I'm well versed in film making from shooting to post-production. Being a full fledged software engineer I use these skills to design new creative experiences.
-I love to work on audiovisual and art projects where my creativity and rigor can be an asset.
+Passionate by cinema, photography and visual arts, I love to work on projects in which my creativity and technical skills can be an asset. I'm well versed in **film making** from shooting to post-production. Being a full fledged engineer I specialise on **audiovisual technologies and software development**. I'm not afraid to learn cutting-edge technologies to open up new creative possibilities.
 
-I'm always looking for new projects — if you would like to make something together, get in touch ! [maxime.touroute@gmail.com](mailto:maxime.touroute@gmail.com)
+I'm always open to new projects  
+— if you would like to make something together, get in touch ! [maxime.touroute@gmail.com](mailto:maxime.touroute@gmail.com)
 
 <br><br>
 
-## — What I do
-
-#### I make movies
-
-I direct short movies and I join movie crews as a camera operator, camera assistant, or sound engineer during shooting, as a colorist or sound mixer during post.
-
-#### I work on any kind of creative projects
-
-Cinema, photography, digital arts... If it's creative, I'm in for it !
-
-#### And I code
-
-Web apps, software, mobile apps... With my experience as a software engineer I design workflows to gain on productivity and I develop innovative solutions for art projects.
-
-<br/>
-<br/>
-
 # Overview of my work
-
-#### As a film maker
-
-- [Short Movie "Indice 50"](/indice50#content)
-- [Short movie "Réalité"](/realite#content)
-- [Short movie "Innocent Words"](/innocentWords#content)
-- [Experimental Video "Rainy Day"](/rainyday#content)
-- [Promotional clip "Astrakan Café"](/badhinjan-trio#content)
-
-#### Other projects
 
 - [The Live Drawing Project](/livedrawing#content)
 - [Humanlapse](/humanlapseProject#content)
 - [Space Dances](/spacedances#content)
+- [Short Movie "Indice 50"](/indice50#content)
+- [Short movie "Réalité"](/realite#content)
+- [Short movie "Innocent Words"](/innocentWords#content)
+- [Experimental Video "Rainy Day"](/rainyday#content)
+- [Music Video "Astrakan Café"](/badhinjan-trio#content)
 - [Photography works](/photography)
-- [Colorist works](/colorist)
+- [Color Grading works](/colorist)
 
 #### Distinctions, Awards, Exhibitions
 
@@ -90,7 +68,6 @@ _Ongoing_
 - Film maker of 360° dance videos for Augmented Reality
 - Design and development of an automated rotoscoping process for body extraction using computer vision algorithms and artificial intelligence approaches
 - Conception of a computer-less and mobile render farm to turn any computer available into a render machine in a few minutes
-- In residency at the [Subsistances](//www.les-subs.com/)
 
 #### Software Engineer in Digital Arts
 
@@ -103,11 +80,11 @@ _Ongoing_
 #### Others
 
 - Short jobs on art projects & art shows as a developer, adviser or film maker
-- Deep dedication in joining all kind of movie shootings as cinematographer, sound engineer, colorist or crew assistant
+- Deep dedication in joining movie shootings for professional and also indie projects
 - Film maker for cultural and corporate events
 - Conception and crafting of scenographies for art exhibitions
-- Conference speaker and workshops in visual arts
-- Web designer
+- Talks and workshops on visual arts
+- Web design & SEO
 
 <br/>
 <br/>
@@ -120,7 +97,7 @@ _Web series by Carole Siret - 5'_
 Role: **Cinematographer**  
 Shot with Nikon DSLR
 
-#### [Harmonie des sphères](/harmoniedesspheres) (2017-2019)
+#### [Harmonie des sphères](/harmoniedesspheres) (2019)
 
 _Short movie by Vincent Montalieu - 20'_  
 Role: **Cinematographer**  

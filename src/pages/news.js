@@ -50,6 +50,8 @@ export default function News({ data }) {
       return ''
     })
 
+    console.log(event.description)
+
     const formattedDescription = (
       <>
         {descWithNoUrls.split(/BR/g).map(part => {
@@ -73,10 +75,17 @@ export default function News({ data }) {
         {event.location && <div>Location: {event.location}</div>}
         <p>
           {formattedDescription}
-
           {urls.map(url => (
             <>
-              <a href={url}>{url}</a>
+              <div
+                style={{
+                  display: 'inline-block',
+                  maxWidth: '90vw',
+                  overflowWrap: 'break-word',
+                }}
+              >
+                <a href={url}>{url}</a>
+              </div>
               <br />
             </>
           ))}

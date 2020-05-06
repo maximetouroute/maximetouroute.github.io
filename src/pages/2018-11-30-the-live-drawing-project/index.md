@@ -14,11 +14,12 @@ A digital arts project about experiencing the possibilities of collaborative and
 More informations about it on the official website [Live Drawing Project](//thelivedrawingproject.com).
 
 <photo-grid>
-<img src="b-3.jpg"/>
-<img src="b-2-2.jpg"/>
-<img src="6.jpg"/>
+<img src="26v_2_webw.jpg"/>
 <img src="web-6.jpg"/>
 <img src="web-11.jpg"/>
 <img src="web-21.jpg"/>
+<img src="web-14.jpg"/>
+<img src="SprayingBoard_7.jpg"/>
 <img src="web-23.jpg"/>
+<img src="6.jpg"/>
 </photo-grid>

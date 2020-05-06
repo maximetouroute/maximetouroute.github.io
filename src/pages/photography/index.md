@@ -35,8 +35,6 @@ A series of experiments on the usage of lighting and photography techniques
 <img src="portraits/b-18.jpg"/>
 <img src="portraits/b-21.jpg"/>
 <img src="portraits/ju2.jpg"/>
-<img src="portraits/b-20.jpg"/>
-<img src="portraits/b-24.jpg"/>
 <img src="portraits/ju1.jpg"/>
 </photo-grid>
 
@@ -44,14 +42,11 @@ A series of experiments on the usage of lighting and photography techniques
 
 <photo-grid>
 <img src="landscapes/b-34.jpg"/>
-<img src="landscapes/b-27.jpg"/>
 <img src="landscapes/b-39.jpg"/>
-<img src="landscapes/b-33.jpg"/>
 <img src="landscapes/b-37.jpg"/>
 <img src="landscapes/b-40.jpg"/>
 <img src="landscapes/b-46.jpg"/>
 <img src="landscapes/b-38.jpg"/>
-<img src="landscapes/b-35.jpg"/>
 </photo-grid>
 
 # Architecture
@@ -60,11 +55,11 @@ A series of experiments on the usage of lighting and photography techniques
 
 <photo-grid>
 <img src="architecture/a0.jpg"/>
-<img src="architecture/a1.jpg"/>
 <img src="architecture/a2.jpg"/>
 <img src="architecture/b0.jpg"/>
 <img src="architecture/b1.jpg"/>
 <img src="architecture/b2.jpg"/>
+<img src="architecture/b3.jpg"/>
 </photo-grid>
 
 # Dailies

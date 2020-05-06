@@ -4,7 +4,7 @@ layout: post
 title: 'Echos'
 subtitle: 24h short movie
 date: '2017-10-09'
-category: portfolio
+category: hidden
 image: 'post_echos.jpg'
 ---
 

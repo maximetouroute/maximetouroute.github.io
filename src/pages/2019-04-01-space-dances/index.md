@@ -22,4 +22,8 @@ image: 'cover2.jpg'
 
 #### Role
 
-Visual Arts Engineer
+- Film maker of 360° dance videos for Augmented Reality. Stage Light Design
+- Design and development of an automated rotoscoping process for body extraction using computer vision algorithms and artificial intelligence approaches
+- Conception of a computer-less and mobile render farm to turn any computer available into a render machine in a few minutes
+- Development of Augmented Reality post production workflows
+- Research on transparent video playback and real-time color grading for mobile devices

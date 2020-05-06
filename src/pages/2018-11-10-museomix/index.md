@@ -4,7 +4,7 @@ layout: post
 title: Dans les deux sens
 subtitle: Museum Installation
 date: '2018-08-10'
-category: portfolio
+category: hidden
 image: 'p-10.jpg'
 ---
 

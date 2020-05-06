@@ -49,7 +49,6 @@ The frames are fully autonomous. They turn on in the morning and turn off in the
 The frames are fixed on poles and disposed in an open area so visitors can walk around each humanlapse as they would for a photo exhibition.
 
 <photo-grid>
-<img src="VDL-logo.jpg" />
 <img src="b-2.jpg" />
 <img src="b-5.jpg" />
 <img src="b-11.jpg" />
