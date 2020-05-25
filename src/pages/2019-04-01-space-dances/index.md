@@ -16,7 +16,7 @@ image: 'cover2.jpg'
 
 **Space Dances** is an ambitious project of digital arts and dance using state of the art technologies in augmented reality, filming techniques and post production.
 
-[Main website for this project](//natachapaquignon.fr/?page_id=971#dossiers)
+[Main website for this project](//natachapaquignon.com)
 
 [Facebook Page](//www.facebook.com/SpaceDances/)
 
