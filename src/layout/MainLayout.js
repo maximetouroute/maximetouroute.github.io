@@ -4,7 +4,15 @@ import Footer from '../bits/Footer/Footer'
 import { Navbar } from '../bits/Navbar/Navbar'
 import './MainLayout.scss'
 import MobileAppBar from './../bits/Navbar/MobileAppBar'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#3568cf',
+    },
+  },
+})
 const navbarLinks = [
   { path: '/', name: 'WORK' },
   { path: '/news', name: 'NEWS' },
@@ -12,7 +20,7 @@ const navbarLinks = [
 ]
 const navbarTitle = 'MAXIME TOUROUTE'
 const MainLayout = ({ children }) => (
-  <>
+  <ThemeProvider theme={theme}>
     <div className="CssGridNavContentFooter">
       <div className="AppBar">
         <MobileAppBar title={navbarTitle} />
@@ -25,7 +33,7 @@ const MainLayout = ({ children }) => (
         <Footer />
       </div>
     </div>
-  </>
+  </ThemeProvider>
 )
 
 MainLayout.propTypes = {

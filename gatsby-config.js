@@ -92,7 +92,7 @@ module.exports = {
         short_name: `Maxime Portfolio`,
         start_url: `/`,
         background_color: `#d6d0cd`,
-        theme_color: `#363636`,
+        theme_color: `#3568cf`,
         display: `minimal-ui`,
         icon: `src/res/favicon.png`, // This path is relative to the root of the site.
       },
