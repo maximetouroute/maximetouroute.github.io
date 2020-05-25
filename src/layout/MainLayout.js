@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Footer from '../bits/Footer/Footer'
 import { Navbar } from '../bits/Navbar/Navbar'
 import './MainLayout.scss'
+import MobileAppBar from './../bits/Navbar/MobileAppBar'
 
 const navbarLinks = [
   { path: '/', name: 'WORK' },
@@ -13,6 +14,9 @@ const navbarTitle = 'MAXIME TOUROUTE'
 const MainLayout = ({ children }) => (
   <>
     <div className="CssGridNavContentFooter">
+      <div className="AppBar">
+        <MobileAppBar title={navbarTitle} />
+      </div>
       <nav className="gridNavBar">
         <Navbar title={navbarTitle} links={navbarLinks} />
       </nav>
