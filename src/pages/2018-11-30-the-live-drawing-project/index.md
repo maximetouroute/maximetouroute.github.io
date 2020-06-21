@@ -3,9 +3,9 @@ path: /livedrawing
 layout: post
 title: Live Drawing Project
 subtitle: Collaborative Drawing
-date: '2019-05-01'
+date: '2020-01-01'
 category: portfolio
-image: '6.jpg'
+image: 'b.jpg'
 ---
 
 ## Description
@@ -21,5 +21,6 @@ More informations about it on the official website [Live Drawing Project](//thel
 <img src="web-14.jpg"/>
 <img src="SprayingBoard_7.jpg"/>
 <img src="web-23.jpg"/>
+<img src="b.jpg"/>
 <img src="6.jpg"/>
 </photo-grid>
