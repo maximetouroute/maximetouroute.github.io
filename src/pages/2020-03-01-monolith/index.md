@@ -2,7 +2,7 @@
 path: /monolith
 layout: post
 title: Monolith
-subtitle: Interactive Live Set
+subtitle: Interactive Music Set
 date: '2020-01-01'
 category: portfolio
 image: 'cover.jpg'
