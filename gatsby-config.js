@@ -38,15 +38,6 @@ module.exports = {
         icon: true,
       },
     },
-
-    {
-      resolve: `gatsby-source-ical`,
-      options: {
-        name: `events`,
-        url: `https://calendar.google.com/calendar/ical/rod4537o03duvj8s8sdrfd221o%40group.calendar.google.com/public/basic.ics`,
-      },
-    },
-
     'gatsby-plugin-offline',
     `gatsby-plugin-catch-links`,
 
