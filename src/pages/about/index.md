@@ -15,42 +15,37 @@ image: 'profile.jpg'
 
 ### — I'm Maxime, engineer specialised in **audiovisual arts**
 
-Passionate by cinema, photography and visual arts, I love to work on projects in which my creativity and technical skills can be an asset. I'm well versed in **film making** from shooting to post-production. Being a full fledged engineer I specialise on **audiovisual technologies and software development**. I'm not afraid to learn cutting-edge technologies to open up new creative possibilities.
+Passionate by cinema, photography and digital arts, I love to work on projects in which my creativity and technical skills can be an asset. I'm well versed in **film making** from shooting to post-production. Being a full fledged engineer I specialise on **audiovisual technologies and software development**. I'm not afraid to learn cutting-edge technologies to open up new creative possibilities.
 
-I'm always open to new projects  
-— if you would like to make something together, get in touch ! [maxime.touroute@gmail.com](mailto:maxime.touroute@gmail.com)
+Currently open to new projects  
+— if you would like to make something together, get in touch at [maxime.touroute@gmail.com](mailto:maxime.touroute@gmail.com)
 
 <br><br>
 
-# Overview of my work
-
-- [The Live Drawing Project](/livedrawing#content)
-- [Humanlapse](/humanlapseProject#content)
-- [Space Dances](/spacedances#content)
-- [Short Movie "Indice 50"](/indice50#content)
-- [Short movie "Réalité"](/realite#content)
-- [Short movie "Innocent Words"](/innocentWords#content)
-- [Experimental Video "Rainy Day"](/rainyday#content)
-- [Music Video "Astrakan Café"](/badhinjan-trio#content)
-- [Photography works](/photography)
-- [Color Grading works](/colorist)
+- [Work Showcase](/)
+- [Photography](/photography)
+- [Color Grading](/colorist)
 
 #### Distinctions, Awards, Exhibitions
 
-- Spraying Board (2020) - **Exhibition of live mapping installation [Spraying Board](https://sprayingboard.thedailyboard.co/)**
-- Copenhagen Light Festival (2020) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
+- "Pepite des Pépites" award for [Draw From The Window](/drawfromthewindow#content) (2020) - **Delivered by [Pepite France](https://www.pepite-france.fr/)**
+- [Space Dances](/spacedances#content) for European Heritage Days (2020)
+- Culture Night Ireland (2020) - **Cross-country Interactive Projection between Dublin and Paris [The Live Drawing Project](/livedrawing#content)**
+- [Draw From The Window](/drawfromthewindow#content) (2020) - **Nationwide Interactive Projection during France lockdown**
+- [Spraying Board](https://sprayingboard.thedailyboard.co/) (2020) - **Interactive Projection [The Live Drawing Project](/livedrawing#content)**
+- Copenhagen Light Festival (2020) - **Performance [The Live Drawing Project](/livedrawing#content)**
 - Calgary Winter Lights Festival (2020) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
 - Lyon Young and Culture House (2020)- **Exhibition [Humanlapse](/humanlapseProject#content)**
-- Le Creusot Video Game Festival (2019) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
-- Lyon Young Film Festival (2019) - **Projection "Les étoiles du LYF" [Réalité](/realite#content)**
+- Le Creusot Video Game Festival (2019) - **Interactive Projection [The Live Drawing Project](/livedrawing#content)**
+- Lyon Young Film Festival (2019) - **Film Projection "Les étoiles du LYF" [Réalité](/realite#content)**
 - Citizen Global Film Festival (2019) - **Official Selection [Innocent Words](/innocentWords#content)**
-- Chevagny Art Festival (2019) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
+- Chevagny Art Festival (2019) - **Performance [The Live Drawing Project](/livedrawing#content)**
 - Toï Toï Le Zinc (2019) - **Exhibition [Humanlapse](/humanlapseProject#content)**
-- Festi Lumi Light Festival (2019) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
+- Festi Lumi Light Festival (2019) - **Performance [The Live Drawing Project](/livedrawing#content)**
 - Red Cross and Health Film Festival (2019) - **Short Movie Selection [Réalité](/realite#content)**
-- Peinture Fraiche Street Art Festival (2019) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
+- Peinture Fraiche Street Art Festival (2019) - **Interactive Projection [The Live Drawing Project](/livedrawing#content)**
 - Comete Film Festival (2019) - **Official Selection [Réalité](/realite#content)**
-- Lyon Light Festival (off) (2018) - **Exhibition [The Live Drawing Project](/livedrawing#content)**
+- Lyon Light Festival (off) (2018) - **Interactive Projection [The Live Drawing Project](/livedrawing#content)**
 - Lyon City Hall (2019) - **Exhibition [Humanlapse](/humanlapseProject#content)**
 - Mobile Film Festival (2018) - **Official Selection [Innocent Words](/innocentWords#content)**
 - Lyon Young Film Festival (2018) - **Official Selection [Réalité](/realite#content)**
@@ -65,9 +60,11 @@ I'm always open to new projects
 
 _Ongoing_
 
-- Film maker of 360° dance videos for Augmented Reality
-- Design and development of an automated rotoscoping process for body extraction using computer vision algorithms and artificial intelligence approaches
-- Conception of a computer-less and mobile render farm to turn any computer available into a render machine in a few minutes
+- Augmented Reality Film maker, exploration of new film formats (360°, multi-planar, ultra-wide, 3D...)
+- Development of Augmented Reality post production workflows
+- Design and development of Artificial Intelligence rotoscoping to detour bodies without green screens
+- Development of video encoding with transparency and real-time color grading/VFX for mobile devices
+- Implementation of tools to create render farms on the go with any computer available
 
 #### Software Engineer in Digital Arts
 
@@ -89,81 +86,97 @@ _Ongoing_
 <br/>
 <br/>
 
-# Filmography (Tech Crew)
+# Filmography
 
-#### L'héritage, Ep 1. (2019) (post-production)
+#### AR Dance Films (2019 - 2020)
 
-_Web series by Carole Siret - 5'_  
-Role: **Cinematographer**  
-Shot with Nikon DSLR
+Film Maker of Augmented Reality Films (Pre, Shoot and Post).  
+Production: [Space Dances](/spacedances)
+
+- CCO La Soie, Villeurbanne (2020)  
+  Ultra-wide films with 8:1 ratio using multicam panorama merging techniques.  
+  Projected in AR on a ~16meters screen.
+
+- Subsistances, Lyon (2019-2020)  
+  Multi-planar and 360° formats distributed in a wide outdoor space.
+
+- Scène Nationale d'Aubusson (2019)  
+  360° formats on the National Theater outdoor entrance.
+
+- CCO La Soie, Villeurbanne (2019)  
+  3-layer-depth dances inside a corridor.
+
+#### [Indice 50](/indice50#content) (2019)
+
+_Short movie co-directed with Vincent Montalieu - 4'_  
+Role: **Cinematographer**
 
 #### [Harmonie des sphères](/harmoniedesspheres) (2019)
 
 _Short movie by Vincent Montalieu - 20'_  
-Role: **Cinematographer**  
-Shot with Lumix GH2
+Role: **Cinematographer**
 
-#### Franchement, ça se mange (2019)
+#### [Innocent Words](/innocentWords#content) (2018)
 
-_Short movie by Bertille Garraud - 3'_  
-Role: **Colorist**  
-Shot with Lumix GH5
+_Short movie - 1'_  
+Official Selection Mobile Film Festival  
+Role: **Director**
 
-#### Ouno (2019)
+#### [Réalité](/realite#content) (2018)
 
-_Short movie by Alex Boulin - 3'_  
-Role: **Cinematographer**  
-Shot with Nikon DSLR  
-3rd public prize, Kino Lyon
+_Short movie - 3'_  
+Official Selections  
+Role: **Director**
 
-#### L'obsession du lac (2019)
+_Tech Crew - Indie films_
 
-_Short movie by Bertille Garraud - 3'_  
-Role: **Colorist**  
-Shot with Lumix GH5
+- L'héritage, Ep 1. (2019)  
+  _Web series by Carole Siret - 5'_  
+  Role: **Cinematographer**
 
-#### La Cible (2019)
+- Franchement, ça se mange (2019)  
+  _Short movie by Bertille Garraud - 3'_  
+  Role: **Colorist**
 
-_Short movie by Alex Boulin - 3'_  
-Role: **Camera, Colorist**  
-Shot with Canon DSLR and Sony Alpha series  
-3rd public prize, Kino Lyon
+- Ouno (2019)  
+  _Short movie by Alex Boulin - 3'_  
+  Role: **Cinematographer**  
+  3rd public prize, Kino Lyon
 
-#### Esteban (2019)
+- L'obsession du lac (2019)  
+  _Short movie by Bertille Garraud - 3'_  
+  Role: **Colorist**
 
-_Short movie by Sebastien Jimenez - 10'_  
-_Cinematography by Pierre Chamming_  
-Role: **1st Assistant Camera**
+- La Cible (2019)  
+  _Short movie by Alex Boulin - 3'_  
+  Role: **Camera, Colorist**  
+  3rd public prize, Kino Lyon
 
-#### Toc Toc (2018) (post-production)
+- Esteban (2019)  
+  _Short movie by Sebastien Jimenez - 10'_  
+  _Cinematography by Pierre Chamming_  
+  Role: **1st Assistant Camera**
 
-_Short movie by Nicolas Sintes and Vincent Montalieu_  
-Role: **Cinematographer**  
-Shot with Lumix GH2
+- Toc Toc (2018)  
+  _Short movie by Nicolas Sintes and Vincent Montalieu_  
+  Role: **Cinematographer**
 
-#### Petit poucet (2018)
+- Petit poucet (2018)  
+  _24h short movie co-directed with Steve Houeto and Gaelle Costa Ellias_  
+  Role: **Co-director**
 
-_24h short movie co-directed with Steve Houeto and Gaelle Costa Ellias_  
-Role: **Co-director**  
-Shot with Blackmagic Cinema Camera
+- Eva (2018)  
+  _Short movie by Julien Gasparoux - 4'_  
+  Role: **Colorist**
 
-#### Eva (2018)
+- Quand le loup n’y est pas (2018)  
+  _Short movie by Josephine Santraille - 20'_  
+  Role: **Sound engineer**
 
-_Short movie by Julien Gasparoux - 4'_  
-Role: **Colorist**  
-Shot with Sony Alpha series
-
-#### Quand le loup n’y est pas (2018)
-
-_Short movie by Josephine Santraille - 20'_  
-Role: **Sound engineer**  
-Shot with Lumix GH5
-
-#### Yllib (2017) (post-production)
-
-_Feature by Cecile Briffoz_  
-_Cinematography by Philippe Brelot_  
-Role: **Sound assistant**
+* Yllib (2017)  
+  _Feature by Cecile Briffoz_  
+  _Cinematography by Philippe Brelot_  
+  Role: **Sound assistant**
 
 # Studies
 

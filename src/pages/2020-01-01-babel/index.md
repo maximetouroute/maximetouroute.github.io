@@ -2,7 +2,7 @@
 path: /babel
 layout: post
 title: Babel
-subtitle: Collaborative Video Game
+subtitle: Multiplayer Videoprojected Game
 date: '2019-11-01'
 category: portfolio
 image: 'b-4.jpg'

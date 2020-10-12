@@ -14,7 +14,7 @@ image: 'cover2.jpg'
 
 ## Description
 
-**Space Dances** is an ambitious project of digital arts and dance using state of the art technologies in augmented reality, filming techniques and post production.
+**Space Dances** is a project exploring dance in Augmented/Mixed Reality using state of the art technologies and filming techniques.
 
 [Main website for this project](//natachapaquignon.com)
 
@@ -22,8 +22,8 @@ image: 'cover2.jpg'
 
 #### Role
 
-- Film maker of 360° dance videos for Augmented Reality. Stage Light Design
-- Design and development of an automated rotoscoping process for body extraction using computer vision algorithms and artificial intelligence approaches
-- Conception of a computer-less and mobile render farm to turn any computer available into a render machine in a few minutes
+- Augmented Reality Film maker, exploration of new film formats (360°, multi-planar, ultra-wide, 3D...)
 - Development of Augmented Reality post production workflows
-- Research on transparent video playback and real-time color grading for mobile devices
+- Design and development of Artificial Intelligence rotoscoping to detour bodies without green screens
+- Development of video encoding with transparency and real-time color grading/VFX for mobile devices
+- Implementation of tools to create render farms on the go with any computer available

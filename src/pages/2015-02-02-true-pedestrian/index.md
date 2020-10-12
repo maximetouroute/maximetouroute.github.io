@@ -4,7 +4,7 @@ layout: post
 title: True Pedestrian
 subtitle: Spoof Trailer
 date: '2015-12-07'
-category: portfolio
+category: hidden
 image: 'post_truePedestrian.jpg'
 ---
 

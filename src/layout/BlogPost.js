@@ -50,9 +50,6 @@ export default function Template({ data, pageContext }) {
             <p>
               <strong>{post.frontmatter.subtitle} </strong>
             </p>
-            <p>
-              <em>{new Date(post.frontmatter.date).getFullYear()}</em>
-            </p>
           </h2>
         </div>
       </div>

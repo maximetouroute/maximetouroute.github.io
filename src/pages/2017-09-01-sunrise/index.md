@@ -4,7 +4,7 @@ layout: post
 title: 'Sunrise'
 subtitle: Movie clip
 date: '2017-09-01'
-category: portfolio
+category: hidden
 image: 'post_sunrise.jpg'
 ---
 

@@ -4,7 +4,7 @@ layout: post
 title: 'Veronika'
 subtitle: Short documentary
 date: '2018-11-03'
-category: portfolio
+category: hidden
 image: 'screen1.png'
 ---
 

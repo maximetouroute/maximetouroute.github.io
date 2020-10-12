@@ -14,5 +14,5 @@ image: 'post_badhinjan.jpg'
 
 ## Description
 
-Promotional video for the **[Badhinjan Trio](https://www.facebook.com/BadhinjanTrio/)** to give a good glimpse at their musical style, singularity, and talent.
-It is aimed to help the band showcase their work on social networks and to concert halls.
+Promotional video for the **[Badhinjan Trio](https://www.facebook.com/BadhinjanTrio/)** to give a good glimpse at their musical style, singularity, and talent.  
+Production: 2017
