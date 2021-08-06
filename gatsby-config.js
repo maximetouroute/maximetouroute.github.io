@@ -1,42 +1,77 @@
+const siteManifest = require('./siteManifest');
+
 module.exports = {
   siteMetadata: {
-    siteName: `Maxime Touroute Portfolio`,
-    title: `Maxime's Portfolio`,
-    author: 'Maxime Touroute',
-    authorMail: 'maxime.touroute@gmail.com',
-    titleTemplate: '%s · Maxime Touroute',
-    description:
-      'Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Cinematography, Photography, Digital Arts, Software Engineering. ',
-    url: 'https://maximetouroute.github.io', // No trailing slash allowed!
-    siteUrl: 'https://maximetouroute.github.io', // for robots plugin
-    // Those must be in the res folder
-    favicon: '/res/favicon.png', // Little icon on your browser tab, expected PNG
-    thumbImage: '/res/thumbImage.jpg', // Image shown on embed link previews, expected JPG
-    keywords:
-      'cinematography, photography, digital arts, maxime touroute, portfolio, visual arts', // separated by comas
-
+    siteName: siteManifest.name,
+    title: siteManifest.title,
+    author: siteManifest.author,
+    authorMail: siteManifest.authorMail,
+    titleTemplate: siteManifest.titleTemplate,
+    description: siteManifest.description,
+    siteUrl: siteManifest.url,
+    url: siteManifest.url,
+    favicon: '/favicon.ico',
+    image: '/image.jpg', // Path to your image you placed in the 'static' folder
+    keywords: siteManifest.keywords,
     /* to hide the icon, put an empty string instead of a link */
     socialLinks: {
-      twitter: '//twitter.com/MaximeTouroute',
-      facebook: '//facebook.com/maxime.touroute',
-      github: '//github.com/maximetouroute',
-      instagram: '//instagram.com/maximetouroute',
-      vimeo: '//vimeo.com/maximetouroute',
-      youtube: '',
-      soundcloud: '',
+      twitter: siteManifest.socialLinks.twitter,
+      facebook: siteManifest.socialLinks.facebook,
+      github: siteManifest.socialLinks.github,
+      instagram: siteManifest.socialLinks.instagram,
+      vimeo: siteManifest.socialLinks.vimeo,
+      youtube: siteManifest.socialLinks.youtube,
+      soundcloud: siteManifest.socialLinks.soundcloud,
     },
   },
 
   plugins: [
+    `gatsby-plugin-image`,
     {
-      resolve: 'gatsby-plugin-material-ui',
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          quality: 70,
+          formats: ['auto', 'webp', 'avif'],
+          placeholder: 'blurred',
+        },
+      },
     },
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`],
+        gatsbyRemarkPlugins: [
+          `gatsby-transformer-sharp`,
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin: 0`,
+            },
+          },
+
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1920,
+            },
+          },
+        ], // just in case those previously mentioned remark plugins sound cool :)
+        // defaultLayouts: {
+        //   default: null,//require.resolve("./src/layout/MdxBasic.js"),
+        // },
+      },
+    },
+
     {
       resolve: 'gatsby-plugin-react-helmet',
-
-      options: {
-        icon: true,
-      },
     },
     'gatsby-plugin-offline',
     `gatsby-plugin-catch-links`,
@@ -49,44 +84,43 @@ module.exports = {
         name: 'pages',
       },
     },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 1920,
-              quality: 85,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin: 0`,
-            },
-          },
+    // {
+    //   resolve: 'gatsby-transformer-remark',
+    //   options: {
+    //     plugins: [
+    //       {
+    //         resolve: `gatsby-remark-images`,
+    //         options: {
+    //           // It's important to specify the maxWidth (in pixels) of
+    //           // the content container as this plugin uses this as the
+    //           // base for generating different widths of each image.
+    //           maxWidth: 1920,
+    //         },
+    //       },
+    //       {
+    //         resolve: `gatsby-remark-responsive-iframe`,
+    //         options: {
+    //           wrapperStyle: `margin: 0`,
+    //         },
+    //       },
 
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-          },
-        ], // just in case those previously mentioned remark plugins sound cool :)
-      },
-    },
+    //       {
+    //         resolve: 'gatsby-remark-copy-linked-files',
+    //       },
+    //     ], // just in case those previously mentioned remark plugins sound cool :)
+    //   },
+    // },
 
     `gatsby-plugin-sharp`, // For res processing
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Maxime Touroute Portfolio`,
-        short_name: `Maxime Portfolio`,
+        name: siteManifest.pwa.name,
+        short_name: siteManifest.pwa.short_name,
         start_url: `/`,
-        background_color: `#d6d0cd`,
-        theme_color: `#3568cf`,
+        background_color: siteManifest.pwa.background_color,
+        theme_color: siteManifest.pwa.theme_color,
         display: `minimal-ui`,
         icon: `src/res/favicon.png`, // This path is relative to the root of the site.
       },
@@ -95,8 +129,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://maximetouroute.github.io',
-        sitemap: 'https://maximetouroute.github.io/sitemap.xml',
+        host: siteManifest.robots.host,
+        sitemap: siteManifest.robots.sitemap,
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
@@ -107,10 +141,12 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#3568cf`,
+        color: siteManifest.spin.color,
         // Disable the loading spinner.
         showSpinner: false,
       },
     },
+
+    `gatsby-plugin-emotion`,
   ],
-}
+};

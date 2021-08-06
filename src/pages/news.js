@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
-import MetaTags from '../bits/MetaTags/MetaTags'
+import SEO from '../bits/SEO/SEO'
 import './../layout/Layouts.scss'
 import './news.scss'
 
@@ -294,7 +294,7 @@ export default function News({ data }) {
   }
   return (
     <MainLayout>
-      <MetaTags title={'News'} />
+      <SEO title={'News'} />
       <div className="Page">
         <article className="card article">
           <br />

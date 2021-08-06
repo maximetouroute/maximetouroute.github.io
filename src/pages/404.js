@@ -1,8 +1,9 @@
 import React from 'react'
 import MainLayout from '../layout/MainLayout'
 
-const NotFoundPage = () => (
-  <MainLayout>
+export default function NotFoundPage({ data, pageContext: { langCode } }) {
+  return (
+  <MainLayout language={langCode}>
     <div
       style={{
         display: 'flex',
@@ -16,6 +17,6 @@ const NotFoundPage = () => (
       <p>You just hit a route that doesn&#39;t exist...</p>
     </div>
   </MainLayout>
-)
+);
 
-export default NotFoundPage
+    }

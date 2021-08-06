@@ -1,18 +1,21 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
-import MetaTags from '../bits/MetaTags/MetaTags'
-import PostGrid from '../bits/PostGrid/PostGrid'
+import SEO from '../bits/SEO/SEO'
+import PostGrid from '../bits/PostGridFlat/PostGridFlat'
 import './index.scss'
 
-export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark
-
+export default function Index({ data, pageContext: { langCode }, location }) {
+  // const LOCAL = indexPageStrings[langCode];
+  const posts = data.allMdx.edges;
+  const postsInMyLang =  posts.filter((post) => post.node.frontmatter.language === langCode);
+  
   return (
-    <MainLayout>
-      <MetaTags title={'Home'} />
+    <MainLayout language={langCode} location={{ ...location }}>
+      <SEO title={'Home'} langCode={langCode}/>
       <div className="home">
-        <PostGrid posts={posts}></PostGrid>
+
+        <PostGrid posts={postsInMyLang}></PostGrid>
         <div className="moreProjects">
           <Link to="/about">About me</Link>
         </div>
@@ -23,7 +26,7 @@ export default function Index({ data }) {
 
 export const portfolioPostsQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
+    allMdx(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { category: { eq: "portfolio" } } }
     ) {
@@ -37,15 +40,10 @@ export const portfolioPostsQuery = graphql`
             path
             category
             subtitle
+            language
             image {
               childImageSharp {
-                # Other options include height (set both width and height to crop),
-                # grayscale, duotone, rotate, etc.
-                fixed(width: 700) {
-                  # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-                  ...GatsbyImageSharpFixed
-                  src
-                }
+                gatsbyImageData(height: 500, placeholder: BLURRED)
               }
             }
           }
