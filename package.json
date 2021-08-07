@@ -40,6 +40,7 @@
     "gatsby-link": "^3.10.0",
     "gatsby-plugin-catch-links": "^3.10.0",
     "gatsby-plugin-emotion": "^6.10.0",
+    "gatsby-plugin-extract-image-colors": "0.0.14",
     "gatsby-plugin-image": "^1.10.1",
     "gatsby-plugin-manifest": "^3.10.0",
     "gatsby-plugin-material-ui": "^3.0.1",

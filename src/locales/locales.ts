@@ -1,12 +1,12 @@
-export type LangCode = 'en' | 'fr';
+export type LangCode = 'en' | 'fr'
 
 export interface LangSettings {
-  urlPrefix: string;
-  humanName: string;
-  default?: boolean;
+  urlPrefix: string
+  humanName: string
+  default?: boolean
 }
 
-export const defaultLang: LangCode = 'en';
+export const defaultLang: LangCode = 'en'
 
 export const supportedLangs: Record<LangCode, LangSettings> = {
   ['en']: {
@@ -17,4 +17,4 @@ export const supportedLangs: Record<LangCode, LangSettings> = {
     urlPrefix: 'fr',
     humanName: 'Français',
   },
-};
+}

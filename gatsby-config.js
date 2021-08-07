@@ -1,4 +1,4 @@
-const siteManifest = require('./siteManifest');
+const siteManifest = require('./siteManifest')
 
 module.exports = {
   siteMetadata: {
@@ -27,6 +27,7 @@ module.exports = {
 
   plugins: [
     `gatsby-plugin-image`,
+    'gatsby-plugin-extract-image-colors',
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -149,4 +150,4 @@ module.exports = {
 
     `gatsby-plugin-emotion`,
   ],
-};
+}

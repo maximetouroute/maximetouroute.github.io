@@ -12,14 +12,14 @@ module.exports = {
   url: 'https://maximetouroute.github.io',
   // separated by comas
   keywords:
-  'cinematography, photography, digital arts, maxime touroute, portfolio, visual arts, paris, lyon, french artist',
+    'cinematography, photography, digital arts, maxime touroute, portfolio, visual arts, paris, lyon, french artist',
 
   socialLinks: {
     twitter: '//twitter.com/MaximeTouroute',
-    facebook:  '//facebook.com/maxime.touroute',
+    facebook: '//facebook.com/maxime.touroute',
     github: '//github.com/maximetouroute',
     instagram: '//instagram.com/maximetouroute',
-    vimeo:  '//vimeo.com/maximetouroute',
+    vimeo: '//vimeo.com/maximetouroute',
     youtube: '',
     soundcloud: '',
   },
@@ -28,15 +28,15 @@ module.exports = {
     name: `Maxime Touroute Portfolio`,
     short_name: `Maxime's Portfolio`,
     background_color: `#d6d0cd`,
-    theme_color: `#3568cf`,
+    theme_color: `#800f2f`,
   },
 
   spin: {
-    color: `#3568cf`,
+    color: `#800f2f`,
   },
 
   robots: {
     host: 'https://maximetouroute.github.io',
-    sitemap:  'https://maximetouroute.github.io/sitemap.xml',
+    sitemap: 'https://maximetouroute.github.io/sitemap.xml',
   },
-};
+}

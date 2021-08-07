@@ -37,7 +37,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
@@ -45,13 +45,13 @@ exports.createPages = ({ actions, graphql }) => {
     // Actually creating the page
     const allPages = result.data.allMarkdownRemark.edges
     const pages = allPages.filter(
-      edge => edge.node.frontmatter.layout === pageLayouts.page
+      (edge) => edge.node.frontmatter.layout === pageLayouts.page
     )
     const posts = allPages.filter(
-      edge => edge.node.frontmatter.layout === pageLayouts.post
+      (edge) => edge.node.frontmatter.layout === pageLayouts.post
     )
     const others = allPages.filter(
-      edge =>
+      (edge) =>
         edge.node.frontmatter.layout !== pageLayouts.post &&
         edge.node.frontmatter.layout !== pageLayouts.page
     )
