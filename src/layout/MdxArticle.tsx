@@ -36,35 +36,34 @@ const nextPrevLinkInsideCoverCSS: CSSObject = {
       // padding: 0.2em;
     },
   },
-};
+}
 
 const nextPrevLinkCSS = (theme: Theme): CSSObject => {
   return {
-  marginTop: '4rem',
-  display: 'flex',
-  flexWrap: 'wrap',
-  //filter: grayscale(1);
+    marginTop: '4rem',
+    display: 'flex',
+    flexWrap: 'wrap',
+    //filter: grayscale(1);
 
-  justifyContent: 'space-around',
-  [breakpointKey('small')]: {
-    // better style in case it takes two lines
     justifyContent: 'space-around',
-    marginTop: '2em',
-  },
-
-  a: {
-    ...themedACSS('#ffffff'),
-    color: 'white',
-    padding: '0.75em',
-    textOverflow: 'ellipsis',
-    marginBottom: '1em',
     [breakpointKey('small')]: {
       // better style in case it takes two lines
-      // padding: 0.2em;
+      justifyContent: 'space-around',
+      marginTop: '2em',
     },
-  },
-};
-};
+
+    a: {
+      ...themedACSS(theme.palette.primary.main),
+      padding: '0.75em',
+      textOverflow: 'ellipsis',
+      marginBottom: '1em',
+      [breakpointKey('small')]: {
+        // better style in case it takes two lines
+        // padding: 0.2em;
+      },
+    },
+  }
+}
 
 export default function Template({ data: { mdx }, location, pageContext }) {
   const { previousPost, nextPost, langCode } = pageContext
