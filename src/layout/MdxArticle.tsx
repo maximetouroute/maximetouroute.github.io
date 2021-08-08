@@ -69,7 +69,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
   const { previousPost, nextPost, langCode } = pageContext
   // content is at false is no previous or next
   const previousPostHtml = previousPost ? (
-    <Link to={previousPost.frontmatter.path}>
+    <Link to={`${previousPost.frontmatter.path}#content`}>
       ← {previousPost.frontmatter.title}
     </Link>
   ) : (
@@ -77,7 +77,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
   )
   const nextPostHtml = nextPost ? (
     nextPost && (
-      <Link to={nextPost.frontmatter.path}>{nextPost.frontmatter.title} →</Link>
+      <Link to={`${nextPost.frontmatter.path}#content`}>{nextPost.frontmatter.title} →</Link>
     )
   ) : (
     <div></div>
