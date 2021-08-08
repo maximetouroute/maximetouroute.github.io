@@ -3,7 +3,27 @@ import { Link, graphql } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
 import SEO from '../bits/SEO/SEO'
 import PostGrid from '../bits/PostGridFlat/PostGridFlat'
-import './index.scss'
+import { Theme, useTheme, CSSObject } from '@emotion/react'
+import { themedACSS } from '../bits/styles/styles'
+const homeCSS = {
+  marginTop: '4rem',
+}
+
+const moreProjectsCSS = (theme: Theme): CSSObject => {
+  return {
+    fontSize: '1.5rem',
+    display: 'grid',
+    justifySelf: 'center',
+    justifyItems: 'center',
+
+    a: {
+      textAlign: 'center',
+      margin: '1rem',
+      marginTop: '4rem',
+      ...themedACSS(theme.palette.primary.main),
+    },
+  }
+}
 
 export default function Index({ data, pageContext: { langCode }, location }) {
   // const LOCAL = indexPageStrings[langCode];
@@ -15,9 +35,9 @@ export default function Index({ data, pageContext: { langCode }, location }) {
   return (
     <MainLayout language={langCode} location={{ ...location }}>
       <SEO title={'Home'} langCode={langCode} />
-      <div className="home">
-        <PostGrid posts={postsInMyLang}></PostGrid>
-        <div className="moreProjects">
+      <div css={homeCSS}>
+        <PostGrid posts={postsInMyLang} />
+        <div css={(theme) => moreProjectsCSS(theme)}>
           <Link to="/about">About me</Link>
         </div>
       </div>

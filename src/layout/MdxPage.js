@@ -7,6 +7,7 @@ import './BasicPage.scss'
 import 'moment'
 import SEO from '../bits/SEO/SEO'
 import { SHORTCODES } from './MdxBits'
+import { injectLinkCSS } from '../bits/styles/styles'
 
 export const pageQuery = graphql`
   query MdxPageByPath($path: String!) {
@@ -41,7 +42,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         article={true}
         langCode={langCode}
       />
-      <div className="Page">
+      <div className="Page" css={(theme) => injectLinkCSS(theme)}>
         <article className="card article" id="content">
           <header
             className="header"

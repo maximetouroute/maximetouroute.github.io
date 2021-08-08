@@ -89,34 +89,10 @@
     padding: 2em;
 
     @include breakpoint(small) {
-      padding-left: 0.4em;
-      padding-right: 0.4em;
-      padding-top: 2em;
-      padding-bottom: 2em;
-    }
-
-    .prevNextLinks {
-      margin-top: 4rem;
-      display: flex;
-      flex-wrap: wrap;
-      //filter: grayscale(1);
-
-      justify-content: space-between;
-      @include breakpoint(small) {
-        // better style in case it takes two lines
-        justify-content: space-around;
-        margin-top: 2em;
-      }
-
-      a {
-        padding: 0.75em;
-        text-overflow: ellipsis;
-        margin-bottom: 1em;
-        @include breakpoint(small) {
-          // better style in case it takes two lines
-          padding: 0.2em;
-        }
-      }
+      // padding-left: 0.4em;
+      // padding-right: 0.4em;
+      // padding-top: 2em;
+      // padding-bottom: 2em;
     }
   }
 
@@ -240,7 +216,6 @@
   transition: opacity 1.5s ease;
   font-weight: 600;
   color: white;
-  border-radius: 4px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;

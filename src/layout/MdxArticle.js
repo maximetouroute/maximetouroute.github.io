@@ -8,22 +8,37 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import SEO from '../bits/SEO/SEO'
 import { graphql, Link } from 'gatsby'
 import { SHORTCODES } from './MdxBits'
+import { injectLinkCSS, breakpointKey, themedACSS } from '../bits/styles/styles'
 
-const colorCoverCSS = (color) => {
-  return {
-    color: color,
-  }
+const nextPrevLinkInsideCoverCSS = {
+  margin: '2rem',
+  marginTop: '4rem',
+  display: 'flex',
+  flexWrap: 'wrap',
+  //filter: grayscale(1);
+
+  justifyContent: 'space-around',
+  [breakpointKey('small')]: {
+    // better style in case it takes two lines
+    justifyContent: 'space-around',
+    marginTop: '2em',
+  },
+
+  a: {
+    ...themedACSS('#ffffff'),
+    color: 'white',
+    padding: '0.75em',
+    textOverflow: 'ellipsis',
+    marginBottom: '1em',
+    [breakpointKey('small')]: {
+      // better style in case it takes two lines
+      // padding: 0.2em;
+    },
+  },
 }
-const colorCSS = (color) => {
-  return {
-    backgroundColor: color,
-    width: '2rem',
-    height: '2rem',
-  }
-}
+
 export default function Template({ data: { mdx }, location, pageContext }) {
   const { previousPost, nextPost, langCode } = pageContext
-
   // content is at false is no previous or next
   const previousPostHtml = previousPost ? (
     <Link to={previousPost.frontmatter.path}>
@@ -41,7 +56,11 @@ export default function Template({ data: { mdx }, location, pageContext }) {
   )
 
   return (
-    <MainLayout language={mdx.frontmatter.language} location={{ ...location }}>
+    <MainLayout
+      language={mdx.frontmatter.language}
+      location={{ ...location }}
+      accentColor={mdx.frontmatter.image.colors.vibrant}
+    >
       <SEO
         title={mdx.frontmatter.title}
         description={mdx.frontmatter.description || mdx.frontmatter.subtitle}
@@ -53,36 +72,30 @@ export default function Template({ data: { mdx }, location, pageContext }) {
       <div
         className="basicPageCoverBand"
         id="content"
-        css={colorCoverCSS(mdx.frontmatter.image.colors.darkVibrant)}
+        css={(theme) => ({ backgroundColor: theme.palette.primary.main })}
       >
-        <div
-          className="overlay"
-          css={colorCoverCSS(mdx.frontmatter.image.colors.darkVibrant)}
-        >
-          <h1
-            className="punchline"
-            css={colorCoverCSS(mdx.frontmatter.image.colors.darkVibrant)}
-          >
-            {mdx.frontmatter.title}
-          </h1>
-          <h2
-            className="subtext"
-            css={colorCoverCSS(mdx.frontmatter.image.colors.darkVibrant)}
-          >
+        <div className="overlay">
+          <h1 className="punchline">{mdx.frontmatter.title}</h1>
+          <h2 className="subtext">
             <p>
               <strong>{mdx.frontmatter.subtitle} </strong>
               <br />{' '}
             </p>
           </h2>
         </div>
+        <div css={nextPrevLinkInsideCoverCSS}>
+          {previousPostHtml}
+          {nextPostHtml}
+        </div>
       </div>
 
-      <div className="Page">
+      <div className="Page" css={(theme) => injectLinkCSS(theme)}>
         <article
           className="card"
           itemScope
           itemType="http://schema.org/BlogPosting"
         >
+          {/* css={theme => ({backgroundColor: theme.colors.accent})} */}
           <div className="article">
             <br />
             <br />
@@ -92,7 +105,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
             <div css={colorCSS(mdx.frontmatter.image.colors.muted)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.darkMuted)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.lightMuted)}></div> */}
-            {/* {JSON.stringify(mdx.frontmatter.image.colors)} */}
+            {/* {JSON.stringify(mdx.frontmatter.image.colors)}*/}
             <MDXProvider components={SHORTCODES}>
               <MDXRenderer
                 remoteImages={mdx.frontmatter.embeddedImagesRemote}
