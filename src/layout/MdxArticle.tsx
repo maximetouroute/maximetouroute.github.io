@@ -153,8 +153,6 @@ export default function Template({ data: { mdx }, location, pageContext }) {
   )
 }
 
-//  <div className="content" itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }}/>
-
 export const pageQuery = graphql`
   query MdxArticleByPath($path: String!) {
     mdx(frontmatter: { path: { eq: $path } }) {

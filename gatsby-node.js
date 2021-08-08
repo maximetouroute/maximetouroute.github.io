@@ -44,7 +44,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       subtitle: String
       date: Date @dateformat
       category: String,
-      priority: Int
+      priority: Float!
       image: File @fileByRelativePath
       embeddedImagesRemote: [File] @link(by: "url")
       embeddedImagesLocal: [File] @fileByRelativePath
@@ -166,10 +166,11 @@ exports.createPages = ({ actions, graphql }) => {
   const layoutPage = path.resolve(`src/layout/MdxPage.js`)
   const layoutArticle = path.resolve(`src/layout/MdxArticle.tsx`)
 
+  // Sort by priority for prev/next post, for them to be the same than on homepage
   return graphql(`
     {
       allMdx(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: ASC, fields: [frontmatter___priority] }
         limit: 1000
         filter: { frontmatter: { category: { ne: "hidden" } } }
       ) {

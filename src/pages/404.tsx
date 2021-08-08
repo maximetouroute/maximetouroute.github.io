@@ -1,9 +1,13 @@
 import React from 'react'
 import MainLayout from '../layout/MainLayout'
 
-export default function NotFoundPage({ data, pageContext: { langCode } }) {
+export default function NotFoundPage({
+  data,
+  pageContext: { langCode },
+  location,
+}) {
   return (
-    <MainLayout language={langCode}>
+    <MainLayout language={langCode} location={location}>
       <div
         style={{
           display: 'flex',

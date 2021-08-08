@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { PhotoGrid } from '../bits/PhotoGrid/PhotoGrid'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import GatsbyImageCompare from '../bits/ImageCompare/GatsbyImageCompare'
 
 interface OwnProps {
   image: any
@@ -26,5 +27,17 @@ export function ImageGrid({ props, indices = [] }: MoreOwnProps) {
   return <PhotoGrid gatsbyImagesWithThumbs={localImages} />
 }
 
+export function ImageCompare({ props, indices = [] }: MoreOwnProps) {
+  const left = props.localImages[indices[0]].childImageSharp
+  const right = props.localImages[indices[1]].childImageSharp
+  return <GatsbyImageCompare left={left} right={right} />
+}
 // Provide common components here
-export const SHORTCODES = { Link, Image, ImageGrid, GatsbyImage, PhotoGrid }
+export const SHORTCODES = {
+  Link,
+  Image,
+  ImageGrid,
+  GatsbyImage,
+  PhotoGrid,
+  ImageCompare,
+}
