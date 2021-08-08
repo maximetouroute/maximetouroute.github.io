@@ -11,7 +11,8 @@ import { SHORTCODES } from './MdxBits'
 import { injectLinkCSS, breakpointKey, themedACSS } from '../bits/styles/styles'
 
 const nextPrevLinkInsideCoverCSS = {
-  margin: '2rem',
+  marginLeft: '2rem',
+  marginRight: '2rem',
   marginTop: '4rem',
   display: 'flex',
   flexWrap: 'wrap',

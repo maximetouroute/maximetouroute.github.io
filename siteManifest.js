@@ -28,11 +28,11 @@ module.exports = {
     name: `Maxime Touroute Portfolio`,
     short_name: `Maxime's Portfolio`,
     background_color: `#d6d0cd`,
-    theme_color: `#800f2f`,
+    theme_color: '#ffffff',
   },
 
   spin: {
-    color: `#800f2f`,
+    color: '#ffffff',
   },
 
   robots: {
