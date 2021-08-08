@@ -164,7 +164,7 @@ exports.onCreatePage = ({ page, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
   const layoutPage = path.resolve(`src/layout/MdxPage.js`)
-  const layoutArticle = path.resolve(`src/layout/MdxArticle.js`)
+  const layoutArticle = path.resolve(`src/layout/MdxArticle.tsx`)
 
   return graphql(`
     {
