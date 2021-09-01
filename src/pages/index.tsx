@@ -5,6 +5,7 @@ import SEO from '../bits/SEO/SEO'
 import PostGrid from '../bits/PostGridFlat/PostGridFlat'
 import { Theme, useTheme, CSSObject } from '@emotion/react'
 import { themedACSS } from '../bits/styles/styles'
+import { strings } from '../locales/strings'
 const homeCSS = {
   marginTop: '4rem',
 }
@@ -38,7 +39,7 @@ export default function Index({ data, pageContext: { langCode }, location }) {
       <div css={homeCSS}>
         <PostGrid posts={postsInMyLang} />
         <div css={(theme) => moreProjectsCSS(theme)}>
-          <Link to="/about">About me</Link>
+          <Link to="/about">{strings['aboutMe'][langCode]}</Link>
         </div>
       </div>
     </MainLayout>
