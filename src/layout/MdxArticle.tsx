@@ -77,7 +77,9 @@ export default function Template({ data: { mdx }, location, pageContext }) {
   )
   const nextPostHtml = nextPost ? (
     nextPost && (
-      <Link to={`${nextPost.frontmatter.path}#content`}>{nextPost.frontmatter.title} →</Link>
+      <Link to={`${nextPost.frontmatter.path}#content`}>
+        {nextPost.frontmatter.title} →
+      </Link>
     )
   ) : (
     <div></div>
