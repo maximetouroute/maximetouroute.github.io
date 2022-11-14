@@ -4,10 +4,9 @@ import Footer from '../bits/Footer/Footer'
 import Navbar from '../bits/Navbar/Navbar'
 import './MainLayout.scss'
 import MobileAppBar from '../bits/Navbar/MobileAppBar'
-import {
-  createTheme,
-  ThemeProvider as MaterialThemeProvider,
-} from '@material-ui/core/styles'
+
+import {  ThemeProvider as MaterialThemeProvider, createTheme, adaptV4Theme } from '@mui/material/styles';
+import { ThemeProvider } from '@emotion/react'
 import LanguageSwitcher from '../bits/LanguageSwitcher/LanguageSwitcher'
 import { defaultLang } from '../locales/locales'
 import { languageAutoRedirect } from '../locales/localeUtils'
@@ -15,7 +14,33 @@ import { NavbarData, FooterLinks } from './Data'
 
 import { DEFAULT_MAIN_COLOR } from './../bits/styles/styles'
 
-import { CSSObject, Theme, ThemeProvider, Global } from '@emotion/react'
+const themetest = createTheme({
+
+  palette: {
+    mode: 'light',
+    primary: {
+      main:  DEFAULT_MAIN_COLOR,
+    },
+    // secondary: {
+    //   main: '#506b5c',
+    // },
+    // background: {
+    //   default: '#282c34',
+    //   paper: '#19191d',
+    // },
+    // action: {
+    //   hover: 'rgba(0,0,0,0.56)',
+    // },
+    // Used by `getContrastText()` to maximize the contrast between
+    // the background and the text.
+    contrastThreshold: 3,
+    // Used by the functions below to shift a color's luminance by approximately
+    // two indexes within its tonal palette.
+    // E.g., shift from Red 500 to Red 300 or Red 700.
+    tonalOffset: 0.2,
+  },
+});
+
 
 const navbarTitle = 'MAXIME TOUROUTE'
 interface OwnProps {
@@ -44,16 +69,36 @@ export default function MainLayout({
     languageAutoRedirect(language, location.pathname)
   }
   const theme = createTheme({
+
     palette: {
+      mode: 'light',
       primary: {
         main: accentColor ? accentColor : DEFAULT_MAIN_COLOR,
       },
+      // secondary: {
+      //   main: '#506b5c',
+      // },
+      // background: {
+      //   default: '#282c34',
+      //   paper: '#19191d',
+      // },
+      // action: {
+      //   hover: 'rgba(0,0,0,0.56)',
+      // },
+      // Used by `getContrastText()` to maximize the contrast between
+      // the background and the text.
+      contrastThreshold: 3,
+      // Used by the functions below to shift a color's luminance by approximately
+      // two indexes within its tonal palette.
+      // E.g., shift from Red 500 to Red 300 or Red 700.
+      tonalOffset: 0.2,
     },
-  })
+  });
 
+  console.log(theme);
   return (
-    <MaterialThemeProvider theme={theme}>
-      <ThemeProvider theme={theme}>
+    <MaterialThemeProvider theme={themetest}>
+      <ThemeProvider theme={themetest}>
         <div className="CssGridNavContentFooter">
           <div className="AppBar">
             <MobileAppBar title={navbarTitle} />
@@ -75,7 +120,7 @@ export default function MainLayout({
             )}
           </div>
         </div>
-      </ThemeProvider>
+        </ThemeProvider>
     </MaterialThemeProvider>
   )
 }

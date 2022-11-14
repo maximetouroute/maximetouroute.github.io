@@ -155,7 +155,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
   )
 }
 
-export const pageQuery = graphql`
+export const articlePageQuery = graphql`
   query MdxArticleByPath($path: String!) {
     mdx(frontmatter: { path: { eq: $path } }) {
       body

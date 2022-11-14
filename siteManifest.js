@@ -22,6 +22,7 @@ module.exports = {
     vimeo: '//vimeo.com/maximetouroute',
     youtube: '',
     soundcloud: '',
+    linkedin: ''
   },
 
   pwa: {

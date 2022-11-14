@@ -104,6 +104,7 @@ type SiteSiteMetadataSocialLinks {
   vimeo: String
   youtube: String
   soundcloud: String
+  linkedin: String
 }
 
 type SiteFunction implements Node @dontInfer {
