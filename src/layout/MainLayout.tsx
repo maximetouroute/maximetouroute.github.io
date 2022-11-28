@@ -14,32 +14,6 @@ import { NavbarData, FooterLinks } from './Data'
 
 import { DEFAULT_MAIN_COLOR } from './../bits/styles/styles'
 
-const themetest = createTheme({
-
-  palette: {
-    mode: 'light',
-    primary: {
-      main:  DEFAULT_MAIN_COLOR,
-    },
-    // secondary: {
-    //   main: '#506b5c',
-    // },
-    // background: {
-    //   default: '#282c34',
-    //   paper: '#19191d',
-    // },
-    // action: {
-    //   hover: 'rgba(0,0,0,0.56)',
-    // },
-    // Used by `getContrastText()` to maximize the contrast between
-    // the background and the text.
-    contrastThreshold: 3,
-    // Used by the functions below to shift a color's luminance by approximately
-    // two indexes within its tonal palette.
-    // E.g., shift from Red 500 to Red 300 or Red 700.
-    tonalOffset: 0.2,
-  },
-});
 
 
 const navbarTitle = 'MAXIME TOUROUTE'
@@ -95,10 +69,9 @@ export default function MainLayout({
     },
   });
 
-  console.log(theme);
   return (
-    <MaterialThemeProvider theme={themetest}>
-      <ThemeProvider theme={themetest}>
+    <MaterialThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <div className="CssGridNavContentFooter">
           <div className="AppBar">
             <MobileAppBar title={navbarTitle} />
