@@ -225,7 +225,7 @@
     // background-color: $accentColor;
     color: white;
     @include breakpoint(normal) {
-      padding: 4rem;
+      padding: 2rem;
     }
     @include breakpoint(small) {
       padding: 2rem;
@@ -244,9 +244,9 @@
 
     .punchline {
       animation: fadein 1s;
-      font-size: 3rem;
+      font-size: 2rem;
       @include breakpoint(small) {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
       padding-bottom: 1rem;
     }
