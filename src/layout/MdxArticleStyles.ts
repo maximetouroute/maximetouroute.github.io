@@ -103,11 +103,10 @@ export const articleCSS: CSSObject = {
       [breakpointKey('small')]: {
         fontSize: '1.3em',
       },
-  
       fontWeight: 400
     },
     h4: {
-        textAlign: 'start',
+    textAlign: 'start',
       fontSize: '1.6em',
       fontWeight: 600,
       margin: 0.6,

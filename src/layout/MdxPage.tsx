@@ -7,6 +7,7 @@ import 'moment'
 import SEO from '../bits/SEO/SEO'
 import { SHORTCODES } from './MdxBits'
 import { contentCSS, headerCSS, pageCSS, cardCSS } from './basicPageStyles';
+import { articleCSS } from './MdxArticleStyles'
 
 export const pageQuery = graphql`
   query MdxPageByPath($path: String!) {
@@ -42,12 +43,11 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         langCode={langCode}
       />
       <div css={(theme) => pageCSS(theme)}>
-        <article css={{...cardCSS, contentCSS}} id="content">
+        <article css={{...cardCSS, ...contentCSS}} id="content">
           <header
             css={headerCSS}
-            style={{ paddingTop: '1em', paddingBottom: '2em' }}
           ></header>
-          <div ccss={contentCSS} itemProp="articleBody">
+          <div css={articleCSS} itemProp="articleBody">
             <MDXProvider components={SHORTCODES}>
               <MDXRenderer
                 remoteImages={mdx.frontmatter.embeddedImagesRemote}

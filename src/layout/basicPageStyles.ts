@@ -80,6 +80,13 @@ export const pageCSS = (theme: Theme): CSSObject => {
     a: {
         ...themedACSS(theme.palette.primary.main),
       },
+      p: {
+        marginLeft: 0,
+      marginRight: 0,
+      marginBottom: "15px",
+      marginTop: 0,
+      textAlign: 'justify'
+      }
 };
 };
 
@@ -96,13 +103,6 @@ export const gatsbyRespImageLinkCSS: CSSObject = {
     }
 };
 
-export const pagePCSS: CSSObject = {
-    marginLeft: 0,
-      marginRight: 0,
-      marginBottom: "15px",
-      marginTop: 0,
-      textAlign: 'justify'
-}
 
 export const cardCSS : CSSObject = {
 
@@ -164,6 +164,7 @@ export const headerCSS: CSSObject = {
     flexDirection: 'column',
     marginBottom: '2em',
     textAlign: 'center',
+    paddingTop: '1em',
 };
 
 export const contentCSS: CSSObject = {
