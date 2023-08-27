@@ -8,8 +8,7 @@ export const gridNavContentFooterCSS: CSSObject = {
     display: 'grid',
     gridGap: 0,
     gridTemplateAreas: `'nav nav' 'content content' 'content content' 'footer footer' 'navBottom navBottom'`,
-
-    justifyItems: 'stretch'
+    justifyItems: 'stretch',
 }
 
 export const appBarCSS = {

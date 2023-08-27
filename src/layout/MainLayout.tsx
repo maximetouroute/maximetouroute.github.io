@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../bits/Footer/Footer'
 import Navbar from '../bits/Navbar/Navbar'
 import MobileAppBar from '../bits/Navbar/MobileAppBar'
-import {  ThemeProvider as MaterialThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider as MaterialThemeProvider, createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react'
 import LanguageSwitcher from '../bits/LanguageSwitcher/LanguageSwitcher'
 import { defaultLang } from '../locales/locales'
@@ -10,7 +10,8 @@ import { languageAutoRedirect } from '../locales/localeUtils'
 import { NavbarData, FooterLinks } from './Data'
 import { DEFAULT_MAIN_COLOR } from './../bits/styles/styles'
 import { appBarCSS, gridContentCSS, gridFooterCSS, gridNavBarCSS, gridNavContentFooterCSS, styleContentCSS } from './mainLayoutStyle'
-
+import { Global } from '@emotion/react';
+import { bodyCSS } from './globalStyles';
 
 
 const navbarTitle = 'MAXIME TOUROUTE'
@@ -66,8 +67,12 @@ export default function MainLayout({
   });
 
   return (
+
     <MaterialThemeProvider theme={theme}>
       <ThemeProvider theme={theme}>
+      <Global styles={{
+      body: bodyCSS
+    }}/>
         <div css={gridNavContentFooterCSS}>
           <div css={appBarCSS}>
             <MobileAppBar title={navbarTitle} />
@@ -89,8 +94,11 @@ export default function MainLayout({
             )}
           </div>
         </div>
+       
         </ThemeProvider>
     </MaterialThemeProvider>
+
+
   )
 }
 

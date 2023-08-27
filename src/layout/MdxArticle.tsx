@@ -1,13 +1,11 @@
 import React from 'react'
 import MainLayout from './MainLayout'
-import { useTheme } from '@mui/material/styles';
 import 'moment'
 import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import SEO from '../bits/SEO/SEO'
 import { graphql, Link } from 'gatsby'
 import { SHORTCODES } from './MdxBits'
-import { injectLinkCSS } from '../bits/styles/styles'
 import { coverBandCSS, coverBandOverlayCSS, punchlineCSS, subtextCSS, pageCSS, cardCSS,  } from './basicPageStyles'
 import { nextPrevLinkInsideCoverCSS, nextPrevLinkCSS, articleCSS, colorCSS } from './MdxArticleStyles';
 
