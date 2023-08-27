@@ -78,7 +78,6 @@ module.exports = {
     'gatsby-plugin-offline',
     `gatsby-plugin-catch-links`,
 
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

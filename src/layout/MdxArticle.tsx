@@ -74,12 +74,12 @@ export default function Template({ data: { mdx }, location, pageContext }) {
           <div css={articleCSS}>
             <br />
             <br />
-             <div css={colorCSS(mdx.frontmatter.image.colors.vibrant)}></div>
+             {/* <div css={colorCSS(mdx.frontmatter.image.colors.vibrant)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.darkVibrant)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.lightVibrant)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.muted)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.darkMuted)}></div>
-            <div css={colorCSS(mdx.frontmatter.image.colors.lightMuted)}></div>
+            <div css={colorCSS(mdx.frontmatter.image.colors.lightMuted)}></div> */}
             {/* {JSON.stringify(mdx.frontmatter.image.colors)}*/}
             <MDXProvider components={SHORTCODES}>
               <MDXRenderer
