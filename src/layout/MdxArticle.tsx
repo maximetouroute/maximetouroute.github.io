@@ -1,7 +1,6 @@
 import React from 'react'
 import MainLayout from './MainLayout'
 import { CSSObject, Theme } from '@emotion/react'
-import './BasicPage.scss'
 import 'moment'
 import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
@@ -9,6 +8,7 @@ import SEO from '../bits/SEO/SEO'
 import { graphql, Link } from 'gatsby'
 import { SHORTCODES } from './MdxBits'
 import { injectLinkCSS, breakpointKey, themedACSS } from '../bits/styles/styles'
+import { coverBandCSS, coverBandOverlayCSS, punchlineCSS, subtextCSS } from './basicPageStyles'
 
 const nextPrevLinkInsideCoverCSS: CSSObject = {
   marginLeft: '2rem',
@@ -100,13 +100,13 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         langCode={langCode}
       />
       <div
-        className="basicPageCoverBand"
+        css={coverBandCSS}
         id="content"
         css={(theme) => ({ backgroundColor: theme.palette.primary.main })}
       >
-        <div className="overlay">
-          <h1 className="punchline">{mdx.frontmatter.title}</h1>
-          <h2 className="subtext">
+        <div css={coverBandOverlayCSS}>
+          <h1 css={punchlineCSS}>{mdx.frontmatter.title}</h1>
+          <h2 css={subtextCSS}>
             <p>
               <strong>{mdx.frontmatter.subtitle} </strong>
               <br />{' '}

@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Footer from '../bits/Footer/Footer'
 import Navbar from '../bits/Navbar/Navbar'
-import './MainLayout.scss'
 import MobileAppBar from '../bits/Navbar/MobileAppBar'
 
 import {  ThemeProvider as MaterialThemeProvider, createTheme, adaptV4Theme } from '@mui/material/styles';
@@ -13,6 +12,7 @@ import { languageAutoRedirect } from '../locales/localeUtils'
 import { NavbarData, FooterLinks } from './Data'
 
 import { DEFAULT_MAIN_COLOR } from './../bits/styles/styles'
+import { appBarCSS, gridContentCSS, gridFooterCSS, gridNavBarCSS, gridNavContentFooterCSS, styleContentCSS } from './mainLayoutStyle'
 
 
 
@@ -72,18 +72,18 @@ export default function MainLayout({
   return (
     <MaterialThemeProvider theme={theme}>
       <ThemeProvider theme={theme}>
-        <div className="CssGridNavContentFooter">
-          <div className="AppBar">
+        <div css={gridNavContentFooterCSS}>
+          <div css={appBarCSS}>
             <MobileAppBar title={navbarTitle} />
           </div>
           <nav
-            className="gridNavBar"
+            css={gridNavBarCSS}
             style={{ backgroundColor: theme.palette.primary.main }}
           >
             <Navbar title={navbarTitle} links={NavbarData[language].links} />
           </nav>
-          <div className="gridContent styleContent">{children}</div>
-          <div className="gridFooter">
+          <div css={{...gridContentCSS, ...styleContentCSS}}>{children}</div>
+          <div css={gridFooterCSS}>
             <Footer links={FooterLinks[language].links} />
             {location && (
               <LanguageSwitcher
