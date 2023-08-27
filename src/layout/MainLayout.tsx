@@ -1,16 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Footer from '../bits/Footer/Footer'
 import Navbar from '../bits/Navbar/Navbar'
 import MobileAppBar from '../bits/Navbar/MobileAppBar'
-
-import {  ThemeProvider as MaterialThemeProvider, createTheme, adaptV4Theme } from '@mui/material/styles';
+import {  ThemeProvider as MaterialThemeProvider, createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react'
 import LanguageSwitcher from '../bits/LanguageSwitcher/LanguageSwitcher'
 import { defaultLang } from '../locales/locales'
 import { languageAutoRedirect } from '../locales/localeUtils'
 import { NavbarData, FooterLinks } from './Data'
-
 import { DEFAULT_MAIN_COLOR } from './../bits/styles/styles'
 import { appBarCSS, gridContentCSS, gridFooterCSS, gridNavBarCSS, gridNavContentFooterCSS, styleContentCSS } from './mainLayoutStyle'
 
@@ -43,7 +40,6 @@ export default function MainLayout({
     languageAutoRedirect(language, location.pathname)
   }
   const theme = createTheme({
-
     palette: {
       mode: 'light',
       primary: {

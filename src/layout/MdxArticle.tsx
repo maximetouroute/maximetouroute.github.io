@@ -1,69 +1,17 @@
 import React from 'react'
 import MainLayout from './MainLayout'
-import { CSSObject, Theme } from '@emotion/react'
+import { useTheme } from '@mui/material/styles';
 import 'moment'
 import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import SEO from '../bits/SEO/SEO'
 import { graphql, Link } from 'gatsby'
 import { SHORTCODES } from './MdxBits'
-import { injectLinkCSS, breakpointKey, themedACSS } from '../bits/styles/styles'
-import { coverBandCSS, coverBandOverlayCSS, punchlineCSS, subtextCSS } from './basicPageStyles'
+import { injectLinkCSS } from '../bits/styles/styles'
+import { coverBandCSS, coverBandOverlayCSS, punchlineCSS, subtextCSS, pageCSS, cardCSS,  } from './basicPageStyles'
+import { nextPrevLinkInsideCoverCSS, nextPrevLinkCSS, articleCSS, colorCSS } from './MdxArticleStyles';
 
-const nextPrevLinkInsideCoverCSS: CSSObject = {
-  marginLeft: '2rem',
-  marginRight: '2rem',
-  marginTop: '4rem',
-  display: 'flex',
-  flexWrap: 'wrap',
-  //filter: grayscale(1);
 
-  justifyContent: 'space-around',
-  [breakpointKey('small')]: {
-    // better style in case it takes two lines
-    justifyContent: 'space-around',
-    marginTop: '2em',
-  },
-
-  a: {
-    ...themedACSS('#ffffff'),
-    color: 'white',
-    padding: '0.75em',
-    textOverflow: 'ellipsis',
-    marginBottom: '1em',
-    [breakpointKey('small')]: {
-      // better style in case it takes two lines
-      // padding: 0.2em;
-    },
-  },
-}
-
-const nextPrevLinkCSS = (theme: Theme): CSSObject => {
-  return {
-    marginTop: '4rem',
-    display: 'flex',
-    flexWrap: 'wrap',
-    //filter: grayscale(1);
-
-    justifyContent: 'space-around',
-    [breakpointKey('small')]: {
-      // better style in case it takes two lines
-      justifyContent: 'space-around',
-      marginTop: '2em',
-    },
-
-    a: {
-      ...themedACSS(theme.palette.primary.main),
-      padding: '0.75em',
-      textOverflow: 'ellipsis',
-      marginBottom: '1em',
-      [breakpointKey('small')]: {
-        // better style in case it takes two lines
-        // padding: 0.2em;
-      },
-    },
-  }
-}
 
 export default function Template({ data: { mdx }, location, pageContext }) {
   const { previousPost, nextPost, langCode } = pageContext
@@ -100,9 +48,8 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         langCode={langCode}
       />
       <div
-        css={coverBandCSS}
+        css={(theme) => coverBandCSS(theme)}
         id="content"
-        css={(theme) => ({ backgroundColor: theme.palette.primary.main })}
       >
         <div css={coverBandOverlayCSS}>
           <h1 css={punchlineCSS}>{mdx.frontmatter.title}</h1>
@@ -119,22 +66,22 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         </div>
       </div>
 
-      <div className="Page" css={(theme) => injectLinkCSS(theme)}>
+      <div css={(theme) => pageCSS(theme)}>
         <article
-          className="card"
+          css={cardCSS}
           itemScope
           itemType="http://schema.org/BlogPosting"
         >
           {/* css={theme => ({backgroundColor: theme.colors.accent})} */}
-          <div className="article">
+          <div css={articleCSS}>
             <br />
             <br />
-            {/* <div css={colorCSS(mdx.frontmatter.image.colors.vibrant)}></div>
+             <div css={colorCSS(mdx.frontmatter.image.colors.vibrant)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.darkVibrant)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.lightVibrant)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.muted)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.darkMuted)}></div>
-            <div css={colorCSS(mdx.frontmatter.image.colors.lightMuted)}></div> */}
+            <div css={colorCSS(mdx.frontmatter.image.colors.lightMuted)}></div>
             {/* {JSON.stringify(mdx.frontmatter.image.colors)}*/}
             <MDXProvider components={SHORTCODES}>
               <MDXRenderer

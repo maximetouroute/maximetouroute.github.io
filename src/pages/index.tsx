@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import MainLayout from '../layout/MainLayout'
 import SEO from '../bits/SEO/SEO'
 import PostGrid from '../bits/PostGridFlat/PostGridFlat'
-import { Theme, useTheme, CSSObject } from '@emotion/react'
+import { Theme, useTheme, CSSObject, ThemeProvider } from '@emotion/react'
 import { themedACSS } from '../bits/styles/styles'
 import { strings } from '../locales/strings'
 const homeCSS = {

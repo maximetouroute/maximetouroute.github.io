@@ -3,11 +3,10 @@ import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { graphql } from 'gatsby'
 import MainLayout from './MainLayout'
-import './BasicPage.scss'
 import 'moment'
 import SEO from '../bits/SEO/SEO'
 import { SHORTCODES } from './MdxBits'
-import { injectLinkCSS } from '../bits/styles/styles'
+import { contentCSS, headerCSS, pageCSS, cardCSS } from './basicPageStyles';
 
 export const pageQuery = graphql`
   query MdxPageByPath($path: String!) {
@@ -42,13 +41,13 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         article={true}
         langCode={langCode}
       />
-      <div className="Page" css={(theme) => injectLinkCSS(theme)}>
-        <article className="card article" id="content">
+      <div css={(theme) => pageCSS(theme)}>
+        <article css={{...cardCSS, contentCSS}} id="content">
           <header
-            className="header"
+            css={headerCSS}
             style={{ paddingTop: '1em', paddingBottom: '2em' }}
           ></header>
-          <div className="content" itemProp="articleBody">
+          <div ccss={contentCSS} itemProp="articleBody">
             <MDXProvider components={SHORTCODES}>
               <MDXRenderer
                 remoteImages={mdx.frontmatter.embeddedImagesRemote}

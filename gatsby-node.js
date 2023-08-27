@@ -163,7 +163,7 @@ exports.onCreatePage = ({ page, actions }) => {
 /// ---------------- Custom page generation for markdown files
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-  const layoutPage = path.resolve(`src/layout/MdxPage.js`)
+  const layoutPage = path.resolve(`src/layout/MdxPage.tsx`)
   const layoutArticle = path.resolve(`src/layout/MdxArticle.tsx`)
 
   // Sort by priority for prev/next post, for them to be the same than on homepage
