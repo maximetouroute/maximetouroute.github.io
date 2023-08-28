@@ -12,7 +12,6 @@ import { articleCSS } from './MdxArticleStyles'
 export const pageQuery = graphql`
   query MdxPageByPath($markdownPath: String, $langCode: String!) {
     mdx(frontmatter: { path: { eq: $markdownPath } language: { eq: $langCode } }) {
-      body
       frontmatter {
         path
         title

@@ -47,33 +47,33 @@ export default function Index({ data, pageContext: { langCode }, location }) {
 }
 
 export const portfolioPostsQuery = graphql`
-  query IndexQuery {
-    allMdx(
-      sort: { order: ASC, fields: [frontmatter___priority] }
-      filter: { frontmatter: { category: { eq: "portfolio" } } }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-            category
-            subtitle
-            language
-            image {
-              colors {
-                ...GatsbyImageColors
-              }
-              childImageSharp {
-                gatsbyImageData(height: 500, placeholder: BLURRED)
-              }
+query IndexQuery {
+  allMdx(
+    sort: {frontmatter: {priority: ASC}}
+    filter: {frontmatter: {category: {eq: "portfolio"}}}
+  ) {
+    edges {
+      node {
+        excerpt(pruneLength: 250)
+        id
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          path
+          category
+          subtitle
+          language
+          image {
+            colors {
+              ...GatsbyImageColors
+            }
+            childImageSharp {
+              gatsbyImageData(height: 500, placeholder: BLURRED)
             }
           }
         }
       }
     }
   }
+}
 `

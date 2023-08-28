@@ -44,28 +44,12 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`],
-        gatsbyRemarkPlugins: [
-          `gatsby-transformer-sharp`,
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin: 0`,
-            },
-          },
-
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 1920,
-            },
-          },
-        ], // just in case those previously mentioned remark plugins sound cool :)
+        mdxOptions: {
+                   remarkPlugins: [        
+                  ],
+                   rehypePlugins: [],
+                 },
+                  // just in case those previously mentioned remark plugins sound cool :)
         // defaultLayouts: {
         //   default: null,//require.resolve("./src/layout/MdxBasic.js"),
         // },

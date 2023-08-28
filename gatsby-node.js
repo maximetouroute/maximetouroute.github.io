@@ -127,29 +127,32 @@ exports.onCreatePage = ({ page, actions }) => {
 /// ---------------- Custom page generation for markdown files
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-  const layoutPage = path.resolve(`src/layout/MdxPage.tsx`)
-  const layoutArticle = path.resolve(`src/layout/MdxArticle.tsx`)
+  const layoutPage = path.resolve(`./src/layout/MdxPage.tsx`)
+  const layoutArticle = path.resolve(`./src/layout/MdxArticle.tsx`)
 
   // Sort by priority for prev/next post, for them to be the same than on homepage
   return graphql(`
-    {
-      allMdx(
-        sort: { order: ASC, fields: [frontmatter___priority] }
-        limit: 1000
-        filter: { frontmatter: { category: { ne: "hidden" } } }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              path
-              layout
-              title
-              language
-            }
+  {
+    allMdx(
+      sort: {frontmatter: {priority: ASC}}
+      limit: 1000
+      filter: {frontmatter: {category: {ne: "hidden"}}}
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            layout
+            title
+            language
+          }
+          internal {
+            contentFilePath
           }
         }
       }
     }
+  }
   `).then((result) => {
     if (result.errors) {
       console.error('got error', result.errors);
@@ -218,7 +221,7 @@ exports.createPages = ({ actions, graphql }) => {
       const markdownPath = node.frontmatter.path;
       createPage({
         path: `${urlPrefix}${node.frontmatter.path}`,
-        component: layoutArticle,
+        component:`${layoutArticle}?__contentFilePath=${node.internal.contentFilePath}`,
         context: {
           markdownPath,
           previousPost,
@@ -233,7 +236,7 @@ exports.createPages = ({ actions, graphql }) => {
       const markdownPath = node.frontmatter.path;
       createPage({
         path: `${urlPrefix}${node.frontmatter.path}`,
-        component: layoutPage,
+        component: `${layoutPage}?__contentFilePath=${node.internal.contentFilePath}`,
         context: { markdownPath, langCode: node.frontmatter.language }, // additional data can be passed via context
       })
     });

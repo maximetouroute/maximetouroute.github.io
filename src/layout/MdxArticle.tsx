@@ -2,7 +2,6 @@ import React from 'react'
 import MainLayout from './MainLayout'
 import 'moment'
 import { MDXProvider } from '@mdx-js/react'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import SEO from '../bits/SEO/SEO'
 import { graphql, Link } from 'gatsby'
 import { SHORTCODES } from './MdxBits'
@@ -21,7 +20,7 @@ import {
   colorCSS,
 } from './MdxArticleStyles';
 
-export default function Template({ data: {mdx}, location, pageContext: {previousPost, nextPost, langCode} }) {
+export default function Template({ data: {mdx}, children, location, pageContext: {previousPost, nextPost, langCode} }) {
 
   // const mdx = data;
   console.log(mdx);
@@ -91,11 +90,12 @@ export default function Template({ data: {mdx}, location, pageContext: {previous
             <div css={colorCSS(mdx.frontmatter.image.colors.lightMuted)}></div> */}
             {/* {JSON.stringify(mdx.frontmatter.image.colors)}*/}
             <MDXProvider components={SHORTCODES}>
-              <MDXRenderer
+              {children}
+              {/* <MDXRenderer
                 localImages={mdx.frontmatter.embeddedImagesLocal}
               >
                 {mdx.body}
-              </MDXRenderer>
+              </MDXRenderer> */}
             </MDXProvider>
             <div css={(theme) => nextPrevLinkCSS(theme)}>
               {previousPostHtml}
@@ -111,7 +111,6 @@ export default function Template({ data: {mdx}, location, pageContext: {previous
 export const articlePageQuery = graphql`
   query MdxArticleByPath($markdownPath: String!, $langCode: String!) {
     mdx(frontmatter: { path: { eq: $markdownPath } language: { eq: $langCode } }) {
-      body
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
