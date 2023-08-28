@@ -1,6 +1,3 @@
-import { CSSObject } from "@emotion/react";
+import { CSSObject } from '@emotion/react'
 
-
-export const pageCSS = {
-
-};
+export const pageCSS = {}

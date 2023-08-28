@@ -6,7 +6,7 @@ import MainLayout from './MainLayout'
 import 'moment'
 import SEO from '../bits/SEO/SEO'
 import { SHORTCODES } from './MdxBits'
-import { contentCSS, headerCSS, pageCSS, cardCSS } from './basicPageStyles';
+import { contentCSS, headerCSS, pageCSS, cardCSS } from './basicPageStyles'
 import { articleCSS } from './MdxArticleStyles'
 
 export const pageQuery = graphql`
@@ -43,10 +43,8 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         langCode={langCode}
       />
       <div css={(theme) => pageCSS(theme)}>
-        <article css={{...cardCSS, ...contentCSS}} id="content">
-          <header
-            css={headerCSS}
-          ></header>
+        <article css={{ ...cardCSS, ...contentCSS }} id="content">
+          <header css={headerCSS}></header>
           <div css={articleCSS} itemProp="articleBody">
             <MDXProvider components={SHORTCODES}>
               <MDXRenderer

@@ -6,10 +6,20 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import SEO from '../bits/SEO/SEO'
 import { graphql, Link } from 'gatsby'
 import { SHORTCODES } from './MdxBits'
-import { coverBandCSS, coverBandOverlayCSS, punchlineCSS, subtextCSS, pageCSS, cardCSS,  } from './basicPageStyles'
-import { nextPrevLinkInsideCoverCSS, nextPrevLinkCSS, articleCSS, colorCSS } from './MdxArticleStyles';
-
-
+import {
+  coverBandCSS,
+  coverBandOverlayCSS,
+  punchlineCSS,
+  subtextCSS,
+  pageCSS,
+  cardCSS,
+} from './basicPageStyles'
+import {
+  nextPrevLinkInsideCoverCSS,
+  nextPrevLinkCSS,
+  articleCSS,
+  colorCSS,
+} from './MdxArticleStyles'
 
 export default function Template({ data: { mdx }, location, pageContext }) {
   const { previousPost, nextPost, langCode } = pageContext
@@ -45,10 +55,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
         article={true}
         langCode={langCode}
       />
-      <div
-        css={(theme) => coverBandCSS(theme)}
-        id="content"
-      >
+      <div css={(theme) => coverBandCSS(theme)} id="content">
         <div css={coverBandOverlayCSS}>
           <h1 css={punchlineCSS}>{mdx.frontmatter.title}</h1>
           <h2 css={subtextCSS}>
@@ -74,7 +81,7 @@ export default function Template({ data: { mdx }, location, pageContext }) {
           <div css={articleCSS}>
             <br />
             <br />
-             {/* <div css={colorCSS(mdx.frontmatter.image.colors.vibrant)}></div>
+            {/* <div css={colorCSS(mdx.frontmatter.image.colors.vibrant)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.darkVibrant)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.lightVibrant)}></div>
             <div css={colorCSS(mdx.frontmatter.image.colors.muted)}></div>

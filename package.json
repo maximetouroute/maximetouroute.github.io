@@ -11,7 +11,7 @@
     "start": "gatsby develop --host 0.0.0.0",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettiegit str --write '**/*.js'",
+    "format": "prettier --write '**/*.js' '**/*.ts' '**/*.tsx'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "upgrade-interactive": "npm-check --update",

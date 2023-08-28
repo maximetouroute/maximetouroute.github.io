@@ -1,7 +1,6 @@
-import { CSSObject } from '@emotion/react';
+import { CSSObject } from '@emotion/react'
 
 export const bodyCSS: CSSObject = {
-
   minHeight: '100%',
   display: 'flex',
   flexDirection: 'column',
@@ -12,5 +11,5 @@ export const bodyCSS: CSSObject = {
   backgroundColor: 'rgb(240,240,240)',
   fontFamily: `-apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial,
-    sans-serif`
-};
+    sans-serif`,
+}
