@@ -34,7 +34,7 @@
     "browser-lang": "^0.1.0",
     "css-element-queries": "^1.2.3",
     "framer-motion": "^3.2.1",
-    "gatsby": "^3.10.2",
+    "gatsby": "3.13.1",
     "gatsby-background-image": "^1.5.3",
     "gatsby-image": "^3.10.0",
     "gatsby-image-background-slider": "0.0.2",
