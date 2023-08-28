@@ -10,17 +10,14 @@ import { contentCSS, headerCSS, pageCSS, cardCSS } from './basicPageStyles'
 import { articleCSS } from './MdxArticleStyles'
 
 export const pageQuery = graphql`
-  query MdxPageByPath($path: String!) {
-    mdx(frontmatter: { path: { eq: $path } }) {
+  query MdxPageByPath($markdownPath: String, $langCode: String!) {
+    mdx(frontmatter: { path: { eq: $markdownPath } language: { eq: $langCode } }) {
       body
       frontmatter {
         path
         title
         language
         description
-        embeddedImagesRemote {
-          ...modernGatImage
-        }
         embeddedImagesLocal {
           ...modernGatImage
         }
@@ -29,8 +26,8 @@ export const pageQuery = graphql`
   }
 `
 
-export default function Template({ data: { mdx }, location, pageContext }) {
-  const { langCode } = pageContext
+export default function Template({ data: { mdx }, location, pageContext: {langCode} }) {
+  // console.log('mdx', data, langCode);
   return (
     <MainLayout language={mdx.frontmatter.language} location={{ ...location }}>
       <SEO
@@ -48,7 +45,6 @@ export default function Template({ data: { mdx }, location, pageContext }) {
           <div css={articleCSS} itemProp="articleBody">
             <MDXProvider components={SHORTCODES}>
               <MDXRenderer
-                remoteImages={mdx.frontmatter.embeddedImagesRemote}
                 localImages={mdx.frontmatter.embeddedImagesLocal}
               >
                 {mdx.body}

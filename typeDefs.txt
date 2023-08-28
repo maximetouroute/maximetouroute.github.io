@@ -477,6 +477,5 @@ type Frontmatter {
   date: Date @dateformat
   category: String
   image: File @fileByRelativePath
-  embeddedImagesRemote: [File] @link(by: "url")
   embeddedImagesLocal: [File] @fileByRelativePath
 }

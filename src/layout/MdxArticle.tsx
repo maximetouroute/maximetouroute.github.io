@@ -19,10 +19,12 @@ import {
   nextPrevLinkCSS,
   articleCSS,
   colorCSS,
-} from './MdxArticleStyles'
+} from './MdxArticleStyles';
 
-export default function Template({ data: { mdx }, location, pageContext }) {
-  const { previousPost, nextPost, langCode } = pageContext
+export default function Template({ data: {mdx}, location, pageContext: {previousPost, nextPost, langCode} }) {
+
+  // const mdx = data;
+  console.log(mdx);
   // content is at false is no previous or next
   const previousPostHtml = previousPost ? (
     <Link to={`${previousPost.frontmatter.path}#content`}>
@@ -90,7 +92,6 @@ export default function Template({ data: { mdx }, location, pageContext }) {
             {/* {JSON.stringify(mdx.frontmatter.image.colors)}*/}
             <MDXProvider components={SHORTCODES}>
               <MDXRenderer
-                remoteImages={mdx.frontmatter.embeddedImagesRemote}
                 localImages={mdx.frontmatter.embeddedImagesLocal}
               >
                 {mdx.body}
@@ -108,8 +109,8 @@ export default function Template({ data: { mdx }, location, pageContext }) {
 }
 
 export const articlePageQuery = graphql`
-  query MdxArticleByPath($path: String!) {
-    mdx(frontmatter: { path: { eq: $path } }) {
+  query MdxArticleByPath($markdownPath: String!, $langCode: String!) {
+    mdx(frontmatter: { path: { eq: $markdownPath } language: { eq: $langCode } }) {
       body
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
@@ -118,9 +119,6 @@ export const articlePageQuery = graphql`
         subtitle
         language
         description
-        embeddedImagesRemote {
-          ...modernGatImage
-        }
         embeddedImagesLocal {
           ...modernGatImage
         }

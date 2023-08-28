@@ -6,8 +6,7 @@
 
 // You can delete this file if you're not using it
 // import { supportedLangs, defaultLang } from './src/locales/locales';
-const path = require('path')
-const { createRemoteFileNode } = require('gatsby-source-filesystem')
+const path = require('path');
 // BIG WORKAROUND : cannot import lang codes directly from typescript code in src because here we use node without es6-etc support.
 // So re-recrate data here
 // TODO
@@ -20,13 +19,46 @@ const supportedLangs = {
     urlPrefix: 'fr',
     humanName: 'Français',
   },
-}
-const defaultLangCode = 'en'
+};
+
+const defaultLangCode = 'en';
 
 const LAYOUTS = {
   page: 'page',
   article: 'article',
+};
+
+const getUrlPrefix = (node) => {
+  const initialLanguage = node.frontmatter.language;
+let languageUrlPrefix = '';
+// Default language if not defined
+if (initialLanguage === void 0 || initialLanguage === null) {
+console.info(
+'No language field in markdown, select default language:' +
+ defaultLangCode
+);
+node.frontmatter.language = defaultLangCode;
 }
+console.info(`got language ${node.frontmatter.language}`);
+
+let foundALanguageOtherThanDefault = false;
+const language = node.frontmatter.language;
+for (let key of Object.keys(supportedLangs)) {
+if (language === key && language !== defaultLangCode) {
+languageUrlPrefix = `/${supportedLangs[key].urlPrefix}`;
+foundALanguageOtherThanDefault = true;
+break;
+}
+}
+
+if (!foundALanguageOtherThanDefault && language !== defaultLangCode) {
+console.warn(
+`Unhandled language for markdown: ${node.frontmatter.language}. No path change (could conflict with default)`
+);
+
+}
+return languageUrlPrefix;
+};
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes, printTypeDefinitions } = actions
@@ -46,7 +78,6 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       category: String,
       priority: Float!
       image: File @fileByRelativePath
-      embeddedImagesRemote: [File] @link(by: "url")
       embeddedImagesLocal: [File] @fileByRelativePath
     }
     `)
@@ -55,83 +86,16 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   printTypeDefinitions({ path: './typeDefs.txt' })
 }
 
-exports.onCreateNode = ({
-  node,
-  createNodeId,
-  actions: { createNode },
-  cache,
-  store,
-}) => {
-  // For markdown/Mdx files, check for language field and change url accordingly
-  // No URL change for default language
-  // Other languages get a /langCode/ prefix on their URLs
-  if (node.internal.type === 'Mdx') {
-    const initialLanguage = node.frontmatter.language
-    let languageUrlPrefix = ''
-    // Default language if not defined
-    if (initialLanguage === void 0 || initialLanguage === null) {
-      console.info(
-        'No language field in markdown, select default language:' +
-          defaultLangCode
-      )
-      node.frontmatter.language = defaultLangCode
-    }
-
-    let foundALanguageOtherThanDefault = false
-    const language = node.frontmatter.language
-    for (let key of Object.keys(supportedLangs)) {
-      if (language === key && language !== defaultLangCode) {
-        languageUrlPrefix = `/${supportedLangs[key].urlPrefix}`
-        foundALanguageOtherThanDefault = true
-        break
-      }
-    }
-
-    if (!foundALanguageOtherThanDefault && language !== defaultLangCode) {
-      console.warn(
-        `Unhandled language for markdown: ${node.frontmatter.language}. No path change (could conflict with default)`
-      )
-      // return;
-    }
-    node.frontmatter.path = `${languageUrlPrefix}${node.frontmatter.path}`
-  }
-
-  // Fetch remote images if any
-  if (
-    node.internal.type === 'Mdx' &&
-    node.frontmatter &&
-    node.frontmatter.embeddedImagesRemote
-  ) {
-    return Promise.all(
-      node.frontmatter.embeddedImagesRemote.map((url) => {
-        try {
-          return createRemoteFileNode({
-            url,
-            parentNodeId: node.id,
-            createNode,
-            createNodeId,
-            cache,
-            store,
-          })
-        } catch (error) {
-          console.error(error)
-        }
-      })
-    )
-  }
-}
-
 // Fired after page creation
 // used to detect JS pages and create their languages variants
 exports.onCreatePage = ({ page, actions }) => {
-  const { createPage, deletePage } = actions
+  const { createPage, deletePage } = actions;
 
-  console.info(`on create ${page.path}`)
   // If the component path is .mdx, it means the gatsby-plugin-mdx used its default layout.
   // We don't want any default pages to avoid dirty duplicates
   // So remove it !
   if (page.componentPath.includes('.mdx')) {
-    deletePage(page)
+   deletePage(page);
     return
   }
   if (page.context.langCode === void 0) {
@@ -155,8 +119,8 @@ exports.onCreatePage = ({ page, actions }) => {
           },
         })
       })
-      resolve()
-    })
+      resolve();
+    });
   }
 }
 
@@ -188,45 +152,47 @@ exports.createPages = ({ actions, graphql }) => {
     }
   `).then((result) => {
     if (result.errors) {
+      console.error('got error', result.errors);
       return Promise.reject(result.errors)
     }
 
     // Actually creating the page
-    const allPages = result.data.allMdx.edges
+    const allPages = result.data.allMdx.edges;
 
     const mdxPages = allPages.filter(
       (edge) => edge.node.frontmatter.layout === LAYOUTS.page
-    )
+    );
 
     const mdxArticles = allPages.filter(
       (edge) => edge.node.frontmatter.layout === LAYOUTS.article
-    )
+    );
 
     const others = allPages.filter(
       (edge) =>
         Object.values(LAYOUTS).indexOf(edge.node.frontmatter.layout) !== -1
-    )
+    );
 
     if (0 < others.length) {
-      console.warn('found pages with unhandled layouts. Will ignore them:')
-      console.warn(others)
+      console.warn('found pages with unhandled layouts. Will ignore them:');
+      console.warn(JSON.stringify(others));
     }
 
     mdxArticles.forEach(({ node }, index) => {
+      console.log('hello creating mdx article', JSON.stringify(node));
       // false if no previous or no next
       const previousPostLooker = () => {
-        let indexToLook = index - 1
+        let indexToLook = index - 1;
         while (0 <= indexToLook) {
           // Only lists articles in same language
           if (
             mdxArticles[indexToLook].node.frontmatter.language ==
             node.frontmatter.language
           ) {
-            return mdxArticles[indexToLook].node
+            return mdxArticles[indexToLook].node;
           }
-          indexToLook--
+          indexToLook--;
         }
-        return false
+        return false;
       }
 
       const nextPostLooker = () => {
@@ -237,36 +203,41 @@ exports.createPages = ({ actions, graphql }) => {
             mdxArticles[indexToLook].node.frontmatter.language ==
             node.frontmatter.language
           ) {
-            return mdxArticles[indexToLook].node
+            return mdxArticles[indexToLook].node;
           }
-          indexToLook++
+          indexToLook++;
         }
-        return false
-      }
+        return false;
+      };
 
-      const previousPost = previousPostLooker()
-      const nextPost = nextPostLooker()
+  
 
+      const previousPost = previousPostLooker();
+      const nextPost = nextPostLooker();
+      const urlPrefix =  getUrlPrefix(node);
+      const markdownPath = node.frontmatter.path;
       createPage({
-        path: node.frontmatter.path,
+        path: `${urlPrefix}${node.frontmatter.path}`,
         component: layoutArticle,
         context: {
+          markdownPath,
           previousPost,
           nextPost,
           langCode: node.frontmatter.language,
         }, // additional data can be passed via context
-      })
-    }) // foreach article
+      });
+    }); // foreach article
 
     mdxPages.forEach(({ node }) => {
-      console.log('hello creating')
+      const urlPrefix =  getUrlPrefix(node);
+      const markdownPath = node.frontmatter.path;
       createPage({
-        path: node.frontmatter.path,
+        path: `${urlPrefix}${node.frontmatter.path}`,
         component: layoutPage,
-        context: { langCode: node.frontmatter.language }, // additional data can be passed via context
+        context: { markdownPath, langCode: node.frontmatter.language }, // additional data can be passed via context
       })
-    })
-  })
+    });
+  });
 }
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
@@ -280,6 +251,6 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
           },
         ],
       },
-    })
-  }
-}
+    });
+  };
+};
