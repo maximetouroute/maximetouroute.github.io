@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://maximetouroute.github.io/sitemap.xml
+Sitemap: https://maximetouroute.github.io/sitemap-0.xml
 Host: https://maximetouroute.github.io
