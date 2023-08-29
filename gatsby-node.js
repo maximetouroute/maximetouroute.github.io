@@ -91,13 +91,55 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
 
+  // We remove every markdown created by the plug-in
   // If the component path is .mdx, it means the gatsby-plugin-mdx used its default layout.
   // We don't want any default pages to avoid dirty duplicates
   // So remove it !
-  if (page.componentPath.includes('.mdx')) {
-  //  deletePage(page);
+  
+  // -- Filter out any pages duplicates created by mdx plugin
+  // Rules : if there is a 20 in path (meaning has not used custom path), remove
+  // If there is a page- (same), remove
+
+  if (page.path.includes('20')) {
+    // console.log('deleting because date inside (20)');
+   deletePage(page);
     return;
   }
+  if(page.path.includes('index')) {
+    deletePage(page);
+    return;
+  }
+  if(page.path.includes('page-')) {
+    deletePage(page);
+    return;
+  }
+
+    // Detect MDX-plugin-generated markdown and remove them, based on the 20xx date in the path (which is absent from our own generated markdowns)
+    console.log('=========');
+    console.log(page.path);
+    console.log(page.componentPath);
+    // if(page.path.includes("about")) {
+    //   console.log(JSON.stringify(page, null, 2))
+    // }
+  
+    // return;
+
+  // Leftovers must be of type MdxPage. 
+
+  // if (page.path.includes('MdxPage') || page.path.includes('MdxArticle')) {
+  //  // let it go
+  //  console.log("Layout OK. let go of", page.componentPath);
+  // } else if (page.frontmatter === void 0) {
+  //   // let if go
+  //   console.log("should we keep", page.componentPath, JSON.stringify(page, null, 2));
+  // }
+  //   else {
+  //   // We're left with the .tsx pages now
+  //   // console.log('deleting');
+  //   // console.log(JSON.stringify(page, null, 2));
+  //   // deletePage(page);
+  //   //  return;
+  // }
   if (page.context.langCode === void 0) {
     console.info(
       `got a root page with no lang context. ${page.path} Delete page and Create one for each language`

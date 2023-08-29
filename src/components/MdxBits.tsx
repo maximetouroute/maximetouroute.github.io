@@ -27,9 +27,13 @@ export function ImageGrid({ props, indices = [] }: MoreOwnProps) {
   return <PhotoGrid gatsbyImagesWithThumbs={localImages} />;
 }
 
-export function ImageCompare({ props, indices = [] }: MoreOwnProps) {
-  const left = props.localImages[indices[0]].childImageSharp;
-  const right = props.localImages[indices[1]].childImageSharp;
+interface ImageCompareProps {
+  props: any[]; // Expect gatsby images array
+  indices: number[];
+}
+export function ImageCompare({ props, indices }: ImageCompareProps) {
+  const left = props[indices[0]].childImageSharp;
+  const right = props[indices[1]].childImageSharp;
   return <GatsbyImageCompare left={left} right={right} />
 }
 

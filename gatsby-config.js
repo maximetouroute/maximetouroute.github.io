@@ -162,15 +162,15 @@ module.exports = {
     },
 
     // TODO: disabled for updates
-    // {
-    //   resolve: 'gatsby-plugin-robots-txt',
-    //   options: {
-    //     host: siteManifest.robots.host,
-    //     sitemap: siteManifest.robots.sitemap,
-    //     policy: [{ userAgent: '*', allow: '/' }],
-    //   },
-    // },
-    // `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: siteManifest.robots.host,
+        sitemap: siteManifest.robots.sitemap,
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    `gatsby-plugin-sitemap`,
 
     // Amazing loading progress bar on top of website
     {
