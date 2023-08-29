@@ -1,29 +1,24 @@
-import React from 'react'
-import LayoutRoot from '../LayoutRoot/LayoutRoot'
-import 'moment'
-import { MDXProvider } from '@mdx-js/react'
-import SEO from '../../bits/SEO/SEO'
-import { graphql, Link } from 'gatsby'
+import React from 'react';
+import LayoutRoot from '../LayoutRoot/LayoutRoot';
+import 'moment';
+import { MDXProvider } from '@mdx-js/react';
+import SEO from '../../bits/SEO/SEO';
+import { graphql, Link } from 'gatsby';
 import { SHORTCODES } from '../../mdx-components/shortcodes';
 import {
+  nextPrevLinkInsideCoverCSS,
+  nextPrevLinkCSS,
+  articleCSS,
   coverBandCSS,
   coverBandOverlayCSS,
   punchlineCSS,
   subtextCSS,
   pageCSS,
   cardCSS,
-} from '../basicPageStyles'
-import {
-  nextPrevLinkInsideCoverCSS,
-  nextPrevLinkCSS,
-  articleCSS,
-  colorCSS,
 } from './styles';
 
 export default function Template({ data: {mdx}, children, location, pageContext: {previousPost, nextPost, langCode} }) {
 
-  // const mdx = data;
-  console.log(mdx);
   // content is at false is no previous or next
   const previousPostHtml = previousPost ? (
     <Link to={`${previousPost.frontmatter.path}#content`}>
@@ -42,7 +37,6 @@ export default function Template({ data: {mdx}, children, location, pageContext:
     <div></div>
   )
 
-  console.log(mdx);
   return (
     <LayoutRoot
       language={mdx.frontmatter.language}
@@ -92,11 +86,6 @@ export default function Template({ data: {mdx}, children, location, pageContext:
             {/* {JSON.stringify(mdx.frontmatter.image.colors)}*/}
             <MDXProvider components={SHORTCODES}>
               {children}
-              {/* <MDXRenderer
-                localImages={mdx.frontmatter.embeddedImagesLocal}
-              >
-                {mdx.body}
-              </MDXRenderer> */}
             </MDXProvider>
             <div css={(theme) => nextPrevLinkCSS(theme)}>
               {previousPostHtml}

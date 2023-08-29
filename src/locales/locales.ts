@@ -1,14 +1,8 @@
-export type LangCode = 'en' | 'fr'
-
-export interface LangSettings {
-  urlPrefix: string
-  humanName: string
-  default?: boolean
-}
+import { LangCode, SupportedLangs } from "../bits/types";
 
 export const defaultLang: LangCode = 'en'
 
-export const supportedLangs: Record<LangCode, LangSettings> = {
+export const supportedLangs: SupportedLangs = {
   ['en']: {
     urlPrefix: '',
     humanName: '🇬🇧 English',

@@ -5,7 +5,7 @@ import LayoutRoot from '../LayoutRoot/LayoutRoot';
 import 'moment';
 import SEO from '../../bits/SEO/SEO';
 import { SHORTCODES } from '../../mdx-components/shortcodes';
-import { contentCSS, headerCSS, pageCSS, cardCSS } from '../basicPageStyles';
+import { contentCSS, headerCSS, pageCSS, cardCSS  } from './styles';
 import { articleCSS } from '../LayoutMdxArticle/styles';
 
 
