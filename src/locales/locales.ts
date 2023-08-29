@@ -11,10 +11,10 @@ export const defaultLang: LangCode = 'en'
 export const supportedLangs: Record<LangCode, LangSettings> = {
   ['en']: {
     urlPrefix: '',
-    humanName: 'English',
+    humanName: '🇬🇧 English',
   },
   ['fr']: {
     urlPrefix: 'fr',
-    humanName: 'Français',
+    humanName: '🇫🇷 Français',
   },
 }
