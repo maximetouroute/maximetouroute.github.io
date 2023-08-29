@@ -28,7 +28,7 @@ interface OwnProps {
 
 export function ResponsiveIframe({width, height, src}: OwnProps) {
     return (<div
-    css={containerCSS}>
+    css={containerCSS(width, height)}>
    <iframe style={iframeStyle} height={null} width={null} frameBorder={0}
     allowFullScreen src={src} scrolling={'no'}></iframe>
     </div>);

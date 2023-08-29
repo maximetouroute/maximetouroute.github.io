@@ -3,10 +3,11 @@ import { Link, graphql } from 'gatsby';
 import LayoutRoot from '../components/LayoutRoot/LayoutRoot';
 import SEO from '../bits/SEO/SEO';
 import PostGrid from '../bits/PostGridFlat/PostGridFlat';
-import { Theme, CSSObject } from '@emotion/react';
+import { CSSObject } from '@emotion/react';
+import { Theme } from '@mui/material';
 import { useState } from 'react';
 import { themedACSS } from '../bits/styles/styles';
-import Hero from '../components/Hero/Hero';
+import Hero from '../components/MaxHero/Hero';
 import { strings } from '../locales/strings';
 import PostFilterer from '../bits/MaxPostFilterer/PostFilterer';
 const homeCSS = {
