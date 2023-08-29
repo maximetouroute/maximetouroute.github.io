@@ -1,10 +1,10 @@
 import React from 'react'
-import MainLayout from './MainLayout'
+import LayoutRoot from '../LayoutRoot/LayoutRoot'
 import 'moment'
 import { MDXProvider } from '@mdx-js/react'
-import SEO from '../bits/SEO/SEO'
+import SEO from '../../bits/SEO/SEO'
 import { graphql, Link } from 'gatsby'
-import { SHORTCODES } from './../mdx-components/shortcodes';
+import { SHORTCODES } from '../../mdx-components/shortcodes';
 import {
   coverBandCSS,
   coverBandOverlayCSS,
@@ -12,13 +12,13 @@ import {
   subtextCSS,
   pageCSS,
   cardCSS,
-} from './basicPageStyles'
+} from '../basicPageStyles'
 import {
   nextPrevLinkInsideCoverCSS,
   nextPrevLinkCSS,
   articleCSS,
   colorCSS,
-} from './MdxArticleStyles';
+} from './styles';
 
 export default function Template({ data: {mdx}, children, location, pageContext: {previousPost, nextPost, langCode} }) {
 
@@ -44,7 +44,7 @@ export default function Template({ data: {mdx}, children, location, pageContext:
 
   console.log(mdx);
   return (
-    <MainLayout
+    <LayoutRoot
       language={mdx.frontmatter.language}
       location={{ ...location }}
       accentColor={mdx.frontmatter.image.colors.vibrant}
@@ -105,7 +105,7 @@ export default function Template({ data: {mdx}, children, location, pageContext:
           </div>
         </article>
       </div>
-    </MainLayout>
+    </LayoutRoot>
   )
 }
 

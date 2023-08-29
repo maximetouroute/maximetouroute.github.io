@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import MainLayout from '../components/MainLayout'
+import LayoutRoot from '../components/LayoutRoot/LayoutRoot'
 import SEO from '../bits/SEO/SEO'
 import PostGrid from '../bits/PostGridFlat/PostGridFlat'
 import { Theme, useTheme, CSSObject, ThemeProvider } from '@emotion/react'
@@ -34,7 +34,7 @@ export default function Index({ data, pageContext: { langCode }, location }) {
   )
 
   return (
-    <MainLayout language={langCode} location={{ ...location }}>
+    <LayoutRoot language={langCode} location={{ ...location }}>
       <SEO title={'Home'} langCode={langCode} />
       <div css={homeCSS}>
         <PostGrid posts={postsInMyLang} />
@@ -42,7 +42,7 @@ export default function Index({ data, pageContext: { langCode }, location }) {
           <Link to="/about">{strings['aboutMe'][langCode]}</Link>
         </div>
       </div>
-    </MainLayout>
+    </LayoutRoot>
   )
 }
 

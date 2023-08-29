@@ -4,12 +4,17 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+// This file generates all the pages and all the stuff
+// This is where we handle i18n and custom pathes for it
+// And custom layouts
+
 // You can delete this file if you're not using it
+
+// WORKAROUND : cannot import lang codes directly from typescript code in src because here we use node without es6-etc support.
 // import { supportedLangs, defaultLang } from './src/locales/locales';
-const path = require('path');
-// BIG WORKAROUND : cannot import lang codes directly from typescript code in src because here we use node without es6-etc support.
-// So re-recrate data here
-// TODO
+// So re-recrate types
+const defaultLangCode = 'en'
+
 const supportedLangs = {
   ['en']: {
     urlPrefix: '',
@@ -19,48 +24,95 @@ const supportedLangs = {
     urlPrefix: 'fr',
     humanName: 'Français',
   },
-};
-
-const defaultLangCode = 'en';
+}
+// WORKAROUND END
 
 const LAYOUTS = {
   page: 'page',
   article: 'article',
-};
+}
 
+const path = require('path')
+const layoutPage = path.resolve(
+  `./src/components/LayoutMdxPage/LayoutMdxPage.tsx`
+)
+const layoutArticle = path.resolve(
+  `./src/components/LayoutMdxArticle/LayoutMdxArticle.tsx`
+)
+
+/**
+ * Max's i18n implementation for gatsby (mdx + normal pages)
+ * @param {*} node
+ * @returns language prefix for URL (is empty for default language)
+ */
 const getUrlPrefix = (node) => {
-  const initialLanguage = node.frontmatter.language;
-let languageUrlPrefix = '';
-// Default language if not defined
-if (initialLanguage === void 0 || initialLanguage === null) {
-console.info(
-'No language field in markdown, select default language:' +
- defaultLangCode
-);
-node.frontmatter.language = defaultLangCode;
-}
-console.info(`got language ${node.frontmatter.language}`);
+  const initialLanguage = node.frontmatter.language
+  let languageUrlPrefix = ''
+  // Default language if not defined
+  if (initialLanguage === void 0 || initialLanguage === null) {
+    console.info(
+      'No language field in markdown, select default language:' +
+        defaultLangCode
+    )
+    node.frontmatter.language = defaultLangCode
+  }
+  console.info(`got language ${node.frontmatter.language}`)
 
-let foundALanguageOtherThanDefault = false;
-const language = node.frontmatter.language;
-for (let key of Object.keys(supportedLangs)) {
-if (language === key && language !== defaultLangCode) {
-languageUrlPrefix = `/${supportedLangs[key].urlPrefix}`;
-foundALanguageOtherThanDefault = true;
-break;
-}
+  let foundALanguageOtherThanDefault = false
+  const language = node.frontmatter.language
+  for (let key of Object.keys(supportedLangs)) {
+    if (language === key && language !== defaultLangCode) {
+      languageUrlPrefix = `/${supportedLangs[key].urlPrefix}`
+      foundALanguageOtherThanDefault = true
+      break
+    }
+  }
+
+  if (!foundALanguageOtherThanDefault && language !== defaultLangCode) {
+    console.warn(
+      `Unhandled language for markdown: ${node.frontmatter.language}. No path change (could conflict with default)`
+    )
+  }
+  return languageUrlPrefix
 }
 
-if (!foundALanguageOtherThanDefault && language !== defaultLangCode) {
-console.warn(
-`Unhandled language for markdown: ${node.frontmatter.language}. No path change (could conflict with default)`
-);
+// Utils
 
+// false if no previous or no next
+const previousPostLooker = (node, index, mdxArticles) => {
+  let indexToLook = index - 1
+  while (0 <= indexToLook) {
+    // Only lists articles in same language
+    if (
+      mdxArticles[indexToLook].node.frontmatter.language ==
+      node.frontmatter.language
+    ) {
+      return mdxArticles[indexToLook].node
+    }
+    indexToLook--
+  }
+  return false
 }
-return languageUrlPrefix;
-};
 
-exports.createSchemaCustomization = ({ actions, schema }) => {
+const nextPostLooker = (node, index, mdxArticles) => {
+  let indexToLook = index + 1
+  while (indexToLook <= mdxArticles.length - 1) {
+    // Only lists articles in same language
+    if (
+      mdxArticles[indexToLook].node.frontmatter.language ==
+      node.frontmatter.language
+    ) {
+      return mdxArticles[indexToLook].node
+    }
+    indexToLook++
+  }
+  return false
+}
+
+/**
+ * Add custom types to markdown
+ */
+exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes, printTypeDefinitions } = actions
 
   createTypes(`
@@ -86,60 +138,32 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   printTypeDefinitions({ path: './typeDefs.txt' })
 }
 
-// Fired after page creation
-// used to detect JS pages and create their languages variants
+/**
+ * Fired after page creation
+ * used to detect JS pages and create their languages variants
+ */
 exports.onCreatePage = ({ page, actions }) => {
-  const { createPage, deletePage } = actions;
+  const { createPage, deletePage } = actions
 
-  // We remove every markdown created by the plug-in
-  // If the component path is .mdx, it means the gatsby-plugin-mdx used its default layout.
-  // We don't want any default pages to avoid dirty duplicates
-  // So remove it !
-  
-  // -- Filter out any pages duplicates created by mdx plugin
+  // -- Filter out any pages created by mdx plugin with the default layout
+  // We're taking care of it ourselves in CreatePages function
   // Rules : if there is a 20 in path (meaning has not used custom path), remove
   // If there is a page- (same), remove
+  // If
 
   if (page.path.includes('20')) {
-    // console.log('deleting because date inside (20)');
-   deletePage(page);
-    return;
+    deletePage(page)
+    return
   }
-  if(page.path.includes('index')) {
-    deletePage(page);
-    return;
+  if (page.path.includes('index')) {
+    deletePage(page)
+    return
   }
-  if(page.path.includes('page-')) {
-    deletePage(page);
-    return;
+  if (page.path.includes('page-')) {
+    deletePage(page)
+    return
   }
 
-    // Detect MDX-plugin-generated markdown and remove them, based on the 20xx date in the path (which is absent from our own generated markdowns)
-    console.log('=========');
-    console.log(page.path);
-    console.log(page.componentPath);
-    // if(page.path.includes("about")) {
-    //   console.log(JSON.stringify(page, null, 2))
-    // }
-  
-    // return;
-
-  // Leftovers must be of type MdxPage. 
-
-  // if (page.path.includes('MdxPage') || page.path.includes('MdxArticle')) {
-  //  // let it go
-  //  console.log("Layout OK. let go of", page.componentPath);
-  // } else if (page.frontmatter === void 0) {
-  //   // let if go
-  //   console.log("should we keep", page.componentPath, JSON.stringify(page, null, 2));
-  // }
-  //   else {
-  //   // We're left with the .tsx pages now
-  //   // console.log('deleting');
-  //   // console.log(JSON.stringify(page, null, 2));
-  //   // deletePage(page);
-  //   //  return;
-  // }
   if (page.context.langCode === void 0) {
     console.info(
       `got a root page with no lang context. ${page.path} Delete page and Create one for each language`
@@ -161,134 +185,99 @@ exports.onCreatePage = ({ page, actions }) => {
           },
         })
       })
-      resolve();
-    });
+      resolve()
+    })
   }
 }
 
 /// ---------------- Custom page generation for markdown files
+/**
+ * Create our own pages
+ */
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
-  const layoutPage = path.resolve(`./src/components/MdxPage.tsx`);
-  const layoutArticle = path.resolve(`./src/components/MdxArticle.tsx`);
-console.log("hello create pages");
+  const { createPage } = actions
+
+  // Fetch data from Graphql
   // Sort by priority for prev/next post, for them to be the same than on homepage
   return graphql(`
-  {
-    allMdx(
-      sort: {frontmatter: {priority: ASC}}
-      limit: 1000
-      filter: {frontmatter: {category: {ne: "hidden"}}}
-    ) {
-      edges {
-        node {
-          frontmatter {
-            path
-            layout
-            title
-            language
-          }
-          internal {
-            contentFilePath
+    {
+      allMdx(
+        sort: { frontmatter: { priority: ASC } }
+        limit: 1000
+        filter: { frontmatter: { category: { ne: "hidden" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+              layout
+              title
+              language
+            }
+            internal {
+              contentFilePath
+            }
           }
         }
       }
     }
-  }
   `).then((result) => {
     if (result.errors) {
-      console.error('got error', result.errors);
+      console.error('got error', result.errors)
       return Promise.reject(result.errors)
     }
 
-    // Actually creating the page
-    const allPages = result.data.allMdx.edges;
+    const allPages = result.data.allMdx.edges
 
     const mdxPages = allPages.filter(
       (edge) => edge.node.frontmatter.layout === LAYOUTS.page
-    );
+    )
 
     const mdxArticles = allPages.filter(
       (edge) => edge.node.frontmatter.layout === LAYOUTS.article
-    );
+    )
 
     const others = allPages.filter(
       (edge) =>
         Object.values(LAYOUTS).indexOf(edge.node.frontmatter.layout) !== -1
-    );
+    )
 
     if (0 < others.length) {
-      console.warn('found pages with unhandled layouts. Will ignore them:');
-      console.warn(JSON.stringify(others));
+      console.warn('found pages with unhandled layouts. Will ignore them:')
+      console.warn(JSON.stringify(others))
     }
 
     mdxArticles.forEach(({ node }, index) => {
-      console.log('hello creating mdx article', JSON.stringify(node));
-      // false if no previous or no next
-      const previousPostLooker = () => {
-        let indexToLook = index - 1;
-        while (0 <= indexToLook) {
-          // Only lists articles in same language
-          if (
-            mdxArticles[indexToLook].node.frontmatter.language ==
-            node.frontmatter.language
-          ) {
-            return mdxArticles[indexToLook].node;
-          }
-          indexToLook--;
-        }
-        return false;
-      }
-
-      const nextPostLooker = () => {
-        let indexToLook = index + 1
-        while (indexToLook <= mdxArticles.length - 1) {
-          // Only lists articles in same language
-          if (
-            mdxArticles[indexToLook].node.frontmatter.language ==
-            node.frontmatter.language
-          ) {
-            return mdxArticles[indexToLook].node;
-          }
-          indexToLook++;
-        }
-        return false;
-      };
-
-  
-
-      const previousPost = previousPostLooker();
-      const nextPost = nextPostLooker();
-      const urlPrefix =  getUrlPrefix(node);
-      const markdownPath = node.frontmatter.path;
-      console.log("hello everything OK?", node.internal.contentFilePath);
+      const previousPost = previousPostLooker(node, index, mdxArticles)
+      const nextPost = nextPostLooker(node, index, mdxArticles)
+      const urlPrefix = getUrlPrefix(node)
+      const markdownPath = node.frontmatter.path
       try {
-      createPage({
-        path: `${urlPrefix}${node.frontmatter.path}`,
-        component:`${layoutArticle}?__contentFilePath=${node.internal.contentFilePath}`,
-        context: {
-          markdownPath,
-          previousPost,
-          nextPost,
-          langCode: node.frontmatter.language,
-        }, // additional data can be passed via context
-      });
-    }
-    catch(e) {
-      console.error('well it failed', e);
-    }
-    }); // foreach article
+        createPage({
+          path: `${urlPrefix}${node.frontmatter.path}`,
+          component: `${layoutArticle}?__contentFilePath=${node.internal.contentFilePath}`,
+          context: {
+            markdownPath,
+            previousPost,
+            nextPost,
+            langCode: node.frontmatter.language,
+          }, // additional data can be passed via context
+        })
+      } catch (e) {
+        console.error('well it failed', e)
+      }
+    }) // foreach article
 
     mdxPages.forEach(({ node }) => {
-      const urlPrefix =  getUrlPrefix(node);
-      const markdownPath = node.frontmatter.path;
+      const urlPrefix = getUrlPrefix(node)
+      const markdownPath = node.frontmatter.path
       createPage({
         path: `${urlPrefix}${node.frontmatter.path}`,
         component: `${layoutPage}?__contentFilePath=${node.internal.contentFilePath}`,
         context: { markdownPath, langCode: node.frontmatter.language }, // additional data can be passed via context
       })
-    });
-  });
+    })
+  })
 }
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
@@ -302,6 +291,6 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
           },
         ],
       },
-    });
-  };
-};
+    })
+  }
+}

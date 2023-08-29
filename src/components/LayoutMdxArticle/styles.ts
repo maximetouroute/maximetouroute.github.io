@@ -1,7 +1,7 @@
 import { CSSObject } from '@emotion/react'
 import { Theme } from '@mui/material'
-import { breakpointKey } from '../bits/styles/styles'
-import { themedACSS } from '../bits/styles/styles'
+import { breakpointKey } from '../../bits/styles/styles'
+import { themedACSS } from '../../bits/styles/styles'
 
 export const colorCSS = (color: string): CSSObject => {
   return {

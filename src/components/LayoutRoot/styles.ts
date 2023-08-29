@@ -1,5 +1,5 @@
 import { CSSObject } from '@emotion/react'
-import { breakpointKey } from '../bits/styles/styles'
+import { breakpointKey } from '../../bits/styles/styles'
 
 export const gridNavContentFooterCSS: CSSObject = {
   width: '100%',

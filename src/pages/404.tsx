@@ -1,5 +1,5 @@
 import React from 'react'
-import MainLayout from '../components/MainLayout'
+import LayoutRoot from '../components/LayoutRoot/LayoutRoot'
 
 export default function NotFoundPage({
   data,
@@ -7,7 +7,7 @@ export default function NotFoundPage({
   location,
 }) {
   return (
-    <MainLayout language={langCode} location={location}>
+    <LayoutRoot language={langCode} location={location}>
       <div
         style={{
           display: 'flex',
@@ -20,6 +20,6 @@ export default function NotFoundPage({
         <h1>Are you lost ?</h1>
         <p>You just hit a route that doesn&#39;t exist...</p>
       </div>
-    </MainLayout>
+    </LayoutRoot>
   )
 }
