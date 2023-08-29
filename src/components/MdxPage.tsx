@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import MainLayout from './MainLayout'
 import 'moment'
 import SEO from '../bits/SEO/SEO'
-import { SHORTCODES } from './MdxBits'
+import { SHORTCODES } from './../mdx-components/shortcodes';
 import { contentCSS, headerCSS, pageCSS, cardCSS } from './basicPageStyles'
 import { articleCSS } from './MdxArticleStyles'
 

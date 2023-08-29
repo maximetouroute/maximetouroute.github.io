@@ -4,7 +4,7 @@ import 'moment'
 import { MDXProvider } from '@mdx-js/react'
 import SEO from '../bits/SEO/SEO'
 import { graphql, Link } from 'gatsby'
-import { SHORTCODES } from './MdxBits'
+import { SHORTCODES } from './../mdx-components/shortcodes';
 import {
   coverBandCSS,
   coverBandOverlayCSS,
