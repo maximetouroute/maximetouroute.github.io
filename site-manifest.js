@@ -72,6 +72,6 @@
 
   robots: {
     host: 'https://maximetouroute.github.io',
-    sitemap: 'https://maximetouroute.github.io/sitemap.xml',
+    sitemap: 'https://maximetouroute.github.io/sitemap-0.xml',
   },
 };
