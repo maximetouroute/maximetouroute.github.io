@@ -1,6 +1,5 @@
 import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { graphql } from 'gatsby'
 import MainLayout from './MainLayout'
 import 'moment'
@@ -25,7 +24,7 @@ export const pageQuery = graphql`
   }
 `
 
-export default function Template({ data: { mdx }, location, pageContext: {langCode} }) {
+export default function Template({ data: { mdx }, children, location, pageContext: {langCode} }) {
   // console.log('mdx', data, langCode);
   return (
     <MainLayout language={mdx.frontmatter.language} location={{ ...location }}>
@@ -43,11 +42,7 @@ export default function Template({ data: { mdx }, location, pageContext: {langCo
           <header css={headerCSS}></header>
           <div css={articleCSS} itemProp="articleBody">
             <MDXProvider components={SHORTCODES}>
-              <MDXRenderer
-                localImages={mdx.frontmatter.embeddedImagesLocal}
-              >
-                {mdx.body}
-              </MDXRenderer>
+              {children}
             </MDXProvider>
           </div>
         </article>

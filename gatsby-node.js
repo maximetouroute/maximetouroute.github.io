@@ -95,8 +95,8 @@ exports.onCreatePage = ({ page, actions }) => {
   // We don't want any default pages to avoid dirty duplicates
   // So remove it !
   if (page.componentPath.includes('.mdx')) {
-   deletePage(page);
-    return
+  //  deletePage(page);
+    return;
   }
   if (page.context.langCode === void 0) {
     console.info(
@@ -126,10 +126,10 @@ exports.onCreatePage = ({ page, actions }) => {
 
 /// ---------------- Custom page generation for markdown files
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
-  const layoutPage = path.resolve(`./src/layout/MdxPage.tsx`)
-  const layoutArticle = path.resolve(`./src/layout/MdxArticle.tsx`)
-
+  const { createPage } = actions;
+  const layoutPage = path.resolve(`./src/components/MdxPage.tsx`);
+  const layoutArticle = path.resolve(`./src/components/MdxArticle.tsx`);
+console.log("hello create pages");
   // Sort by priority for prev/next post, for them to be the same than on homepage
   return graphql(`
   {
@@ -219,6 +219,8 @@ exports.createPages = ({ actions, graphql }) => {
       const nextPost = nextPostLooker();
       const urlPrefix =  getUrlPrefix(node);
       const markdownPath = node.frontmatter.path;
+      console.log("hello everything OK?", node.internal.contentFilePath);
+      try {
       createPage({
         path: `${urlPrefix}${node.frontmatter.path}`,
         component:`${layoutArticle}?__contentFilePath=${node.internal.contentFilePath}`,
@@ -229,6 +231,10 @@ exports.createPages = ({ actions, graphql }) => {
           langCode: node.frontmatter.language,
         }, // additional data can be passed via context
       });
+    }
+    catch(e) {
+      console.error('well it failed', e);
+    }
     }); // foreach article
 
     mdxPages.forEach(({ node }) => {

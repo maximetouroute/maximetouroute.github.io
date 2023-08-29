@@ -51,7 +51,7 @@ module.exports = {
                  },
                   // just in case those previously mentioned remark plugins sound cool :)
         // defaultLayouts: {
-        //   default: null,//require.resolve("./src/layout/MdxBasic.js"),
+        //   default: null,//require.resolve("./src/components/MdxBasic.js"),
         // },
       },
     },
