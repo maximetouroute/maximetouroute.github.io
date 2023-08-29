@@ -27,8 +27,10 @@ module.exports = {
   },
 
   plugins: [
-    `gatsby-plugin-image`,
     'gatsby-plugin-extract-image-colors',
+
+    `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -40,12 +42,35 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-image`,
+    
 
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `md`],
         gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+        // gatsbyRemarkPlugins: [
           // `gatsby-transformer-sharp`,
           // {
           //   resolve: `gatsby-remark-responsive-iframe`,
@@ -66,7 +91,7 @@ module.exports = {
           //     maxWidth: 1920,
           //   },
           // },
-        ], // just in case those previously mentioned remark plugins sound cool :)
+        // ], // just in case those previously mentioned remark plugins sound cool :)
 
         // mdxOptions: {
         //            remarkPlugins: [
