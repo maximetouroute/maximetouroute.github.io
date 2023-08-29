@@ -8,7 +8,7 @@ interface OwnProps {
   image: any; // Gatsby Image
   alt: string;
 }
-export function Image({ image, alt = '' }: OwnProps) {
+export function MimsImage({ image, alt = '' }: OwnProps) {
   return <GatsbyImage alt={alt} image={getImage(image.childImageSharp.full)} />
 }
 
@@ -63,7 +63,7 @@ export function ResponsiveIframe({width, height, src}: OwnPropsAgain) {
 // Provide common components here
 export const SHORTCODES = {
   Link,
-  Image,
+  MimsImage,
   ImageGrid,
   GatsbyImage,
   PhotoGrid,
