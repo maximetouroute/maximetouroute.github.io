@@ -42,6 +42,7 @@ export default function Template({ data: {mdx}, children, location, pageContext:
     <div></div>
   )
 
+  console.log(mdx);
   return (
     <MainLayout
       language={mdx.frontmatter.language}
@@ -51,7 +52,7 @@ export default function Template({ data: {mdx}, children, location, pageContext:
       <SEO
         title={mdx.frontmatter.title}
         description={mdx.frontmatter.description || mdx.frontmatter.subtitle}
-        image={mdx.frontmatter.image.childImageSharp.fixed.src}
+        image={mdx.frontmatter.image.childImageSharp.gatsbyImageData.images.sources[0]}
         pathname={mdx.frontmatter.path}
         article={true}
         langCode={langCode}
@@ -126,13 +127,7 @@ export const articlePageQuery = graphql`
             ...GatsbyImageColors
           }
           childImageSharp {
-            # Other options include height (set both width and height to crop),
-            # grayscale, duotone, rotate, etc.
-            fixed(width: 700) {
-              # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-              ...GatsbyImageSharpFixed
-              src
-            }
+            gatsbyImageData(layout: FIXED, width: 700)
           }
         }
       }
