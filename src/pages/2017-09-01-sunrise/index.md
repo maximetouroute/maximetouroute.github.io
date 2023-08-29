@@ -8,7 +8,7 @@ category: hidden
 image: 'post_sunrise.jpg'
 ---
 
-<iframe width="1920" height="960" src="https://www.youtube.com/embed/-JbLUvenUJ8?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1920" height="960" src="https://www.youtube.com/embed/-JbLUvenUJ8?rel=0" frameBorder={0} allowFullScreen></iframe>
 
 [Direct Link](https://www.youtube.com/watch?v=-JbLUvenUJ8)
 
