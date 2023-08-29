@@ -12,6 +12,7 @@
 //     titleTemplate: string;
 //     description: string;
 //     url: string;
+//     siteUrl: string;
 //     keywords: string;
 //     socialLinks: Record<Social, string>
 //     pwa: {
@@ -42,6 +43,7 @@
     'Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Cinematography, Photography, Digital Arts, Software Engineering.',
   // for robots plugin, No trailing slash allowed!
   url: 'https://maximetouroute.github.io',
+  siteUrl: 'https://maximetouroute.github.io',
   // separated by comas
   keywords:
     'cinematography, photography, digital arts, maxime touroute, portfolio, visual arts, paris, lyon, french artist',
