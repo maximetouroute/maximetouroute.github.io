@@ -1,6 +1,8 @@
-const siteManifest = require('./siteManifest')
+// import type { GatsbyConfig } from "gatsby";
+const siteManifest = require('./site-manifest.js');
 
 module.exports = {
+
   siteMetadata: {
     siteName: siteManifest.name,
     title: siteManifest.title,

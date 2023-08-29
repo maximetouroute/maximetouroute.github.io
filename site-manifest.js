@@ -1,4 +1,36 @@
-module.exports = {
+/**
+ * Maxime
+ * Config file to simplify site creation
+ */
+
+// type Social = 'twitter' | 'linkedin' | 'facebook' | 'github' | 'instagram' | 'youtube' | 'soundcloud' | 'vimeo';
+// interface SiteManifest {
+//     name: string;
+//     title: string;
+//     author: string;
+//     authorMail: string;
+//     titleTemplate: string;
+//     description: string;
+//     url: string;
+//     keywords: string;
+//     socialLinks: Record<Social, string>
+//     pwa: {
+//         name: string;
+//         short_name: string;
+//         background_color: string;
+//         theme_color: string;
+//     };
+//     spin: {
+//         color: string;
+//     };
+//     robots: {
+//         host: string;
+//         sitemap: string;
+//       };
+// };
+
+// export const siteManifest: SiteManifest = {
+  module.exports = {
   name: `Maxime Touroute Portfolio`,
   title: `Maxime's Portfolio`,
   author: 'Maxime Touroute',
@@ -40,4 +72,4 @@ module.exports = {
     host: 'https://maximetouroute.github.io',
     sitemap: 'https://maximetouroute.github.io/sitemap.xml',
   },
-}
+};

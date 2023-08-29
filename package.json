@@ -14,6 +14,7 @@
     "format": "prettier --write '**/*.js' '**/*.ts' '**/*.tsx'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public -b master",
+    "clean": "gatsby clean",
     "upgrade-interactive": "npm-check --update",
     "pre-commit": "lint-staged",
     "format:check": "prettier --check .",
