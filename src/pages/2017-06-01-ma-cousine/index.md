@@ -8,7 +8,7 @@ category: hidden
 image: 'cover-cousine.png'
 ---
 
-<iframe src="https://player.vimeo.com/video/219981931" frameBorder={0} allowFullScreen width="1920" height="1080"></iframe>
+<ResponsiveIframe src="https://player.vimeo.com/video/219981931" width="1920" height="1080"/>
 
 [Direct Link](https://vimeo.com/219981931)
 

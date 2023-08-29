@@ -8,7 +8,7 @@ category: hidden
 image: 'post_truePedestrian.jpg'
 ---
 
-<iframe width="1920" height="1080" src="https://www.youtube.com/embed/cz8iNzDwNpc?rel=0" frameBorder={0} allowFullScreen></iframe>
+<ResponsiveIframe width="1920" height="1080" src="https://www.youtube.com/embed/cz8iNzDwNpc?rel=0"/>
 
 [Direct Link](https://www.youtube.com/watch?v=cz8iNzDwNpc)
 

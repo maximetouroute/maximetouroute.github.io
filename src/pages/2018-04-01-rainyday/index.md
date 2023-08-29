@@ -8,7 +8,7 @@ category: portfolio
 image: 'post_rainyday.jpg'
 ---
 
-<iframe src="https://player.vimeo.com/video/263371046" frameBorder={0} allowFullScreen width="1920" height="1080"></iframe>
+<ResponsiveIframe src="https://player.vimeo.com/video/263371046" width="1920" height="1080"/>
 
 [Direct Link](https://vimeo.com/263371046)
 

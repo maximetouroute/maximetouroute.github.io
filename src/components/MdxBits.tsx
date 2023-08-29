@@ -32,6 +32,34 @@ export function ImageCompare({ props, indices = [] }: MoreOwnProps) {
   const right = props.localImages[indices[1]].childImageSharp;
   return <GatsbyImageCompare left={left} right={right} />
 }
+
+
+interface OwnPropsAgain {
+  width: number;
+  height: number;
+  src: string;
+}
+export function ResponsiveIframe({width, height, src}: OwnPropsAgain) {
+
+  return <div
+  css={{
+    paddingBottom: `${(height/width)*100}%`,
+    position: 'relative',
+    height: 0,
+    overflow: 'hidden'
+  }}>
+ <iframe style={{position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%'
+  
+  }} height={null} width={null} frameBorder={0}
+  allowFullScreen src={src} scrolling={'no'}></iframe>
+  </div>
+
+}
+
 // Provide common components here
 export const SHORTCODES = {
   Link,
@@ -40,4 +68,5 @@ export const SHORTCODES = {
   GatsbyImage,
   PhotoGrid,
   ImageCompare,
+  ResponsiveIframe
 }

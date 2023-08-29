@@ -10,6 +10,6 @@ image: 'post_sunrise.jpg'
 
 An overview of some color grading works.
 
-<iframe src="https://player.vimeo.com/video/258404953" frameBorder={0} allowFullScreen width="1920" height="1080"></iframe>
+<ResponsiveIframe src="https://player.vimeo.com/video/258404953" width="1920" height="1080"/>
 
 [Direct Link](https://vimeo.com/258404953)
