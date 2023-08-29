@@ -62,6 +62,10 @@ export default function LayoutRoot({
         default: '#E4E4E4',
         paper:'#fafafa',
       },
+
+      action: {
+        active: accentColor ? accentColor : '#0C132C',
+      },
       // action: {
       //   hover: 'rgba(0,0,0,0.56)',
       // },

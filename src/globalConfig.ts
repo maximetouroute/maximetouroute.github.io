@@ -2,7 +2,7 @@ import { NavbarConfig, FooterConfig } from './bits/types';
 
 
 export const navbarConfig: NavbarConfig = {
-  name: 'Maxime.',
+  name: 'Maxime Touroute.',
   links: {
     en: {
       links: [
