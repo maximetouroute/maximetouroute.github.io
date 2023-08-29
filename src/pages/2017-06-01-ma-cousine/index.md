@@ -3,6 +3,7 @@ path: /ma-cousine
 layout: post
 title: 'Ma Cousine'
 subtitle: Short movie
+tags: other
 date: '2017-06-01'
 category: hidden
 image: 'cover-cousine.png'

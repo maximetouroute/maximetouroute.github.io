@@ -3,6 +3,7 @@ path: /rainyday
 layout: post
 title: Rainy Day
 subtitle: Experimental video
+tags: other
 date: '2018-04-01'
 category: portfolio
 image: 'post_rainyday.jpg'

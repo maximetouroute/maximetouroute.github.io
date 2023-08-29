@@ -3,6 +3,7 @@ path: /veronika
 layout: post
 title: 'Veronika'
 subtitle: Short documentary
+tags: other
 date: '2018-11-03'
 category: hidden
 image: 'screen1.png'

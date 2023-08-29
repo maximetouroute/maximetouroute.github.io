@@ -3,6 +3,7 @@ path: /museomix
 layout: post
 title: Dans les deux sens
 subtitle: Museum Installation
+tags: other
 date: '2018-08-10'
 category: hidden
 image: 'p-10.jpg'

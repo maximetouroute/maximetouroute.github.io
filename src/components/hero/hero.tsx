@@ -1,21 +1,35 @@
-import { useTheme } from '@mui/styles'
+import React from 'react';
 import {
-  detailsCSS,
   grettingCSS,
   heroCSS,
   punchlineCSS,
-  textCSS,
-} from './styles'
+  lastLineCSS,
+} from './styles';
+import { strings } from './strings';
+import { LangCode } from '../../bits/types';
 
-export default function Hero() {
-  const theme = useTheme()
+
+const punchline = {
+  en: (<div css={punchlineCSS}>I'm 
+  <b> Maxime.</b> I work on <b css={{color: '#588CF6'}}>digital art</b> experiences and I build <b css={{color: '#ad206d'}}>software</b> for digital artists and cultural institutions.
+  </div>),
+  fr:  <div css={punchlineCSS}>Moi c'est 
+  <b> Maxime.</b> Je crée des expériences <b css={{color: '#588CF6'}}> d'art numérique</b> et je développe des <b css={{color: '#ad206d'}}>logiciels</b> pour les artistes et institutions culturelles.
+  </div>
+};
+interface OwnProps {
+  langCode: LangCode;
+}
+export default function Hero({langCode}: OwnProps) {
+
   return (
     <div css={heroCSS}>
-      <div css={grettingCSS}>Hello 👋 </div>
-      <div css={punchlineCSS}>I'm Maxime</div>
-      <div css={detailsCSS}>One more line</div>
-      <p css={textCSS}>
-        I work with cultural institutions and digital artists to create stuff
+      <div css={grettingCSS}>{strings.hello[langCode]}</div>
+      {punchline[langCode]}  
+      <p css={lastLineCSS}>
+       {strings.checkOut[langCode]}
+       <br/>
+       <b css={{fontStyle: 'none'}}>↓</b>
       </p>
     </div>
   )

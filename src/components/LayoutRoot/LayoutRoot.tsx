@@ -63,6 +63,10 @@ export default function LayoutRoot({
         paper:'#fafafa',
       },
 
+      info: {
+        main: "#588CF6"
+      },
+
       action: {
         active: accentColor ? accentColor : '#0C132C',
       },

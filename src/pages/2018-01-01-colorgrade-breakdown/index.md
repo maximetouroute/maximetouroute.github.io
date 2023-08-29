@@ -3,6 +3,7 @@ path: /color-grade-breakdown-2017
 layout: post
 title: 'Color Grade Breakdown 2017'
 subtitle: Showreel
+tags: other
 date: '2018-01-01'
 category: hidden
 image: 'post_sunrise.jpg'

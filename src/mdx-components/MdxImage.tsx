@@ -7,5 +7,7 @@ interface OwnProps {
   alt: string;
 }
 export function MdxImage({ image, alt = '' }: OwnProps) {
-  return <GatsbyImage alt={alt} image={getImage(image.childImageSharp.full)} />
+  return <div css={{maxWidth: '30rem', margin: 'auto', borderRadius: '100%' }}>
+    <GatsbyImage alt={alt} image={getImage(image.childImageSharp.full)} />
+    </div>
 }

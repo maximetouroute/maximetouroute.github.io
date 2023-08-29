@@ -3,6 +3,7 @@ path: /prose-aftermovie
 layout: post
 title: 'Prose Aftermovie'
 subtitle: Film making
+tags: other
 date: '2018-02-01'
 category: hidden
 image: 'post_prose.jpg'

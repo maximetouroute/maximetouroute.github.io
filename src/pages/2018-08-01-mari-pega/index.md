@@ -3,6 +3,7 @@ path: /maripega
 layout: post
 title: 'Mari Pega'
 subtitle: Music Clip
+tags: other
 date: '2018-08-01'
 category: hidden
 image: 'mari5_a.jpg'

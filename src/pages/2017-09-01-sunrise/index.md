@@ -3,6 +3,7 @@ path: /sunrise
 layout: post
 title: 'Sunrise'
 subtitle: Movie clip
+tags: other
 date: '2017-09-01'
 category: hidden
 image: 'post_sunrise.jpg'

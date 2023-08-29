@@ -126,6 +126,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String!
       language: String!
       subtitle: String
+      tags: String!
       date: Date @dateformat
       category: String,
       priority: Float!

@@ -3,6 +3,7 @@ path: /true-pedestrian
 layout: post
 title: True Pedestrian
 subtitle: Spoof Trailer
+tags: other
 date: '2015-12-07'
 category: hidden
 image: 'post_truePedestrian.jpg'

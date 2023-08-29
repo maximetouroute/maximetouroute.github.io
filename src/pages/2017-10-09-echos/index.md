@@ -3,6 +3,7 @@ path: /echos
 layout: post
 title: 'Echos'
 subtitle: 24h short movie
+tags: other
 date: '2017-10-09'
 category: hidden
 image: 'post_echos.jpg'
