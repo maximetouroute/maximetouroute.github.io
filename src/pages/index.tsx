@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import LayoutRoot from '../components/LayoutRoot/LayoutRoot';
+import LayoutRoot from '../bits/Max/LayoutRoot/LayoutRoot';
 import SEO from '../bits/SEO/SEO';
-import PostGrid from '../bits/PostGridFlat/PostGridFlat';
+import PostGrid from '../bits/Max/PostGridFlat/PostGridFlat';
 import { CSSObject } from '@emotion/react';
 import { Theme } from '@mui/material';
 import { useState } from 'react';
 import { themedACSS } from '../bits/styles/styles';
-import Hero from '../components/MaxHero/Hero';
+import Hero from '../bits/Max/MaxHero/Hero';
 import { strings } from '../locales/strings';
-import PostFilterer from '../bits/MaxPostFilterer/PostFilterer';
+import PostFilterer from '../bits/Max/MaxPostFilterer/PostFilterer';
 const homeCSS = {
   marginTop: '4rem',
 }

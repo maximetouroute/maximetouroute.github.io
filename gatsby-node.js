@@ -34,10 +34,10 @@ const LAYOUTS = {
 
 const path = require('path')
 const layoutPage = path.resolve(
-  `./src/components/LayoutMdxPage/LayoutMdxPage.tsx`
+  `./src/bits/Max/LayoutMdxPage/LayoutMdxPage.tsx`
 )
 const layoutArticle = path.resolve(
-  `./src/components/LayoutMdxArticle/LayoutMdxArticle.tsx`
+  `./src/bits/Max/LayoutMdxArticle/LayoutMdxArticle.tsx`
 )
 
 /**

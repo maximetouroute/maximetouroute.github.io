@@ -1,5 +1,5 @@
-import React from 'react'
-import LayoutRoot from '../components/LayoutRoot/LayoutRoot'
+import React from 'react';
+import LayoutRoot from '../bits/Max/LayoutRoot/LayoutRoot';
 
 export default function NotFoundPage({
   data,
