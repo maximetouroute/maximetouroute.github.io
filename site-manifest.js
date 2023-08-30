@@ -32,47 +32,47 @@
 
 // export const siteManifest: SiteManifest = {
   module.exports = {
-  name: `Maxime Touroute Portfolio`,
-  title: `Maxime's Portfolio`,
-  author: 'Maxime Touroute',
-  authorMail: 'maxime.touroute@gmail.com',
+  name: `Reveality`,
+  title: `Reveality Website`,
+  author: 'Reveality',
+  authorMail: 'contact@reveality.io',
   // %s for pageName
-  titleTemplate: '%s · Maxime Touroute',
+  titleTemplate: '%s · Reveality',
   // Not too long for google snippet !
   description:
-    'Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Digital Arts, Software Engineering, Film Making',
+    'Reveality is a toolbox for artists and cultural institutions to create Augmented Reality experiences',
   // for robots plugin, No trailing slash allowed!
-  url: 'https://maximetouroute.github.io',
-  siteUrl: 'https://maximetouroute.github.io',
+  url: 'https://reveality.io',
+  siteUrl: 'https://reveality.io',
   // separated by comas
   keywords:
-    'digital arts, mapping, live drawing, interactive, maxime touroute, portfolio, cinematography, photography, visual arts, paris, lyon, french artist',
+  'augmented reality, mixed reality, XR, immersive art, digital art, audiovisual, video, mobile application, app',
 
   socialLinks: {
-    twitter: '//twitter.com/MaximeTouroute',
-    facebook: '//facebook.com/maxime.touroute',
-    github: '//github.com/maximetouroute',
-    instagram: '//instagram.com/maximetouroute',
-    vimeo: '//vimeo.com/maximetouroute',
+    twitter: '//twitter.com/revealityAR/',
+    facebook: '//facebook.com/revealityAR/',
+    github: '',
+    instagram: '//instagram.com/revealityAR/',
+    vimeo: '',
     youtube: '',
     soundcloud: '',
-    linkedin: '',
-    tiktok: ''
+    linkedin: '//linkedin.com/company/reveality/',
+    tiktok: '//tiktok.com/@revealityar',
   },
 
   pwa: {
-    name: `Maxime Touroute Portfolio`,
-    short_name: `Maxime's Portfolio`,
-    background_color: `#d6d0cd`,
-    theme_color: '#ffffff',
+    name: `Reveality Website`,
+    short_name: `Reveality Site`,
+    background_color: `#FCF9E8`,
+    theme_color: `#649DE5`,
   },
 
   spin: {
-    color: '#ffffff',
+    color: `#649DE5`,
   },
 
   robots: {
-    host: 'https://maximetouroute.github.io',
-    sitemap: 'https://maximetouroute.github.io/sitemap-0.xml',
+    host: 'https://reveality.io',
+    sitemap: 'https://reveality.io/sitemap-0.xml',
   },
 };
