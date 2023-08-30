@@ -1,5 +1,4 @@
-import { LanguageServiceMode } from 'typescript'
-import { LangCode } from './locales'
+import { LangCode } from './../bits/types';
 
 export const strings: Record<string, Record<LangCode, string>> = {
   aboutMe: {
