@@ -1,4 +1,4 @@
-### Type definitions saved at 2023-08-28T23:24:39.711Z ###
+### Type definitions saved at 2023-08-30T13:16:33.921Z ###
 
 enum RemoteFileFit {
   COVER
@@ -300,6 +300,7 @@ type SiteSiteMetadataSocialLinks {
   youtube: String
   soundcloud: String
   linkedin: String
+  tiktok: String
 }
 
 type SiteFunction implements Node @dontInfer {
@@ -336,28 +337,6 @@ type SitePlugin implements Node @dontInfer {
 
 type SiteBuildMetadata implements Node @dontInfer {
   buildTime: Date @dateformat
-}
-
-enum GatsbyImageFormat {
-  NO_CHANGE
-  AUTO
-  JPG
-  PNG
-  WEBP
-  AVIF
-}
-
-enum GatsbyImageLayout {
-  FIXED
-  FULL_WIDTH
-  CONSTRAINED
-}
-
-enum GatsbyImagePlaceholder {
-  DOMINANT_COLOR
-  TRACED_SVG
-  BLURRED
-  NONE
 }
 
 enum ImageFormat {
@@ -663,6 +642,73 @@ type ImageSharp implements Node @childOf(types: ["File"]) @dontInfer {
   resize(width: Int, height: Int, quality: Int, jpegQuality: Int, pngQuality: Int, webpQuality: Int, jpegProgressive: Boolean = true, pngCompressionLevel: Int = 9, pngCompressionSpeed: Int = 4, grayscale: Boolean, duotone: DuotoneGradient, base64: Boolean, traceSVG: Potrace, toFormat: ImageFormat, cropFocus: ImageCropFocus = ATTENTION, fit: ImageFit = COVER, background: String = "rgba(0,0,0,1)", rotate: Int, trim: Float): ImageSharpResize
 }
 
+type MarkdownHeading {
+  id: String
+  value: String
+  depth: Int
+}
+
+enum MarkdownHeadingLevels {
+  h1
+  h2
+  h3
+  h4
+  h5
+  h6
+}
+
+enum MarkdownExcerptFormats {
+  PLAIN
+  HTML
+  MARKDOWN
+}
+
+type MarkdownWordCount {
+  paragraphs: Int
+  sentences: Int
+  words: Int
+}
+
+type MarkdownRemark implements Node @childOf(mimeTypes: ["text/markdown", "text/x-markdown"], types: ["File"]) @derivedTypes @dontInfer {
+  frontmatter: MarkdownRemarkFrontmatter
+  excerpt: String
+  rawMarkdownBody: String
+  fileAbsolutePath: String
+}
+
+type MarkdownRemarkFrontmatter {
+  title: String
+  path: String
+  layout: String
+  subtitle: String
+  tags: String
+  date: Date @dateformat
+  category: String
+  image: File @fileByRelativePath
+}
+
+enum GatsbyImageFormat {
+  NO_CHANGE
+  AUTO
+  JPG
+  PNG
+  WEBP
+  AVIF
+}
+
+enum GatsbyImageLayout {
+  FIXED
+  FULL_WIDTH
+  CONSTRAINED
+}
+
+enum GatsbyImagePlaceholder {
+  DOMINANT_COLOR
+  TRACED_SVG
+  BLURRED
+  NONE
+}
+
 type Mdx implements Node @childOf(types: ["File"]) @dontInfer {
   excerpt(pruneLength: Int = 140): String
   tableOfContents(maxDepth: Int): JSON
@@ -677,6 +723,7 @@ type Frontmatter {
   description: String!
   language: String!
   subtitle: String
+  tags: String!
   date: Date @dateformat
   category: String
   priority: Float!

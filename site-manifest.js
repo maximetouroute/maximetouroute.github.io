@@ -3,7 +3,7 @@
  * Config file to simplify site creation
  */
 
-// type Social = 'twitter' | 'linkedin' | 'facebook' | 'github' | 'instagram' | 'youtube' | 'soundcloud' | 'vimeo';
+// type Social = 'twitter' | 'linkedin' | 'facebook' | 'github' | 'instagram' | 'youtube' | 'soundcloud' | 'vimeo' | 'tiktok';
 // interface SiteManifest {
 //     name: string;
 //     title: string;
@@ -57,6 +57,7 @@
     youtube: '',
     soundcloud: '',
     linkedin: '',
+    tiktok: ''
   },
 
   pwa: {

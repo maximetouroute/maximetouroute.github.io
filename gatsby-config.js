@@ -24,6 +24,7 @@ module.exports = {
       youtube: siteManifest.socialLinks.youtube,
       soundcloud: siteManifest.socialLinks.soundcloud,
       linkedin: siteManifest.socialLinks.linkedin,
+      tiktok: siteManifest.socialLinks.tiktok
     },
   },
 
