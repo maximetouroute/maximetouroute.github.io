@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import LayoutRoot from '../bits/Max/LayoutRoot/LayoutRoot';
+import LayoutRoot from '../bits/Rev/LayoutRoot/LayoutRoot';
 import SEO from '../bits/SEO/SEO';
 import PostGrid from '../bits/Max/PostGridFlat/PostGridFlat';
 import { CSSObject } from '@emotion/react';
