@@ -236,40 +236,40 @@ export default function Index({ data, pageContext: { langCode }, location }) {
 }
 
 export const indexPageQuery = graphql`
-  query EducQuery {
-    backgrounds: allFile(filter: { absolutePath: { regex: "/backgrounds/" } }) {
-      nodes {
-        relativePath
-        childImageSharp {
-          fluid(maxWidth: 1400, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
+query EducQuery {
+  backgrounds: allFile(filter: {absolutePath: {regex: "/backgrounds/"}}) {
+    nodes {
+      relativePath
+      childImageSharp {
+        fluid(maxWidth: 1400, quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
-    allMdx(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { category: { eq: "event" } } }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-            category
-            subtitle
-            language
-            image {
-              childImageSharp {
-                gatsbyImageData(height: 500, placeholder: BLURRED)
-              }
+  }
+  allMdx(
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {category: {eq: "event"}}}
+  ) {
+    edges {
+      node {
+        excerpt(pruneLength: 250)
+        id
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          path
+          category
+          subtitle
+          language
+          image {
+            childImageSharp {
+              gatsbyImageData(height: 500, placeholder: BLURRED)
             }
           }
         }
       }
     }
   }
+}
 `;
