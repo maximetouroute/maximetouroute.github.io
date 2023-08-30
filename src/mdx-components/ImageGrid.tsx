@@ -1,6 +1,12 @@
 import React from 'react'
 import { PhotoGrid } from '../bits/PhotoGrid/PhotoGrid'
 
+
+const containerCSS: CSSObjet = {
+  marginTop: '1rem',
+  marginBottom: '1rem'
+};
+
 interface OwnProps {
     props: any[]; // Expect Gatsby images array
     indices: number[];
@@ -12,7 +18,7 @@ interface OwnProps {
         ? props.map((l) => l.childImageSharp)
         : indices.map((index) => props[index].childImageSharp);
   
-    return <PhotoGrid gatsbyImagesWithThumbs={localImages} />;
+    return <div css={containerCSS}><PhotoGrid gatsbyImagesWithThumbs={localImages} /> </div>;
   }
   
   
