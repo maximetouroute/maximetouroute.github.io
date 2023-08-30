@@ -40,13 +40,13 @@
   titleTemplate: '%s · Maxime Touroute',
   // Not too long for google snippet !
   description:
-    'Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Cinematography, Photography, Digital Arts, Software Engineering.',
+    'Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Digital Arts, Software Engineering, Film Making',
   // for robots plugin, No trailing slash allowed!
   url: 'https://maximetouroute.github.io',
   siteUrl: 'https://maximetouroute.github.io',
   // separated by comas
   keywords:
-    'cinematography, photography, digital arts, maxime touroute, portfolio, visual arts, paris, lyon, french artist',
+    'digital arts, mapping, live drawing, interactive, maxime touroute, portfolio, cinematography, photography, visual arts, paris, lyon, french artist',
 
   socialLinks: {
     twitter: '//twitter.com/MaximeTouroute',
