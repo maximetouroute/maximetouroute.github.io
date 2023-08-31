@@ -67,10 +67,11 @@ export default function Index({ data, pageContext: { langCode }, location }) {
       <PostGrid posts={postsInMyLang} langCode={langCode} />
       </div>
       <TheApp langCode={langCode}/>
-      <AdvancedUsers langCode={langCode}/>
+
       <AboutUs langCode={langCode}/>
       <Partners langCode={langCode}/>
       
+      <AdvancedUsers langCode={langCode}/>
 
     </LayoutRoot>
   )

@@ -11,7 +11,7 @@ import logoPartner_lincc from './res/logoPartner_lincc.png';
 import logoAdvanced_unity from './res/logo_unity.svg';
 
 export const CLIENTS_LOGOS = [
-  { imageUrl: logoClient_cube, siteUrl: 'https://lecube.com/', scale: 0.7 },
+  { imageUrl: logoClient_cube, siteUrl: 'https://lecube.com/', scale: 1 },
   { imageUrl: logoClient_nat, siteUrl: 'https://www.natachapaquignon.com/' },
   { imageUrl: logoClient_saintex, siteUrl: 'https://saintex-reims.com/' },
   { imageUrl: logoClient_snzc, siteUrl: 'https://en.snzn.org/' },

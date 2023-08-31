@@ -9,12 +9,16 @@ export const responsiveContainerCSS: CSSObject = {
 };
 
 
-export const revLinkCSS: CSSObject = {
+export const revLinkCSS = (theme: Theme): CSSObject => {
+
+  return {
   marginTop: '2rem',
   marginBottom: '2rem',
-  ...themedACSS('blue'),
-  fontSize: '4rem'
-}
+  ...themedACSS(theme.palette.primary.main),
+  fontSize: '1.5rem'
+};
+};
+
 export const badgeContainerCSS: CSSObject = {
   
     display: 'flex',
@@ -259,19 +263,22 @@ export const subjectVideoCSS: CSSObject = {
   },
 };
 
-export const subjectTitleCSS: CSSObject = {
+export const subjectTitleCSS = (theme: Theme):CSSObject => { 
+  return {
   padding: '2rem',
   paddingTop: '1rem',
   paddingBottom: '1rem',
   borderRadius: '0.4rem',
   color: '#fbf9e8',
-  backgroundColor: '#649de4',
+  // backgroundColor: '#649de4',
   userSelect: 'none',
+  color: theme.palette.primary.main
+};
 };
 
 export const joinBetaCallCSS: CSSObject = {
   textAlign: 'center',
-  color: '#2A6DBF',
+
 };
 
 export const mainVideoCSS: CSSObject = {
