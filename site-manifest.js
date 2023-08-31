@@ -31,7 +31,7 @@
 // };
 
 // export const siteManifest: SiteManifest = {
-  module.exports = {
+module.exports = {
   name: `Reveality`,
   title: `Reveality Website`,
   author: 'Reveality',
@@ -46,7 +46,7 @@
   siteUrl: 'https://reveality.io',
   // separated by comas
   keywords:
-  'augmented reality, mixed reality, XR, immersive art, digital art, audiovisual, video, mobile application, app',
+    'augmented reality, mixed reality, XR, immersive art, digital art, audiovisual, video, mobile application, app',
 
   socialLinks: {
     twitter: '//twitter.com/revealityAR/',
@@ -75,4 +75,4 @@
     host: 'https://reveality.io',
     sitemap: 'https://reveality.io/sitemap-0.xml',
   },
-};
+}

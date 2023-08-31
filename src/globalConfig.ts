@@ -1,5 +1,4 @@
-import { NavbarConfig, FooterConfig } from './bits/types';
-
+import { NavbarConfig, FooterConfig } from './bits/types'
 
 export const navbarConfig: NavbarConfig = {
   name: 'Reveality',
@@ -10,16 +9,15 @@ export const navbarConfig: NavbarConfig = {
         { path: '/about', name: 'ABOUT' },
       ],
     },
-  
+
     fr: {
       links: [
         { path: '/fr', name: 'PROJETS' },
         { path: '/fr/about', name: 'A PROPOS' },
       ],
-    }
-  }
-};
-
+    },
+  },
+}
 
 export const footerConfig: FooterConfig = {
   en: {
@@ -43,4 +41,3 @@ export const footerConfig: FooterConfig = {
     ],
   },
 }
-

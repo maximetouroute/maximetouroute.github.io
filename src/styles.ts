@@ -1,31 +1,28 @@
-import { CSSObject } from '@emotion/react';
-import { breakpointKey, basicTransitionCSS } from './bits/styles/styles';
-import { themedACSS } from './bits/styles/styles';
-import { Theme } from '@mui/material';
+import { CSSObject } from '@emotion/react'
+import { breakpointKey, basicTransitionCSS } from './bits/styles/styles'
+import { themedACSS } from './bits/styles/styles'
+import { Theme } from '@mui/material'
 
 export const responsiveContainerCSS: CSSObject = {
   display: 'flex',
   justifyContent: 'center',
-};
-
+}
 
 export const revLinkCSS = (theme: Theme): CSSObject => {
-
   return {
-  marginTop: '2rem',
-  marginBottom: '2rem',
-  ...themedACSS(theme.palette.primary.main),
-  fontSize: '1.5rem'
-};
-};
+    marginTop: '2rem',
+    marginBottom: '2rem',
+    ...themedACSS(theme.palette.primary.main),
+    fontSize: '1.5rem',
+  }
+}
 
 export const badgeContainerCSS: CSSObject = {
-  
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-  };
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+}
 
 export const responsiveContainerInsideCSS: CSSObject = {
   [breakpointKey('normal')]: {
@@ -36,50 +33,50 @@ export const responsiveContainerInsideCSS: CSSObject = {
     minWidth: '90vw',
     // padding: '0.2rem',
   },
-};
+}
 
 export const minHeightCSS: CSSObject = {
   // height: '90vh',
   // minHeight: '90vh',
   padding: '4rem',
-};
+}
 
 export const fullSizeCSS: CSSObject = {
   height: '100vh',
   minHeight: '100vh',
-};
+}
 
-export const punchlineCSS = (theme: Theme): CSSObject => { 
+export const punchlineCSS = (theme: Theme): CSSObject => {
   return {
-  fontSize: '2rem',
-  [breakpointKey('small')]: {
-    fontSize: '3rem',
-  },
-  fontWeight: 900,
-  textAlign: 'center',
-  // color: '#34393A',
-  color: theme.palette.primary.main
+    fontSize: '2rem',
+    [breakpointKey('small')]: {
+      fontSize: '3rem',
+    },
+    fontWeight: 900,
+    textAlign: 'center',
+    // color: '#34393A',
+    color: theme.palette.primary.main,
 
-  // backgroundImage: 'linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)',
-  // backgroundImage: 'linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%)',
-  // backgroundImage: 'linear-gradient(to top, #dfe9f3 0%, white 100%)',
-  // backgroundImage: 'linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%)',
-  // backgroundImage:
-  //   'linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%)',
-  // backgroundImage: 'linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%)',
-  // backgroundImage: 'linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%)',
-  // backgroundImage: 'radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%)',
-  // backgroundBlendMode: screen;
-  // backgroundClip: 'text',
-  // textFillColor: 'transparent',
-};
-};
+    // backgroundImage: 'linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)',
+    // backgroundImage: 'linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%)',
+    // backgroundImage: 'linear-gradient(to top, #dfe9f3 0%, white 100%)',
+    // backgroundImage: 'linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%)',
+    // backgroundImage:
+    //   'linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%)',
+    // backgroundImage: 'linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%)',
+    // backgroundImage: 'linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%)',
+    // backgroundImage: 'radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%)',
+    // backgroundBlendMode: screen;
+    // backgroundClip: 'text',
+    // textFillColor: 'transparent',
+  }
+}
 
 export const welcomeCoverPhotoCSS: CSSObject = {
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-};
+}
 export const welcomeCoverCSS: CSSObject = {
   height: '90vh',
   minHeight: '90vh',
@@ -87,7 +84,7 @@ export const welcomeCoverCSS: CSSObject = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-};
+}
 export const welcomeCoverPunchlineCSS: CSSObject = {
   fontSize: '4rem',
   fontWeight: 300,
@@ -97,7 +94,7 @@ export const welcomeCoverPunchlineCSS: CSSObject = {
   [breakpointKey('small')]: {
     fontSize: '3rem',
   },
-};
+}
 export const welcomeCoverDescriptionCSS: CSSObject = {
   lineHeight: '1.3',
   fontSize: '2.3em',
@@ -116,7 +113,7 @@ export const welcomeCoverDescriptionCSS: CSSObject = {
     paddingLeft: '1em',
     paddingRight: '1em',
   },
-};
+}
 export const welcomeCoverInsideCSS: CSSObject = {
   flexGrow: 1,
   display: 'flex',
@@ -133,7 +130,7 @@ export const welcomeCoverInsideCSS: CSSObject = {
   [breakpointKey('small')]: {
     justifyContent: 'flex-start',
   },
-};
+}
 
 /*
             .CoverLogo {
@@ -153,7 +150,7 @@ export const welcomeCoverInsideCSS: CSSObject = {
 export const smallyTextCSS: CSSObject = {
   fontSize: '0.9em',
   opacity: 0.7,
-};
+}
 
 export const cardCSS: CSSObject = {
   width: '15rem',
@@ -171,7 +168,7 @@ export const cardCSS: CSSObject = {
   justifyContent: 'center',
   alignItems: 'center',
   padding: '1em',
-};
+}
 
 export const studioCardCSS: CSSObject = {
   fontSize: '0.9em',
@@ -193,14 +190,14 @@ export const studioCardCSS: CSSObject = {
   justifyContent: 'center',
   alignItems: 'center',
   padding: '1em',
-};
+}
 export const superGradientCSS: CSSObject = {
   // backgroundImage: 'linear-gradient(to right, #434343 0%, black 100%)'
   background:
     'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898',
   backgroundBlendMode: 'multiply,multiply',
   // backgroundImage: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)'
-};
+}
 
 export const contactButtonCSS: CSSObject = {
   textDecoration: 'none',
@@ -219,7 +216,7 @@ export const contactButtonCSS: CSSObject = {
   },
   padding: '0.4em',
   margin: '0.5em',
-};
+}
 
 export const buttonCSS: CSSObject = {
   backgroundImage:
@@ -240,7 +237,7 @@ export const buttonCSS: CSSObject = {
     transition: 'all 150ms linear',
     filter: 'saturate(1.3)',
   },
-};
+}
 
 export const marqueBlockCSS: CSSObject = {
   fontSize: '1.5em',
@@ -250,7 +247,7 @@ export const marqueBlockCSS: CSSObject = {
   fontWeight: 600,
   paddingTop: '2em',
   paddingBottom: '2em',
-};
+}
 ///
 
 export const subjectVideoCSS: CSSObject = {
@@ -261,30 +258,29 @@ export const subjectVideoCSS: CSSObject = {
     height: '60vh',
     borderRadius: '18px',
   },
-};
+}
 
-export const subjectTitleCSS = (theme: Theme):CSSObject => { 
+export const subjectTitleCSS = (theme: Theme): CSSObject => {
   return {
-  padding: '2rem',
-  paddingTop: '1rem',
-  paddingBottom: '1rem',
-  borderRadius: '0.4rem',
-  color: '#fbf9e8',
-  // backgroundColor: '#649de4',
-  userSelect: 'none',
-  color: theme.palette.primary.main
-};
-};
+    padding: '2rem',
+    paddingTop: '1rem',
+    paddingBottom: '1rem',
+    borderRadius: '0.4rem',
+    color: '#fbf9e8',
+    // backgroundColor: '#649de4',
+    userSelect: 'none',
+    color: theme.palette.primary.main,
+  }
+}
 
 export const joinBetaCallCSS: CSSObject = {
   textAlign: 'center',
-
-};
+}
 
 export const mainVideoCSS: CSSObject = {
   borderRadius: '20px',
   height: '70vh',
-};
+}
 
 // CLIENTS LOGOSexport const
 export const clientsLogoGridCSS: CSSObject = {
@@ -293,7 +289,7 @@ export const clientsLogoGridCSS: CSSObject = {
   flexDirection: 'row',
   justifyContent: 'space-around',
   maxWidth: '90vw',
-};
+}
 export const clientLogoCSS: CSSObject = {
   [breakpointKey('small')]: {
     minWidth: '8em',
@@ -306,7 +302,7 @@ export const clientLogoCSS: CSSObject = {
     minHeight: '8em',
     margin: '2em',
   },
-};
+}
 
 export const imageBackgroundCSS = (url: string): CSSObject => {
   return {
@@ -319,14 +315,14 @@ export const imageBackgroundCSS = (url: string): CSSObject => {
     ...basicTransitionCSS,
 
     '&:hover': {
-       ...basicTransitionCSS,
+      ...basicTransitionCSS,
       cursor: 'pointer',
       filter: 'none',
       opacity: 1,
       transform: 'scale(1.05)',
     },
-  };
-};
+  }
+}
 
 // Small key points features
 
@@ -337,7 +333,7 @@ export const iconContainerCSS: CSSObject = {
   justifyContent: 'center',
   alignItems: 'center',
   color: '#2A6DBF',
-};
+}
 export const thirdPageContainerCSS: CSSObject = {
   margin: 'auto',
   marginTop: 0,
@@ -350,7 +346,7 @@ export const thirdPageContainerCSS: CSSObject = {
   [breakpointKey('small')]: {
     minWidth: '90%',
   },
-};
+}
 
 export const subtextCSS: CSSObject = {
   display: 'flex',
@@ -371,8 +367,8 @@ export const subtextCSS: CSSObject = {
   margin: 0,
 
   textAlign: 'center',
-};
-export const subtextPCSS: CSSObject = {};
+}
+export const subtextPCSS: CSSObject = {}
 
 export const punchlineFeatureCSS: CSSObject = {
   fontSize: '1.5em',
@@ -382,7 +378,7 @@ export const punchlineFeatureCSS: CSSObject = {
   color: 'black',
   margin: 'auto',
   marginBottom: '0.5em',
-};
+}
 
 /// INDEX TSX
 
@@ -393,7 +389,7 @@ export const mainViewCSS: CSSObject = {
   minHeight: '90vh',
   display: 'flex',
   flexDirection: 'column',
-};
+}
 
 export const mainViewInsideCSS: CSSObject = {
   ...responsiveContainerInsideCSS,
@@ -403,7 +399,7 @@ export const mainViewInsideCSS: CSSObject = {
   [breakpointKey('small')]: {
     flexDirection: 'column',
   },
-};
+}
 
 export const logoContainerCSS: CSSObject = {
   width: '7rem',
@@ -416,7 +412,7 @@ export const logoContainerCSS: CSSObject = {
     width: '5rem',
     height: `${5 * 1.5}rem`,
   },
-};
+}
 
 export const logoAndVideoContainerCSS: CSSObject = {
   minWidth: '30vw',
@@ -428,13 +424,13 @@ export const logoAndVideoContainerCSS: CSSObject = {
   [breakpointKey('small')]: {
     minWidth: '90vw',
   },
-};
+}
 
 export const punchlineParagraphCSS: CSSObject = {
   paddingLeft: '5rem',
   paddingRight: '5rem',
   textAlign: 'center',
-};
+}
 
 export const mainVideoContainerCSS: CSSObject = {
   [breakpointKey('normal')]: {
@@ -449,7 +445,7 @@ export const mainVideoContainerCSS: CSSObject = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'flex-start',
-};
+}
 
 export const howDoesItWorkCSS: CSSObject = {
   [breakpointKey('normal')]: {
@@ -466,13 +462,13 @@ export const howDoesItWorkCSS: CSSObject = {
   },
   display: 'flex',
   justifyContent: 'center',
-};
+}
 
 export const howDoesItWorkPartCSS: CSSObject = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-};
+}
 
 export const iframeVideoContainerCSS: CSSObject = {
   ...responsiveContainerInsideCSS,
@@ -484,7 +480,7 @@ export const iframeVideoContainerCSS: CSSObject = {
   margin: '0px',
   marginTop: '2rem',
   marginBottom: '2rem',
-};
+}
 
 export const iframeCSS: CSSObject = {
   position: 'absolute',
@@ -492,4 +488,4 @@ export const iframeCSS: CSSObject = {
   left: '0px',
   width: '100%',
   height: '100%',
-};
+}
