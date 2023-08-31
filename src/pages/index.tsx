@@ -2,49 +2,24 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import LayoutRoot from '../bits/Rev/LayoutRoot/LayoutRoot';
 import SEO from '../bits/SEO/SEO';
-import PostGrid from '../bits/Max/PostGridFlat/PostGridFlat';
-import { CSSObject } from '@emotion/react';
-import { Theme } from '@mui/material';
-import { useState } from 'react';
-import { themedACSS } from '../bits/styles/styles';
-import Hero from '../bits/Max/MaxHero/Hero';
-import PostFilterer from '../bits/Max/MaxPostFilterer/PostFilterer';
-
+import Hero from '../bits/Rev/Hero/Hero';
 import { indexPageStrings } from '../locales/strings';
-import demoVideo from './mixVitrine.webm';
-import demoVideoSafari from './mixVitrineSafari.mp4';
 import AppStoreBadges from './../bits/Rev/AppStoreBadges/AppStoreBadges';
-import subjectRaw from './subjectRAW.webm';
-import subjectAlpha from './subjectALPHA.webm';
-import subjectMix from './subjectMIX.webm';
+
 import { PARTNERS_LOGOS, CLIENTS_LOGOS } from '../logos';
-import subjectRawSafariIos from './subjectRAWSafari.mp4';
-import subjectAlphaSafariIos from './subjectALPHASafari.mp4';
-import subjectMixSafariIos from './subjectMIXSafari.mp4';
-import RevealityLogo from '../bits/Rev/RevealityLogo/RevealityLogo';
 import {
   responsiveContainerCSS,
   responsiveContainerInsideCSS,
   joinBetaCallCSS,
-  subjectTitleCSS,
-  subjectVideoCSS,
   punchlineCSS,
-  mainVideoCSS,
   clientsLogoGridCSS,
   clientLogoCSS,
   imageBackgroundCSS,
   mainViewCSS,
-  mainViewInsideCSS,
-  logoAndVideoContainerCSS,
-  logoContainerCSS,
-  punchlineParagraphCSS,
-  mainVideoContainerCSS,
-  howDoesItWorkCSS,
-  howDoesItWorkPartCSS,
   iframeVideoContainerCSS,
   iframeCSS,
-  badgeContainerCSS
 } from '../styles';
+import TheApp from '../bits/Rev/TheApp/TheApp';
 
 // const moreProjectsCSS = (theme: Theme): CSSObject => {
 //   return {
@@ -72,61 +47,12 @@ export default function Index({ data, pageContext: { langCode }, location }) {
 
   return (
     <LayoutRoot language={langCode} location={{ ...location }}>
-      <SEO title={'Home'} langCode={langCode} />
+      <SEO title={'Home'} langCode={langCode} useRobotoFont={true}/>
+      <Hero langCode={langCode}/>
       <div css={mainViewCSS}>
-        <div css={mainViewInsideCSS}>
-          <div css={logoAndVideoContainerCSS}>
-            <div css={logoContainerCSS}>
-              <RevealityLogo />
-            </div>
 
-            <h1 css={punchlineCSS}>{LOCAL['punchline']}</h1>
-            <p css={punchlineParagraphCSS}>{LOCAL['descriptionPunchline']}</p>
-            <p></p>
-            <div
-              css={badgeContainerCSS}
-            >
-              <h3 css={joinBetaCallCSS}>{LOCAL['getApp']}</h3>
-              <AppStoreBadges/>
-            </div>
-          </div>
+      <TheApp langCode={langCode}/>
 
-          <div css={mainVideoContainerCSS}>
-            <video autoPlay muted loop playsInline css={mainVideoCSS}>
-              <source src={demoVideo} type="video/webm" />
-              <source src={demoVideoSafari} type="video/mp4" />
-            </video>
-          </div>
-        </div>
-
-        <h1 css={{ ...punchlineCSS, marginTop: '8rem', marginBottom: '2rem' }}>
-          {LOCAL['howdoesitwork']}
-        </h1>
-        <div css={howDoesItWorkCSS}>
-          <div css={howDoesItWorkPartCSS}>
-            <h3 css={subjectTitleCSS}>{LOCAL['shoot']}</h3>
-
-            <video autoPlay muted loop playsInline css={subjectVideoCSS}>
-              <source src={subjectRaw} type="video/webm" />
-              <source src={subjectRawSafariIos} type="video/mp4" />
-            </video>
-          </div>
-          <div css={howDoesItWorkPartCSS}>
-            <h3 css={subjectTitleCSS}>{LOCAL['weProcess']}</h3>
-            <video autoPlay muted loop playsInline css={subjectVideoCSS}>
-              <source src={subjectAlpha} type="video/webm" />
-              <source src={subjectAlphaSafariIos} type="video/mp4" />
-            </video>
-          </div>
-
-          <div css={howDoesItWorkPartCSS}>
-            <h3 css={subjectTitleCSS}>{LOCAL['reproject']}</h3>
-            <video autoPlay muted loop playsInline css={subjectVideoCSS}>
-              <source src={subjectMix} type="video/webm" />
-              <source src={subjectMixSafariIos} type="video/mp4" />
-            </video>
-          </div>
-        </div>
 
         <h2>{LOCAL['imaginationLimit']}</h2>
         <div

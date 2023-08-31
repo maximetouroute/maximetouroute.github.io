@@ -42,7 +42,7 @@ export default function Index({ data, pageContext: { langCode }, location }) {
 
   return (
     <LayoutRoot language={langCode} location={{ ...location }}>
-      <SEO title={'Education'} langCode={langCode} />
+      <SEO title={'Education'} langCode={langCode} useRobotoFont={true}/>
       <div
         css={{
           ...responsiveContainerCSS,
