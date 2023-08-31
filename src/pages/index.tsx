@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, graphql } from 'gatsby';
 import LayoutRoot from '../bits/Rev/LayoutRoot/LayoutRoot';
 import SEO from '../bits/SEO/SEO';
 import Hero from '../bits/Rev/Hero/Hero';
 import { indexPageStrings } from '../locales/strings';
 import AppStoreBadges from './../bits/Rev/AppStoreBadges/AppStoreBadges';
-
+import Partners from '../bits/Rev/Partners/Partners';
 import { PARTNERS_LOGOS, CLIENTS_LOGOS } from '../logos';
 import {
   responsiveContainerCSS,
@@ -20,6 +20,11 @@ import {
   iframeCSS,
 } from '../styles';
 import TheApp from '../bits/Rev/TheApp/TheApp';
+import PostGrid from '../bits/Rev/PostGridFlat/PostGridFlat';
+import { StringList } from '../bits/types';
+import { useTheme } from '@mui/material';
+import AdvancedUsers from '../bits/Rev/AdvancedUsers/AdvancedUsers';
+import AboutUs from '../bits/Rev/AboutUs/AboutUs';
 
 // const moreProjectsCSS = (theme: Theme): CSSObject => {
 //   return {
@@ -37,95 +42,35 @@ import TheApp from '../bits/Rev/TheApp/TheApp';
 //   }
 // }
 
+const strings: StringList = {
+  madeWith: {
+    ['en']: 'Made with Reveality',
+    ['fr']: 'Fait avec Reveality'
+  }
+
+}
 export default function Index({ data, pageContext: { langCode }, location }) {
+  const theme = useTheme();
   const posts = data.allMdx.edges;
-  const LOCAL = indexPageStrings[langCode];
-  // const postsInMyLang = posts.filter(
-  //   (post) => post.node.frontmatter.language === langCode
-  // );
-  // const [filteredPosts, setFilteredPosts] = useState<any>(postsInMyLang);
+  // const LOCAL = indexPageStrings[langCode];
+  const postsInMyLang = posts.filter(
+    (post) => post.node.frontmatter.language === langCode
+  );
 
   return (
     <LayoutRoot language={langCode} location={{ ...location }}>
       <SEO title={'Home'} langCode={langCode} useRobotoFont={true}/>
       <Hero langCode={langCode}/>
+      
       <div css={mainViewCSS}>
-
-      <TheApp langCode={langCode}/>
-
-
-        <h2>{LOCAL['imaginationLimit']}</h2>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <h3 css={joinBetaCallCSS}>{LOCAL['getApp']}</h3>
-          <AppStoreBadges/>
-        </div>
-
-        <div css={responsiveContainerCSS}>
-          <div css={iframeVideoContainerCSS}>
-            <iframe
-              css={iframeCSS}
-              src="https://www.youtube.com/embed/I7a_KLPCZgs?rel=0&color=white&modestbranding=1"
-              title="How to create with Reveality (Video)"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-
-        <h3 css={punchlineCSS}>Ils travaillent avec nous</h3>
-        <div css={responsiveContainerCSS}>
-          <div css={responsiveContainerInsideCSS}>
-            <div css={clientsLogoGridCSS}>
-              {CLIENTS_LOGOS.map((logo) => {
-                return (
-                  <a
-                    key={logo.siteUrl}
-                    css={{
-                      ...clientLogoCSS,
-                      ...imageBackgroundCSS(logo.imageUrl),
-                      transform: `scale(${logo.scale ? logo.scale : 1})`,
-                    }}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href={logo.siteUrl}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </div>
-
-        <h3 css={punchlineCSS}>Ils nous accompagnent</h3>
-        <div css={responsiveContainerCSS}>
-          <div css={responsiveContainerInsideCSS}>
-            <div css={clientsLogoGridCSS}>
-              {PARTNERS_LOGOS.map((logo) => {
-                return (
-                  <a
-                    key={logo.siteUrl}
-                    css={{
-                      ...clientLogoCSS,
-                      ...imageBackgroundCSS(logo.imageUrl),
-                      transform: `scale(${logo.scale ? logo.scale : 1})`,
-                    }}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href={logo.siteUrl}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </div>
+        <h2 css={punchlineCSS(theme)}> {strings['madeWith'][langCode]}</h2>
+      <PostGrid posts={postsInMyLang} langCode={langCode} />
       </div>
+      <TheApp langCode={langCode}/>
+      <AdvancedUsers langCode={langCode}/>
+      <AboutUs langCode={langCode}/>
+      <Partners langCode={langCode}/>
+      
 
     </LayoutRoot>
   )

@@ -9,9 +9,11 @@ export const supportedLangs: SupportedLangs = {
   ['en']: {
     urlPrefix: '',
     humanName: '🇬🇧 English',
+    shortName: '🇬🇧 EN'
   },
   ['fr']: {
     urlPrefix: 'fr',
     humanName: '🇫🇷 Français',
+    shortName: '🇫🇷 FR'
   },
 };

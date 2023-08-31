@@ -1,6 +1,7 @@
 import { CSSObject } from '@emotion/react';
 import { breakpointKey, basicTransitionCSS } from './bits/styles/styles';
 import { themedACSS } from './bits/styles/styles';
+import { Theme } from '@mui/material';
 
 export const responsiveContainerCSS: CSSObject = {
   display: 'flex',
@@ -44,14 +45,16 @@ export const fullSizeCSS: CSSObject = {
   minHeight: '100vh',
 };
 
-export const punchlineCSS: CSSObject = {
+export const punchlineCSS = (theme: Theme): CSSObject => { 
+  return {
   fontSize: '2rem',
   [breakpointKey('small')]: {
     fontSize: '3rem',
   },
   fontWeight: 900,
   textAlign: 'center',
-  color: '#34393A',
+  // color: '#34393A',
+  color: theme.palette.primary.main
 
   // backgroundImage: 'linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)',
   // backgroundImage: 'linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%)',
@@ -65,6 +68,7 @@ export const punchlineCSS: CSSObject = {
   // backgroundBlendMode: screen;
   // backgroundClip: 'text',
   // textFillColor: 'transparent',
+};
 };
 
 export const welcomeCoverPhotoCSS: CSSObject = {

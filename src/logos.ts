@@ -8,6 +8,7 @@ import logoPartner_stationf from './res/logoPartner_stationf.svg';
 import logoPartner_schoolab from './res/logoPartner_schoolab.png';
 import logoPartner_polepixel from './res/logoPartner_polePixel.svg';
 import logoPartner_lincc from './res/logoPartner_lincc.png';
+import logoAdvanced_unity from './res/logo_unity.svg';
 
 export const CLIENTS_LOGOS = [
   { imageUrl: logoClient_cube, siteUrl: 'https://lecube.com/', scale: 0.7 },
@@ -23,4 +24,8 @@ export const PARTNERS_LOGOS = [
   { imageUrl: logoPartner_schoolab, siteUrl: 'https://www.theschoolab.com/' },
   { imageUrl: logoPartner_polepixel, siteUrl: 'https://polepixel.fr/' },
   { imageUrl: logoPartner_lincc, siteUrl: 'https://lincc.parisandco.paris/' },
+];
+
+export const ADVANCED_LOGOS = [
+  { imageUrl: logoAdvanced_unity, siteUrl: 'https://reveality.io/' },
 ];
