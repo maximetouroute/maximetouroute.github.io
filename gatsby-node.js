@@ -18,13 +18,18 @@ const defaultLangCode = 'en'
 const supportedLangs = {
   ['en']: {
     urlPrefix: '',
-    humanName: 'English',
+    humanName: '🇬🇧 English',
   },
   ['fr']: {
     urlPrefix: 'fr',
-    humanName: 'Français',
+    humanName: '🇫🇷 Français',
   },
-}
+  ['es']: {
+    urlPrefix: 'es',
+    humanName: '🇪🇸 Español',
+  },
+};
+
 // WORKAROUND END
 
 const LAYOUTS = {

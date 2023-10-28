@@ -14,4 +14,8 @@ export const supportedLangs: SupportedLangs = {
     urlPrefix: 'fr',
     humanName: '🇫🇷 Français',
   },
+  ['es']: {
+    urlPrefix: 'es',
+    humanName: '🇪🇸 Español',
+  },
 };

@@ -10,6 +10,12 @@ export const navbarConfig: NavbarConfig = {
         { path: '/about', name: 'ABOUT' },
       ],
     },
+    es: {
+      links: [
+        { path: '/es', name: 'TRABAJO' },
+        { path: '/es/about', name: 'SOBRE MÌ' },
+      ],
+    },
   
     fr: {
       links: [
@@ -26,6 +32,13 @@ export const footerConfig: FooterConfig = {
     links: [
       { path: '/', name: 'WORK' },
       { path: '/about', name: 'ABOUT' },
+    ],
+  },
+
+  es: {
+    links: [
+      { path: '/es', name: 'TRABAJO' },
+      { path: '/es/about', name: 'SOBRE MÌ' },
     ],
   },
 

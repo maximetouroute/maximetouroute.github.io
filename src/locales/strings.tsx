@@ -1,8 +1,9 @@
-import { LangCode } from './../bits/types';
+import { LangRecord } from './../bits/types';
 
-export const strings: Record<string, Record<LangCode, string>> = {
+export const strings: LangRecord = {
   aboutMe: {
     en: 'About',
     fr: 'A propos',
+    es: 'Sobre mì'
   },
 }
