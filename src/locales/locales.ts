@@ -7,15 +7,18 @@ export const defaultLang: LangCode = 'en';
 
 export const supportedLangs: SupportedLangs = {
   ['en']: {
-    urlPrefix: '',
+    urlPrefix: 'en',
     humanName: '🇬🇧 English',
+    shortName: '🇬🇧 EN',
   },
   ['fr']: {
     urlPrefix: 'fr',
     humanName: '🇫🇷 Français',
+    shortName: '🇫🇷 FR',
   },
   ['es']: {
     urlPrefix: 'es',
     humanName: '🇪🇸 Español',
+    shortName: '🇪🇸 ES',
   },
 };

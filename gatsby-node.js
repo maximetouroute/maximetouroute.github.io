@@ -219,6 +219,11 @@ exports.createPages = ({ actions, graphql }) => {
               layout
               title
               language
+              image {
+                colors {
+                  vibrant
+                }
+              }
             }
             internal {
               contentFilePath

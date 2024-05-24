@@ -32,6 +32,7 @@
     "@mui/icons-material": "^5.14.7",
     "@mui/material": "^5.14.7",
     "browser-lang": "^0.2.1",
+    "color": "^4.2.3",
     "css-element-queries": "^1.2.3",
     "gatsby": "^5.12.3",
     "gatsby-background-image": "^1.5.3",
@@ -69,6 +70,7 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
+    "@types/color": "^3.0.6",
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
