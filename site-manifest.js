@@ -42,8 +42,8 @@
   description:
     'Maxime Touroute · Audiovisual Arts Engineer · Portfolio · Digital Arts, Software Engineering, Film Making',
   // for robots plugin, No trailing slash allowed!
-  url: 'https://maximetouroute.github.io',
-  siteUrl: 'https://maximetouroute.github.io',
+  url: 'https://maximetouroute.com',
+  siteUrl: 'https://maximetouroute.com',
   // separated by comas
   keywords:
     'digital arts, mapping, live drawing, interactive, maxime touroute, portfolio, cinematography, photography, visual arts, paris, lyon, french artist',
@@ -72,7 +72,7 @@
   },
 
   robots: {
-    host: 'https://maximetouroute.github.io',
-    sitemap: 'https://maximetouroute.github.io/sitemap-0.xml',
+    host: 'https://maximetouroute.com/',
+    sitemap: 'https://maximetouroute.com/sitemap.xml',
   },
 };
