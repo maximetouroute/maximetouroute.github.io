@@ -132,6 +132,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       language: String!
       subtitle: String
       tags: String!
+      color: String
       date: Date @dateformat
       category: String,
       priority: Float!
@@ -219,6 +220,7 @@ exports.createPages = ({ actions, graphql }) => {
               layout
               title
               language
+              color
               image {
                 colors {
                   vibrant

@@ -69,6 +69,7 @@ query IndexQuery {
           category
           subtitle
           language
+          color
           tags
           image {
             colors {
