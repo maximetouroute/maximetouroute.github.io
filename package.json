@@ -2,7 +2,7 @@
   "name": "maxime-touroute-portfolio",
   "description": "Maxime Touroute Portfolio",
   "version": "3.0.0",
-  "author": "Maxime Touroute <maxime.touroute@gmail.com>",
+  "author": "Maxime Touroute <contact@maximetouroute.com>",
   "licence": "MIT",
   "engines": {
     "node": ">=18.7.0"
