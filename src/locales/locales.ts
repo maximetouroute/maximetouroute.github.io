@@ -15,10 +15,5 @@ export const supportedLangs: SupportedLangs = {
     urlPrefix: 'fr',
     humanName: '🇫🇷 Français',
     shortName: '🇫🇷 FR',
-  },
-  ['es']: {
-    urlPrefix: 'es',
-    humanName: '🇪🇸 Español',
-    shortName: '🇪🇸 ES',
-  },
+  }
 };
