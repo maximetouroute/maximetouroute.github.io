@@ -35,7 +35,7 @@
   name: `Maxime Touroute Portfolio`,
   title: `Maxime's Portfolio`,
   author: 'Maxime Touroute',
-  authorMail: 'contact@maximetouroutecom',
+  authorMail: 'contact@maximetouroute.com',
   // %s for pageName
   titleTemplate: '%s · Maxime Touroute',
   // Not too long for google snippet !
