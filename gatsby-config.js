@@ -7,6 +7,7 @@ module.exports = {
     title: siteManifest.title,
     author: siteManifest.author,
     authorMail: siteManifest.authorMail,
+    authorPhone: siteManifest.authorPhone,
     titleTemplate: siteManifest.titleTemplate,
     description: siteManifest.description,
     siteUrl: siteManifest.url,

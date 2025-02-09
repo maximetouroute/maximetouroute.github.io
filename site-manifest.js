@@ -36,6 +36,7 @@
   title: `Maxime's Portfolio`,
   author: 'Maxime Touroute',
   authorMail: 'contact@maximetouroute.com',
+  authorPhone: "+33650847419",
   // %s for pageName
   titleTemplate: '%s · Maxime Touroute',
   // Not too long for google snippet !
@@ -49,7 +50,7 @@
     'digital arts, mapping, live drawing, interactive, maxime touroute, portfolio, cinematography, photography, visual arts, paris, lyon, french artist',
 
   socialLinks: {
-    twitter: '//twitter.com/MaximeTouroute',
+    twitter: '',
     facebook: '//facebook.com/maxime.touroute',
     github: '//github.com/maximetouroute',
     instagram: '//instagram.com/maximetouroute',
